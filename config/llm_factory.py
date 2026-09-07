@@ -51,7 +51,7 @@ def get_llm(role: str, config: dict):
             temperature=0,
             num_ctx=num_ctx,
             num_predict=num_predict,
-            reasoning=True
+            reasoning=False
         )
 
 

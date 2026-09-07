@@ -277,6 +277,7 @@ def main():
     )
 
     # 2. Attach LoRA Adapters
+    """
     logger.info("Attaching LoRA adapters (r=%d, alpha=%d)...", args.lora_rank, args.lora_alpha)
     model = FastLanguageModel.get_peft_model(
         model,
@@ -288,6 +289,23 @@ def main():
         use_gradient_checkpointing=True,
         random_state=3407,
     )
+    """
+    # 2. Attach LoRA Adapters (skip if already loaded from SFT checkpoint)
+    if hasattr(model, "peft_config") and model.peft_config:
+        logger.info("Model already has LoRA adapters attached from SFT. Enabling training mode.")
+        FastLanguageModel.for_training(model)
+    else:
+        logger.info("Attaching LoRA adapters (r=%d, alpha=%d)...", args.lora_rank, args.lora_alpha)
+        model = FastLanguageModel.get_peft_model(
+            model,
+            r=args.lora_rank,
+            target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
+            lora_alpha=args.lora_alpha,
+            lora_dropout=0,
+            bias="none",
+            use_gradient_checkpointing=True,
+            random_state=3407,
+        )
 
     # 3. Format Dataset & Train/Test Split
     train_dataset, eval_dataset, n_train, n_eval = format_dataset_for_dpo(
