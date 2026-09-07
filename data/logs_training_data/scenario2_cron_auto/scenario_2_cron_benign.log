@@ -1,0 +1,531 @@
+# Auto-extracted Benign Logs: scenario_2_cron_benign.log
+# Total chunks: 66
+
+# --- START CHUNK: scenario_2_cron_benign_001 (CLEAR) ---
+Jun 18 13:54:26 atb-videoserver-image-2025-06-18t13-40-32z filebeat[38955]: 2025-06-18T13:54:26.668Z#011INFO#011instance/beat.go:462#011filebeat stopped.
+Oct  1 09:55:13 videoserver kernel: [    0.000000] Linux version 5.10.0-8-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.46-4 (2021-08-03)
+Oct  1 09:55:13 videoserver kernel: [    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.10.0-8-amd64 root=UUID=618c2dd8-1cac-4692-9a3d-8a9ec1563c51 ro console=tty0 console=ttyS0,115200 earlyprintk=ttyS0,115200 consoleblank=0
+Oct  1 09:55:13 videoserver kernel: [    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Oct  1 09:55:13 videoserver kernel: [    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+# --- END CHUNK: scenario_2_cron_benign_001 ---
+
+# --- START CHUNK: scenario_2_cron_benign_002 (CLEAR) ---
+Oct  1 09:55:13 videoserver kernel: [    1.388589]  vda: vda1 vda14 vda15
+Oct  1 09:55:13 videoserver kernel: [    1.525287] EXT4-fs (vda1): mounted filesystem with ordered data mode. Opts: (null)
+Oct  1 09:55:13 videoserver kernel: [    1.567182] usb 1-1: new full-speed USB device number 2 using uhci_hcd
+Oct  1 09:55:13 videoserver kernel: [    1.571355] Not activating Mandatory Access Control as /sbin/tomoyo-init does not exist.
+Oct  1 09:55:13 videoserver kernel: [    1.753500] usb 1-1: New USB device found, idVendor=0627, idProduct=0001, bcdDevice= 0.00
+# --- END CHUNK: scenario_2_cron_benign_002 ---
+
+# --- START CHUNK: scenario_2_cron_benign_003 (CLEAR) ---
+Oct  1 09:55:13 videoserver systemd[1]: Finished Coldplug All udev Devices.
+Oct  1 09:55:13 videoserver systemd[1]: Mounted FUSE Control File System.
+Oct  1 09:55:13 videoserver systemd[1]: Mounted Kernel Configuration File System.
+Oct  1 09:55:13 videoserver systemd[1]: Finished Grow File System on /.
+Oct  1 09:55:13 videoserver systemd[1]: Finished Load/Save Random Seed.
+# --- END CHUNK: scenario_2_cron_benign_003 ---
+
+# --- START CHUNK: scenario_2_cron_benign_004 (CLEAR) ---
+Oct  1 09:55:13 videoserver systemd[1]: Reached target Cloud-config availability.
+Oct  1 09:55:13 videoserver systemd[1]: Reached target Network is Online.
+Oct  1 09:55:13 videoserver systemd[1]: Reached target System Initialization.
+Oct  1 09:55:13 videoserver systemd[1]: Started Daily Cleanup of Temporary Directories.
+Oct  1 09:55:13 videoserver systemd[1]: Listening on D-Bus System Message Bus Socket.
+# --- END CHUNK: scenario_2_cron_benign_004 ---
+
+# --- START CHUNK: scenario_2_cron_benign_005 (CLEAR) ---
+Oct  1 09:55:13 videoserver systemd[1]: Reached target Sockets.
+Oct  1 09:55:13 videoserver systemd[1]: Reached target Basic System.
+Oct  1 09:55:13 videoserver systemd[1]: Starting Kernel process accounting...
+Oct  1 09:55:13 videoserver systemd[1]: Starting The Apache HTTP Server...
+Oct  1 09:55:13 videoserver systemd[1]: Starting chrony, an NTP client/server...
+# --- END CHUNK: scenario_2_cron_benign_005 ---
+
+# --- START CHUNK: scenario_2_cron_benign_006 (CLEAR) ---
+Oct  1 10:02:50 videoserver zmc_m1[2604]: ERR [zmc_m1] [Failed to prime capture of initial monitor]
+Oct  1 10:02:51 videoserver systemd[1]: Created slice User Slice of UID 1001.
+Oct  1 10:02:51 videoserver systemd[1]: Starting User Runtime Directory /run/user/1001...
+Oct  1 10:02:51 videoserver systemd[1]: Finished User Runtime Directory /run/user/1001.
+Oct  1 10:02:51 videoserver systemd[1]: Starting User Manager for UID 1001...
+# --- END CHUNK: scenario_2_cron_benign_006 ---
+
+# --- START CHUNK: scenario_2_cron_benign_007 (CLEAR) ---
+Oct  1 10:02:51 videoserver systemd[1]: Started User Manager for UID 1001.
+Oct  1 10:02:51 videoserver systemd[1]: Started Session 3 of user aecid.
+Oct  1 10:02:51 videoserver systemd[2609]: Reached target Main User Target.
+Oct  1 10:02:51 videoserver systemd[2609]: Startup finished in 88ms.
+Oct  1 10:02:52 videoserver zmc_m1[2604]: ERR [zmc_m1] [Unable to open input rtsp://172.17.100.80:8554/mystream due to: Server returned 404 Not Found]
+# --- END CHUNK: scenario_2_cron_benign_007 ---
+
+# --- START CHUNK: scenario_2_cron_benign_008 (CLEAR) ---
+Oct  1 10:04:03 videoserver systemd[1]: user@1001.service: Succeeded.
+Oct  1 10:04:03 videoserver systemd[1]: Stopped User Manager for UID 1001.
+Oct  1 10:04:03 videoserver systemd[1]: Stopping User Runtime Directory /run/user/1001...
+Oct  1 10:04:03 videoserver systemd[1]: run-user-1001.mount: Succeeded.
+Oct  1 10:04:03 videoserver systemd[1]: user-runtime-dir@1001.service: Succeeded.
+# --- END CHUNK: scenario_2_cron_benign_008 ---
+
+# --- START CHUNK: scenario_2_cron_benign_009 (CLEAR) ---
+Oct  1 10:14:09 videoserver zmc_m1[2800]: ERR [zmc_m1] [Failed to prime capture of initial monitor]
+Oct  1 10:14:15 videoserver systemd[1]: Created slice User Slice of UID 0.
+Oct  1 10:14:15 videoserver systemd[1]: Starting User Runtime Directory /run/user/0...
+Oct  1 10:14:15 videoserver systemd[1]: Finished User Runtime Directory /run/user/0.
+Oct  1 10:14:15 videoserver systemd[1]: Starting User Manager for UID 0...
+# --- END CHUNK: scenario_2_cron_benign_009 ---
+
+# --- START CHUNK: scenario_2_cron_benign_010 (CLEAR) ---
+Oct  1 10:14:15 videoserver systemd[1]: Started User Manager for UID 0.
+Oct  1 10:14:15 videoserver systemd[1]: Started Session 6 of user root.
+Oct  1 10:14:15 videoserver systemd[2805]: Reached target Main User Target.
+Oct  1 10:14:15 videoserver systemd[2805]: Startup finished in 82ms.
+Oct  1 10:14:17 videoserver zmc_m1[2800]: ERR [zmc_m1] [Unable to open input rtsp://172.17.100.80:8554/mystream due to: Server returned 404 Not Found]
+# --- END CHUNK: scenario_2_cron_benign_010 ---
+
+# --- START CHUNK: scenario_2_cron_benign_011 (CLEAR) ---
+Oct  1 10:35:46 videoserver systemd[1]: user@0.service: Succeeded.
+Oct  1 10:35:46 videoserver systemd[1]: Stopped User Manager for UID 0.
+Oct  1 10:35:46 videoserver systemd[1]: Stopping User Runtime Directory /run/user/0...
+Oct  1 10:35:46 videoserver systemd[1]: run-user-0.mount: Succeeded.
+Oct  1 10:35:46 videoserver systemd[1]: user-runtime-dir@0.service: Succeeded.
+# --- END CHUNK: scenario_2_cron_benign_011 ---
+
+# --- START CHUNK: scenario_2_cron_benign_012 (CLEAR) ---
+Oct  1 10:44:57 videoserver zmc_m1[3158]: ERR [zmc_m1] [Failed to prime capture of initial monitor]
+Oct  1 10:44:59 videoserver systemd[1]: Created slice User Slice of UID 1001.
+Oct  1 10:44:59 videoserver systemd[1]: Starting User Runtime Directory /run/user/1001...
+Oct  1 10:44:59 videoserver systemd[1]: Finished User Runtime Directory /run/user/1001.
+Oct  1 10:44:59 videoserver systemd[1]: Starting User Manager for UID 1001...
+# --- END CHUNK: scenario_2_cron_benign_012 ---
+
+# --- START CHUNK: scenario_2_cron_benign_013 (CLEAR) ---
+Oct  1 10:44:59 videoserver systemd[1]: Started User Manager for UID 1001.
+Oct  1 10:44:59 videoserver systemd[1]: Started Session 14 of user aecid.
+Oct  1 10:44:59 videoserver systemd[3163]: Reached target Main User Target.
+Oct  1 10:44:59 videoserver systemd[3163]: Startup finished in 74ms.
+Oct  1 10:45:01 videoserver CRON[3214]: (root) CMD (  /usr/share/awffull/awffull)
+# --- END CHUNK: scenario_2_cron_benign_013 ---
+
+# --- START CHUNK: scenario_2_cron_benign_014 (CLEAR) ---
+Oct  1 10:45:01 videoserver CRON[3212]: (CRON) info (No MTA installed, discarding output)
+Oct  1 10:45:03 videoserver systemd[1]: Started Session 17 of user aecid.
+Oct  1 10:45:03 videoserver systemd[1]: session-17.scope: Succeeded.
+Oct  1 10:45:04 videoserver systemd[1]: Started Session 18 of user aecid.
+Oct  1 10:45:04 videoserver zmc_m1[3158]: ERR [zmc_m1] [Unable to open input rtsp://172.17.100.80:8554/mystream due to: Server returned 404 Not Found]
+# --- END CHUNK: scenario_2_cron_benign_014 ---
+
+# --- START CHUNK: scenario_2_cron_benign_015 (CLEAR) ---
+Jun 18 13:52:36 atb-videoserver-image-2025-06-18t13-40-32z sshd[1079]: Disconnected from user debian 10.110.0.254 port 44814
+Jun 18 13:52:36 atb-videoserver-image-2025-06-18t13-40-32z sshd[1072]: pam_unix(sshd:session): session closed for user debian
+Jun 18 13:54:24 atb-videoserver-image-2025-06-18t13-40-32z sudo: pam_unix(sudo:session): session closed for user root
+Jun 18 13:54:25 atb-videoserver-image-2025-06-18t13-40-32z systemd-logind[675]: Power key pressed.
+Jun 18 13:54:25 atb-videoserver-image-2025-06-18t13-40-32z systemd-logind[675]: Powering Off...
+# --- END CHUNK: scenario_2_cron_benign_015 ---
+
+# --- START CHUNK: scenario_2_cron_benign_016 (CLEAR) ---
+Jun 18 13:54:26 atb-videoserver-image-2025-06-18t13-40-32z systemd-logind[675]: System is powering down.
+Jun 18 13:54:26 atb-videoserver-image-2025-06-18t13-40-32z sshd[707]: pam_unix(sshd:session): session closed for user debian
+Jun 18 13:54:26 atb-videoserver-image-2025-06-18t13-40-32z sshd[707]: pam_systemd(sshd:session): Failed to release session: Interrupted system call
+Oct  1 09:55:13 videoserver chpasswd[529]: pam_unix(chpasswd:chauthtok): password changed for aecid
+Oct  1 09:55:13 videoserver systemd-logind[557]: New seat seat0.
+# --- END CHUNK: scenario_2_cron_benign_016 ---
+
+# --- START CHUNK: scenario_2_cron_benign_017 (CLEAR) ---
+Oct  1 09:55:13 videoserver systemd-logind[557]: Watching system buttons on /dev/input/event3 (Power Button)
+Oct  1 09:55:13 videoserver systemd-logind[557]: Watching system buttons on /dev/input/event5 (QEMU QEMU USB Keyboard)
+Oct  1 09:55:13 videoserver systemd-logind[557]: Watching system buttons on /dev/input/event0 (AT Translated Set 2 keyboard)
+Oct  1 09:55:14 videoserver sshd[690]: Server listening on 0.0.0.0 port 22.
+Oct  1 09:55:14 videoserver sshd[690]: Server listening on :: port 22.
+# --- END CHUNK: scenario_2_cron_benign_017 ---
+
+# --- START CHUNK: scenario_2_cron_benign_018 (CLEAR) ---
+Oct  1 09:55:17 videoserver sudo: pam_unix(sudo:session): session closed for user www-data
+Oct  1 10:00:01 videoserver CRON[2580]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct  1 10:00:01 videoserver CRON[2579]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct  1 10:00:01 videoserver CRON[2580]: pam_unix(cron:session): session closed for user root
+Oct  1 10:00:01 videoserver CRON[2579]: pam_unix(cron:session): session closed for user root
+# --- END CHUNK: scenario_2_cron_benign_018 ---
+
+# --- START CHUNK: scenario_2_cron_benign_019 (CLEAR) ---
+Oct  1 10:03:53 videoserver sshd[2635]: Disconnected from user aecid 172.17.100.201 port 44904
+Oct  1 10:03:53 videoserver sshd[2606]: pam_unix(sshd:session): session closed for user aecid
+Oct  1 10:03:53 videoserver systemd-logind[557]: Session 3 logged out. Waiting for processes to exit.
+Oct  1 10:03:53 videoserver systemd-logind[557]: Removed session 3.
+Oct  1 10:04:03 videoserver systemd: pam_unix(systemd-user:session): session closed for user aecid
+# --- END CHUNK: scenario_2_cron_benign_019 ---
+
+# --- START CHUNK: scenario_2_cron_benign_020 (CLEAR) ---
+Oct  1 10:14:15 videoserver systemd: pam_unix(systemd-user:session): session opened for user root(uid=0) by (uid=0)
+Oct  1 10:15:01 videoserver CRON[2838]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct  1 10:15:01 videoserver CRON[2838]: pam_unix(cron:session): session closed for user root
+Oct  1 10:16:01 videoserver CRON[2851]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct  1 10:16:01 videoserver CRON[2851]: pam_unix(cron:session): session closed for user root
+# --- END CHUNK: scenario_2_cron_benign_020 ---
+
+# --- START CHUNK: scenario_2_cron_benign_021 (CLEAR) ---
+Oct  1 10:17:01 videoserver CRON[2871]: pam_unix(cron:session): session closed for user root
+Oct  1 10:30:01 videoserver CRON[2974]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct  1 10:30:01 videoserver CRON[2974]: pam_unix(cron:session): session closed for user root
+Oct  1 10:32:01 videoserver CRON[2994]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct  1 10:32:01 videoserver CRON[2994]: pam_unix(cron:session): session closed for user root
+# --- END CHUNK: scenario_2_cron_benign_021 ---
+
+# --- START CHUNK: scenario_2_cron_benign_022 (CLEAR) ---
+Oct  1 10:35:46 videoserver systemd: pam_unix(systemd-user:session): session closed for user root
+Oct  1 10:39:01 videoserver CRON[3064]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct  1 10:39:01 videoserver CRON[3064]: pam_unix(cron:session): session closed for user root
+Oct  1 10:44:59 videoserver sshd[3160]: Accepted publickey for aecid from 172.17.100.201 port 32968 ssh2: RSA SHA256:yxAJcMgl5WTSlj4ZPvj7TSgUbIlxQ1GHdtXeIcp0czs
+Oct  1 10:44:59 videoserver sshd[3160]: pam_unix(sshd:session): session opened for user aecid(uid=1001) by (uid=0)
+# --- END CHUNK: scenario_2_cron_benign_022 ---
+
+# --- START CHUNK: scenario_2_cron_benign_023 (CLEAR) ---
+Oct  1 10:44:59 videoserver systemd: pam_unix(systemd-user:session): session opened for user aecid(uid=1001) by (uid=0)
+Oct  1 10:45:01 videoserver CRON[3212]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct  1 10:45:01 videoserver CRON[3212]: pam_unix(cron:session): session closed for user root
+Oct  1 10:45:03 videoserver sshd[3247]: Accepted publickey for aecid from 172.17.100.201 port 42800 ssh2: RSA SHA256:yxAJcMgl5WTSlj4ZPvj7TSgUbIlxQ1GHdtXeIcp0czs
+Oct  1 10:45:03 videoserver sshd[3247]: pam_unix(sshd:session): session opened for user aecid(uid=1001) by (uid=0)
+# --- END CHUNK: scenario_2_cron_benign_023 ---
+
+# --- START CHUNK: scenario_2_cron_benign_024 (CLEAR) ---
+Oct  1 10:45:03 videoserver sshd[3254]: Disconnected from user aecid 172.17.100.201 port 42800
+Oct  1 10:45:03 videoserver sshd[3247]: pam_unix(sshd:session): session closed for user aecid
+Oct  1 10:45:03 videoserver systemd-logind[557]: Removed session 17.
+Oct  1 10:45:04 videoserver sshd[3257]: Accepted publickey for aecid from 172.17.100.201 port 42806 ssh2: RSA SHA256:yxAJcMgl5WTSlj4ZPvj7TSgUbIlxQ1GHdtXeIcp0czs
+Oct  1 10:45:04 videoserver sshd[3257]: pam_unix(sshd:session): session opened for user aecid(uid=1001) by (uid=0)
+# --- END CHUNK: scenario_2_cron_benign_024 ---
+
+# --- START CHUNK: scenario_2_cron_benign_025 (CLEAR) ---
+Sep 17 13:13:21 atb-fw-image-2025-09-17t12-57-26z systemd[1]: Stopping Availability of block devices...
+Sep 17 13:13:21 atb-fw-image-2025-09-17t12-57-26z systemd[1]: cloud-final.service: Deactivated successfully.
+Sep 17 13:13:21 atb-fw-image-2025-09-17t12-57-26z systemd[1]: Stopped Execute cloud user/final scripts.
+Sep 17 13:13:21 atb-fw-image-2025-09-17t12-57-26z systemd[1]: Stopped target Multi-User System.
+Sep 17 13:13:21 atb-fw-image-2025-09-17t12-57-26z systemd[1]: Stopped target Login Prompts.
+# --- END CHUNK: scenario_2_cron_benign_025 ---
+
+# --- START CHUNK: scenario_2_cron_benign_026 (CLEAR) ---
+Oct  1 09:53:27 inetfw systemd[1]: Finished Flush Journal to Persistent Storage.
+Oct  1 09:53:27 inetfw systemd-fsck[360]: cloudimg-rootfs: clean, 87580/3225600 files, 819958/6525179 blocks
+Oct  1 09:53:27 inetfw multipathd[380]: --------start up--------
+Oct  1 09:53:27 inetfw multipathd[380]: read /etc/multipath.conf
+Oct  1 09:53:27 inetfw multipathd[380]: path checkers start up
+# --- END CHUNK: scenario_2_cron_benign_026 ---
+
+# --- START CHUNK: scenario_2_cron_benign_027 (CLEAR) ---
+Oct  1 09:53:27 inetfw systemd[1]: Mounting Mount unit for lxd, revision 28373...
+Oct  1 09:53:27 inetfw kernel: [    0.000000] Linux version 5.15.0-113-generic (buildd@lcy02-amd64-072) (gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #123-Ubuntu SMP Mon Jun 10 08:16:17 UTC 2024 (Ubuntu 5.15.0-113.123-generic 5.15.152)
+Oct  1 09:53:27 inetfw kernel: [    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.15.0-113-generic root=LABEL=cloudimg-rootfs ro console=tty1 console=ttyS0
+Oct  1 09:53:27 inetfw kernel: [    0.000000] KERNEL supported cpus:
+Oct  1 09:53:27 inetfw kernel: [    0.000000]   Intel GenuineIntel
+# --- END CHUNK: scenario_2_cron_benign_027 ---
+
+# --- START CHUNK: scenario_2_cron_benign_028 (CLEAR) ---
+Oct  1 09:53:27 inetfw kernel: [    3.421127] Btrfs loaded, crc32c=crc32c-intel, zoned=yes, fsverity=yes
+Oct  1 09:53:27 inetfw kernel: [    3.448594] EXT4-fs (vda1): mounted filesystem with ordered data mode. Opts: (null). Quota mode: none.
+Oct  1 09:53:27 inetfw kernel: [    3.627472] systemd[1]: Inserted module 'autofs4'
+Oct  1 09:53:27 inetfw kernel: [    3.644231] systemd[1]: systemd 249.11-0ubuntu3.12 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY -P11KIT -QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+Oct  1 09:53:27 inetfw kernel: [    3.649207] systemd[1]: Detected virtualization kvm.
+# --- END CHUNK: scenario_2_cron_benign_028 ---
+
+# --- START CHUNK: scenario_2_cron_benign_029 (CLEAR) ---
+Oct  1 09:53:27 inetfw kernel: [    4.163824] systemd[1]: Finished File System Check on Root Device.
+Oct  1 09:53:27 inetfw kernel: [    4.170672] systemd[1]: Mounted FUSE Control File System.
+Oct  1 09:53:27 inetfw kernel: [    4.173460] systemd[1]: Starting Remount Root and Kernel File Systems...
+Oct  1 09:53:27 inetfw kernel: [    4.180890] systemd[1]: Finished Apply Kernel Variables.
+Oct  1 09:53:27 inetfw kernel: [    4.182848] systemd[1]: Finished Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+# --- END CHUNK: scenario_2_cron_benign_029 ---
+
+# --- START CHUNK: scenario_2_cron_benign_030 (CLEAR) ---
+Oct  1 09:53:27 inetfw systemd[1]: Mounted Mount unit for core20, revision 2318.
+Oct  1 09:53:27 inetfw systemd[1]: Mounted Mount unit for lxd, revision 28373.
+Oct  1 09:53:27 inetfw systemd[1]: Reached target Mounted snaps.
+Oct  1 09:53:27 inetfw systemd[1]: Started Rule-based Manager for Device Events and Files.
+Oct  1 09:53:27 inetfw systemd[1]: Condition check resulted in Show Plymouth Boot Screen being skipped.
+# --- END CHUNK: scenario_2_cron_benign_030 ---
+
+# --- START CHUNK: scenario_2_cron_benign_031 (CLEAR) ---
+Oct  1 09:53:27 inetfw systemd[1]: Condition check resulted in Forward Password Requests to Plymouth Directory Watch being skipped.
+Oct  1 09:53:27 inetfw systemd[1]: Reached target Local Encrypted Volumes.
+Oct  1 09:53:27 inetfw systemd-udevd[400]: Using default interface naming scheme 'v249'.
+Oct  1 09:53:27 inetfw systemd-udevd[401]: Using default interface naming scheme 'v249'.
+Oct  1 09:53:27 inetfw systemd-udevd[405]: Using default interface naming scheme 'v249'.
+# --- END CHUNK: scenario_2_cron_benign_031 ---
+
+# --- START CHUNK: scenario_2_cron_benign_032 (CLEAR) ---
+Oct  1 09:53:27 inetfw systemd[1]: Reached target Cloud-config availability.
+Oct  1 09:53:27 inetfw systemd[1]: Reached target Network is Online.
+Oct  1 09:53:27 inetfw systemd[1]: Reached target System Initialization.
+Oct  1 09:53:27 inetfw systemd[1]: Condition check resulted in Process error reports when automatic reporting is enabled (file watch) being skipped.
+Oct  1 09:53:27 inetfw systemd[1]: Condition check resulted in Process error reports when automatic reporting is enabled (timer based) being skipped.
+# --- END CHUNK: scenario_2_cron_benign_032 ---
+
+# --- START CHUNK: scenario_2_cron_benign_033 (CLEAR) ---
+Oct  1 09:53:27 inetfw systemd[1]: Listening on cloud-init hotplug hook socket.
+Oct  1 09:53:27 inetfw systemd[1]: Listening on D-Bus System Message Bus Socket.
+Oct  1 09:53:27 inetfw systemd[1]: Listening on Open-iSCSI iscsid Socket.
+Oct  1 09:53:27 inetfw systemd[1]: Listening on Socket unix for snap application lxd.daemon.
+Oct  1 09:53:27 inetfw systemd[1]: Listening on Socket unix for snap application lxd.user-daemon.
+# --- END CHUNK: scenario_2_cron_benign_033 ---
+
+# --- START CHUNK: scenario_2_cron_benign_034 (CLEAR) ---
+Oct  1 09:53:27 inetfw systemd[1]: Reached target Socket Units.
+Oct  1 09:53:27 inetfw systemd[1]: Reached target Basic System.
+Oct  1 09:53:27 inetfw systemd[1]: Starting LSB: automatic crash report generation...
+Oct  1 09:53:27 inetfw systemd[1]: Starting Statistics collection and monitoring daemon...
+Oct  1 09:53:27 inetfw cron[636]: (CRON) INFO (pidfile fd = 3)
+# --- END CHUNK: scenario_2_cron_benign_034 ---
+
+# --- START CHUNK: scenario_2_cron_benign_035 (CLEAR) ---
+Oct  1 09:53:29 inetfw systemd[1]: Finished Service for snap application lxd.activate.
+Oct  1 09:53:29 inetfw dbus-daemon[637]: [system] Successfully activated service 'org.freedesktop.timedate1'
+Oct  1 09:53:29 inetfw systemd[1]: Started Time & Date Service.
+Oct  1 09:53:29 inetfw systemd[1]: Finished Wait until snapd is fully seeded.
+Oct  1 09:53:29 inetfw systemd[1]: Starting Apply the settings specified in cloud-config...
+# --- END CHUNK: scenario_2_cron_benign_035 ---
+
+# --- START CHUNK: scenario_2_cron_benign_036 (CLEAR) ---
+Oct  1 09:54:03 inetfw polkitd[1881]: started daemon version 0.105 using authority implementation `local' version `0.105'
+Oct  1 09:54:03 inetfw dbus-daemon[637]: [system] Successfully activated service 'org.freedesktop.PolicyKit1'
+Oct  1 09:54:03 inetfw systemd[1]: Started Authorization Manager.
+Oct  1 09:54:03 inetfw dbus-daemon[637]: [system] Successfully activated service 'org.freedesktop.PackageKit'
+Oct  1 09:54:03 inetfw systemd[1]: Started PackageKit Daemon.
+# --- END CHUNK: scenario_2_cron_benign_036 ---
+
+# --- START CHUNK: scenario_2_cron_benign_037 (CLEAR) ---
+Oct  1 09:54:09 inetfw systemd[1]: Starting Time & Date Service...
+Oct  1 09:54:09 inetfw dbus-daemon[637]: [system] Successfully activated service 'org.freedesktop.timedate1'
+Oct  1 09:54:09 inetfw systemd[1]: Started Time & Date Service.
+Oct  1 09:54:13 inetfw systemd-timesyncd[468]: Timed out waiting for reply from 185.125.190.56:123 (ntp.ubuntu.com).
+Oct  1 09:54:20 inetfw cloud-init[1373]: Fetched 20.7 MB in 10s (2091 kB/s)
+# --- END CHUNK: scenario_2_cron_benign_037 ---
+
+# --- START CHUNK: scenario_2_cron_benign_038 (CLEAR) ---
+Oct  1 09:59:09 inetfw systemd[1]: Starting Time & Date Service...
+Oct  1 09:59:09 inetfw dbus-daemon[637]: [system] Successfully activated service 'org.freedesktop.timedate1'
+Oct  1 09:59:09 inetfw systemd[1]: Started Time & Date Service.
+Oct  1 09:59:12 inetfw dnsmasq[733]: query[A] ntp.ubuntu.com from 10.12.0.201
+Oct  1 09:59:12 inetfw dnsmasq[733]: forwarded ntp.ubuntu.com to 192.42.2.2
+# --- END CHUNK: scenario_2_cron_benign_038 ---
+
+# --- START CHUNK: scenario_2_cron_benign_039 (CLEAR) ---
+Oct  1 10:04:13 inetfw systemd[1]: Started Snap Daemon.
+Oct  1 10:04:13 inetfw dbus-daemon[637]: [system] Successfully activated service 'org.freedesktop.timedate1'
+Oct  1 10:04:13 inetfw systemd[1]: Started Time & Date Service.
+Oct  1 10:04:21 inetfw systemd-timesyncd[468]: Timed out waiting for reply from 91.189.91.157:123 (ntp.ubuntu.com).
+Oct  1 10:04:31 inetfw systemd-timesyncd[468]: Timed out waiting for reply from 185.125.190.57:123 (ntp.ubuntu.com).
+# --- END CHUNK: scenario_2_cron_benign_039 ---
+
+# --- START CHUNK: scenario_2_cron_benign_040 (CLEAR) ---
+Oct  1 10:06:22 inetfw kernel: [  786.527716] loop5: detected capacity change from 0 to 187192
+Oct  1 10:06:22 inetfw systemd[1]: Mounted Mount unit for lxd, revision 35819.
+Oct  1 10:06:23 inetfw systemd[1]: snap.lxd.daemon.unix.socket: Deactivated successfully.
+Oct  1 10:06:23 inetfw systemd[1]: Closed Socket unix for snap application lxd.daemon.
+Oct  1 10:06:23 inetfw systemd[1]: snap.lxd.user-daemon.unix.socket: Deactivated successfully.
+# --- END CHUNK: scenario_2_cron_benign_040 ---
+
+# --- START CHUNK: scenario_2_cron_benign_041 (CLEAR) ---
+Oct  1 10:35:26 inetfw dnsmasq[733]: reply ntp.ubuntu.com is 185.125.190.56
+Oct  1 10:37:55 inetfw systemd[1]: Created slice User Slice of UID 1001.
+Oct  1 10:37:55 inetfw systemd[1]: Starting User Runtime Directory /run/user/1001...
+Oct  1 10:37:55 inetfw systemd[1]: Finished User Runtime Directory /run/user/1001.
+Oct  1 10:37:55 inetfw systemd[1]: Starting User Manager for UID 1001...
+# --- END CHUNK: scenario_2_cron_benign_041 ---
+
+# --- START CHUNK: scenario_2_cron_benign_042 (CLEAR) ---
+Oct  1 10:37:55 inetfw systemd[1]: Started User Manager for UID 1001.
+Oct  1 10:37:55 inetfw systemd[1]: Started Session 2 of User aecid.
+Oct  1 10:37:55 inetfw systemd[4350]: Reached target Main User Target.
+Oct  1 10:37:55 inetfw systemd[4350]: Startup finished in 123ms.
+Oct  1 10:37:59 inetfw systemd[1]: Started Session 4 of User aecid.
+# --- END CHUNK: scenario_2_cron_benign_042 ---
+
+# --- START CHUNK: scenario_2_cron_benign_043 (CLEAR) ---
+Sep 17 13:08:34 atb-fw-image-2025-09-17t12-57-26z sshd[2079]: Disconnected from user ubuntu 10.110.0.254 port 42392
+Sep 17 13:08:34 atb-fw-image-2025-09-17t12-57-26z sshd[2033]: pam_unix(sshd:session): session closed for user ubuntu
+Sep 17 13:08:34 atb-fw-image-2025-09-17t12-57-26z systemd-logind[666]: Session 3 logged out. Waiting for processes to exit.
+Sep 17 13:13:21 atb-fw-image-2025-09-17t12-57-26z sudo: pam_unix(sudo:session): session closed for user root
+Sep 17 13:13:21 atb-fw-image-2025-09-17t12-57-26z systemd-logind[666]: Power key pressed.
+# --- END CHUNK: scenario_2_cron_benign_043 ---
+
+# --- START CHUNK: scenario_2_cron_benign_044 (CLEAR) ---
+Oct  1 09:53:28 inetfw systemd-logind[650]: New seat seat0.
+Oct  1 09:53:28 inetfw systemd-logind[650]: Watching system buttons on /dev/input/event0 (Power Button)
+Oct  1 09:53:28 inetfw systemd-logind[650]: Watching system buttons on /dev/input/event5 (QEMU QEMU USB Keyboard)
+Oct  1 09:53:28 inetfw systemd-logind[650]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+Oct  1 10:04:11 inetfw systemd-logind[650]: Watching system buttons on /dev/input/event0 (Power Button)
+# --- END CHUNK: scenario_2_cron_benign_044 ---
+
+# --- START CHUNK: scenario_2_cron_benign_045 (CLEAR) ---
+Oct  1 10:04:11 inetfw systemd-logind[650]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+Oct  1 10:04:11 inetfw systemd-logind[650]: Watching system buttons on /dev/input/event5 (QEMU QEMU USB Keyboard)
+Oct  1 10:17:01 inetfw CRON[4271]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct  1 10:17:01 inetfw CRON[4271]: pam_unix(cron:session): session closed for user root
+Oct  1 10:37:55 inetfw sshd[4347]: Accepted publickey for aecid from 172.17.100.201 port 41170 ssh2: RSA SHA256:yxAJcMgl5WTSlj4ZPvj7TSgUbIlxQ1GHdtXeIcp0czs
+# --- END CHUNK: scenario_2_cron_benign_045 ---
+
+# --- START CHUNK: scenario_2_cron_benign_046 (CLEAR) ---
+10/01/2025-09:57:36.130156  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:43234 -> 185.125.190.95:80
+10/01/2025-09:57:36.389891  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:45978 -> 185.125.190.82:80
+10/01/2025-09:57:36.955810  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:43234 -> 185.125.190.95:80
+10/01/2025-09:57:36.983799  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:43234 -> 185.125.190.95:80
+10/01/2025-09:57:37.011126  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:43234 -> 185.125.190.95:80
+# --- END CHUNK: scenario_2_cron_benign_046 ---
+
+# --- START CHUNK: scenario_2_cron_benign_047 (CLEAR) ---
+10/01/2025-09:57:37.293578  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:45978 -> 185.125.190.82:80
+10/01/2025-09:57:37.319457  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:45978 -> 185.125.190.82:80
+10/01/2025-09:57:37.319457  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:45978 -> 185.125.190.82:80
+10/01/2025-09:57:37.796458  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:45978 -> 185.125.190.82:80
+10/01/2025-09:57:37.937232  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:43234 -> 185.125.190.95:80
+# --- END CHUNK: scenario_2_cron_benign_047 ---
+
+# --- START CHUNK: scenario_2_cron_benign_048 (CLEAR) ---
+10/01/2025-09:57:37.948949  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:45978 -> 185.125.190.82:80
+10/01/2025-09:57:38.111766  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:43234 -> 185.125.190.95:80
+10/01/2025-09:57:38.157214  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:43234 -> 185.125.190.95:80
+10/01/2025-09:57:38.186238  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:43234 -> 185.125.190.95:80
+10/01/2025-09:57:39.132053  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:43234 -> 185.125.190.95:80
+# --- END CHUNK: scenario_2_cron_benign_048 ---
+
+# --- START CHUNK: scenario_2_cron_benign_049 (CLEAR) ---
+10/01/2025-09:57:39.446096  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:43234 -> 185.125.190.95:80
+10/01/2025-09:57:39.446096  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:43234 -> 185.125.190.95:80
+10/01/2025-09:57:39.457475  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:43234 -> 185.125.190.95:80
+10/01/2025-09:57:39.457475  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:43234 -> 185.125.190.95:80
+10/01/2025-09:57:39.457475  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:43234 -> 185.125.190.95:80
+# --- END CHUNK: scenario_2_cron_benign_049 ---
+
+# --- START CHUNK: scenario_2_cron_benign_050 (CLEAR) ---
+2025-10-01T09:59:22.586418+00:00 attacker systemd-modules-load[345]: Inserted module 'dm_multipath'
+2025-10-01T09:59:22.586479+00:00 attacker systemd-fsck[346]: cloudimg-rootfs: clean, 350854/6422528 files, 3670774/12844795 blocks
+2025-10-01T09:59:22.586493+00:00 attacker systemd[1]: modprobe@dm_mod.service: Deactivated successfully.
+2025-10-01T09:59:22.586499+00:00 attacker systemd[1]: Finished modprobe@dm_mod.service - Load Kernel Module dm_mod.
+2025-10-01T09:59:22.586505+00:00 attacker systemd[1]: modprobe@drm.service: Deactivated successfully.
+# --- END CHUNK: scenario_2_cron_benign_050 ---
+
+# --- START CHUNK: scenario_2_cron_benign_051 (CLEAR) ---
+2025-10-01T09:59:22.586566+00:00 attacker systemd[1]: Mounting sys-fs-fuse-connections.mount - FUSE Control File System...
+2025-10-01T09:59:22.586359+00:00 attacker kernel: Linux version 6.8.0-35-generic (buildd@lcy02-amd64-020) (x86_64-linux-gnu-gcc-13 (Ubuntu 13.2.0-23ubuntu4) 13.2.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #35-Ubuntu SMP PREEMPT_DYNAMIC Mon May 20 15:51:52 UTC 2024 (Ubuntu 6.8.0-35.35-generic 6.8.4)
+2025-10-01T09:59:22.586592+00:00 attacker kernel: Command line: BOOT_IMAGE=/vmlinuz-6.8.0-35-generic root=LABEL=cloudimg-rootfs ro console=tty1 console=ttyS0
+2025-10-01T09:59:22.586595+00:00 attacker kernel: KERNEL supported cpus:
+2025-10-01T09:59:22.586597+00:00 attacker kernel:   Intel GenuineIntel
+# --- END CHUNK: scenario_2_cron_benign_051 ---
+
+# --- START CHUNK: scenario_2_cron_benign_052 (CLEAR) ---
+2025-10-01T09:59:22.587567+00:00 attacker systemd-fsck[472]: BOOT: recovering journal
+2025-10-01T09:59:22.587571+00:00 attacker systemd-fsck[472]: BOOT: clean, 600/58496 files, 23926/233728 blocks
+2025-10-01T09:59:22.587578+00:00 attacker systemd[1]: Finished systemd-fsck@dev-disk-by\x2dlabel-BOOT.service - File System Check on /dev/disk/by-label/BOOT.
+2025-10-01T09:59:22.587583+00:00 attacker systemd[1]: Mounting boot.mount - /boot...
+2025-10-01T09:59:22.587588+00:00 attacker systemd[1]: Mounted boot.mount - /boot.
+# --- END CHUNK: scenario_2_cron_benign_052 ---
+
+# --- START CHUNK: scenario_2_cron_benign_053 (CLEAR) ---
+2025-10-01T09:59:22.591470+00:00 attacker systemd-logind[788]: New seat seat0.
+2025-10-01T09:59:22.591476+00:00 attacker systemd-logind[788]: Watching system buttons on /dev/input/event0 (Power Button)
+2025-10-01T09:59:22.591482+00:00 attacker systemd-logind[788]: Watching system buttons on /dev/input/event5 (QEMU QEMU USB Keyboard)
+2025-10-01T09:59:22.591487+00:00 attacker systemd-logind[788]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+2025-10-01T09:59:22.592417+00:00 attacker polkitd[827]: Loading rules from directory /etc/polkit-1/rules.d
+# --- END CHUNK: scenario_2_cron_benign_053 ---
+
+# --- START CHUNK: scenario_2_cron_benign_054 (CLEAR) ---
+Sep 17 11:19:28 atb-corpdns-image-2025-09-17t11-07-58z systemd[1]: Stopping Availability of block devices...
+Sep 17 11:19:28 atb-corpdns-image-2025-09-17t11-07-58z systemd[1]: cloud-final.service: Deactivated successfully.
+Sep 17 11:19:28 atb-corpdns-image-2025-09-17t11-07-58z systemd[1]: Stopped Execute cloud user/final scripts.
+Sep 17 11:19:28 atb-corpdns-image-2025-09-17t11-07-58z systemd[1]: Stopped target Multi-User System.
+Sep 17 11:19:28 atb-corpdns-image-2025-09-17t11-07-58z systemd[1]: Stopped target Login Prompts.
+# --- END CHUNK: scenario_2_cron_benign_054 ---
+
+# --- START CHUNK: scenario_2_cron_benign_055 (CLEAR) ---
+Sep 17 11:19:28 atb-corpdns-image-2025-09-17t11-07-58z systemd[1]: Stopped Apply the settings specified in cloud-config.
+Oct  1 09:53:01 corpdns systemd-fsck[397]: cloudimg-rootfs: clean, 84382/3225600 files, 814770/6525179 blocks
+Oct  1 09:53:01 corpdns kernel: [    0.000000] Linux version 5.15.0-113-generic (buildd@lcy02-amd64-072) (gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #123-Ubuntu SMP Mon Jun 10 08:16:17 UTC 2024 (Ubuntu 5.15.0-113.123-generic 5.15.152)
+Oct  1 09:53:01 corpdns kernel: [    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.15.0-113-generic root=LABEL=cloudimg-rootfs ro console=tty1 console=ttyS0
+Oct  1 09:53:01 corpdns kernel: [    0.000000] KERNEL supported cpus:
+# --- END CHUNK: scenario_2_cron_benign_055 ---
+
+# --- START CHUNK: scenario_2_cron_benign_056 (CLEAR) ---
+Oct  1 09:53:01 corpdns systemd[1]: Finished Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+Oct  1 09:53:01 corpdns systemd[1]: Mounted FUSE Control File System.
+Oct  1 09:53:01 corpdns systemd[1]: Finished Set the console keyboard layout.
+Oct  1 09:53:01 corpdns systemd[1]: Mounted Kernel Configuration File System.
+Oct  1 09:53:01 corpdns kernel: [    0.328769] ACPI: 1 ACPI AML tables successfully acquired and loaded
+# --- END CHUNK: scenario_2_cron_benign_056 ---
+
+# --- START CHUNK: scenario_2_cron_benign_057 (CLEAR) ---
+Oct  1 09:53:01 corpdns systemd[1]: Mounted Mount unit for core20, revision 2318.
+Oct  1 09:53:01 corpdns systemd[1]: Mounted Mount unit for lxd, revision 28373.
+Oct  1 09:53:01 corpdns systemd[1]: Mounted Mount unit for snapd, revision 21759.
+Oct  1 09:53:01 corpdns systemd[1]: Reached target Mounted snaps.
+Oct  1 09:53:01 corpdns systemd[1]: Started Rule-based Manager for Device Events and Files.
+# --- END CHUNK: scenario_2_cron_benign_057 ---
+
+# --- START CHUNK: scenario_2_cron_benign_058 (CLEAR) ---
+Oct  1 09:53:01 corpdns systemd[1]: Condition check resulted in Show Plymouth Boot Screen being skipped.
+Oct  1 09:53:01 corpdns systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+Oct  1 09:53:01 corpdns kernel: [    0.392382] pci 0000:00:02.0: reg 0x20: [mem 0xfeb90000-0xfeb90fff]
+Oct  1 09:53:01 corpdns kernel: [    0.397566] pci 0000:00:02.0: reg 0x30: [mem 0xfeb80000-0xfeb8ffff pref]
+Oct  1 09:53:01 corpdns kernel: [    0.398632] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+# --- END CHUNK: scenario_2_cron_benign_058 ---
+
+# --- START CHUNK: scenario_2_cron_benign_059 (CLEAR) ---
+Oct  1 09:53:01 corpdns systemd[1]: Condition check resulted in Forward Password Requests to Plymouth Directory Watch being skipped.
+Oct  1 09:53:01 corpdns systemd[1]: Reached target Local Encrypted Volumes.
+Oct  1 09:53:01 corpdns systemd-udevd[434]: Using default interface naming scheme 'v249'.
+Oct  1 09:53:01 corpdns systemd[1]: Found device /dev/ttyS0.
+Oct  1 09:53:01 corpdns systemd-udevd[448]: vda: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/vda' failed with exit code 1.
+# --- END CHUNK: scenario_2_cron_benign_059 ---
+
+# --- START CHUNK: scenario_2_cron_benign_060 (CLEAR) ---
+Oct  1 09:53:01 corpdns kernel: [    3.199688] Btrfs loaded, crc32c=crc32c-intel, zoned=yes, fsverity=yes
+Oct  1 09:53:01 corpdns kernel: [    3.250268] EXT4-fs (vda1): mounted filesystem with ordered data mode. Opts: (null). Quota mode: none.
+Oct  1 09:53:01 corpdns kernel: [    3.461036] systemd[1]: Inserted module 'autofs4'
+Oct  1 09:53:01 corpdns kernel: [    3.484922] systemd[1]: systemd 249.11-0ubuntu3.12 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY -P11KIT -QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+Oct  1 09:53:01 corpdns kernel: [    3.490489] systemd[1]: Detected virtualization kvm.
+# --- END CHUNK: scenario_2_cron_benign_060 ---
+
+# --- START CHUNK: scenario_2_cron_benign_061 (CLEAR) ---
+Oct  1 09:53:01 corpdns systemd[1]: Reached target Cloud-config availability.
+Oct  1 09:53:01 corpdns systemd[1]: Reached target Network is Online.
+Oct  1 09:53:01 corpdns systemd[1]: Reached target System Initialization.
+Oct  1 09:53:01 corpdns systemd[1]: Condition check resulted in Process error reports when automatic reporting is enabled (file watch) being skipped.
+Oct  1 09:53:01 corpdns systemd[1]: Condition check resulted in Process error reports when automatic reporting is enabled (timer based) being skipped.
+# --- END CHUNK: scenario_2_cron_benign_061 ---
+
+# --- START CHUNK: scenario_2_cron_benign_062 (CLEAR) ---
+Oct  1 09:53:01 corpdns systemd[1]: Listening on cloud-init hotplug hook socket.
+Oct  1 09:53:01 corpdns systemd[1]: Listening on D-Bus System Message Bus Socket.
+Oct  1 09:53:01 corpdns systemd[1]: Listening on Open-iSCSI iscsid Socket.
+Oct  1 09:53:01 corpdns systemd[1]: Listening on Socket unix for snap application lxd.daemon.
+Oct  1 09:53:01 corpdns systemd[1]: Listening on Socket unix for snap application lxd.user-daemon.
+# --- END CHUNK: scenario_2_cron_benign_062 ---
+
+# --- START CHUNK: scenario_2_cron_benign_063 (CLEAR) ---
+Oct  1 09:53:01 corpdns systemd[1]: Reached target Socket Units.
+Oct  1 09:53:01 corpdns systemd[1]: Reached target Basic System.
+Oct  1 09:53:01 corpdns systemd[1]: Starting LSB: automatic crash report generation...
+Oct  1 09:53:01 corpdns systemd[1]: Starting Statistics collection and monitoring daemon...
+Oct  1 09:53:01 corpdns systemd[1]: Started Regular background program processing daemon.
+# --- END CHUNK: scenario_2_cron_benign_063 ---
+
+# --- START CHUNK: scenario_2_cron_benign_064 (CLEAR) ---
+Oct  1 10:05:50 corpdns kernel: [  778.754337] loop5: detected capacity change from 0 to 187192
+Oct  1 10:05:50 corpdns systemd[1]: Mounted Mount unit for lxd, revision 35819.
+Oct  1 10:05:50 corpdns systemd[1]: snap.lxd.daemon.unix.socket: Deactivated successfully.
+Oct  1 10:05:50 corpdns systemd[1]: Closed Socket unix for snap application lxd.daemon.
+Oct  1 10:05:50 corpdns systemd[1]: snap.lxd.user-daemon.unix.socket: Deactivated successfully.
+# --- END CHUNK: scenario_2_cron_benign_064 ---
+
+# --- START CHUNK: scenario_2_cron_benign_065 (CLEAR) ---
+Oct  1 10:31:45 corpdns systemd-timesyncd[530]: Timed out waiting for reply from 185.125.190.56:123 (ntp.ubuntu.com).
+Oct  1 10:37:56 corpdns systemd[1]: Created slice User Slice of UID 1001.
+Oct  1 10:37:56 corpdns systemd[1]: Starting User Runtime Directory /run/user/1001...
+Oct  1 10:37:56 corpdns systemd[1]: Finished User Runtime Directory /run/user/1001.
+Oct  1 10:37:56 corpdns systemd[1]: Starting User Manager for UID 1001...
+# --- END CHUNK: scenario_2_cron_benign_065 ---
+
+# --- START CHUNK: scenario_2_cron_benign_066 (CLEAR) ---
+Oct  1 09:53:01 corpdns systemd-logind[733]: New seat seat0.
+Oct  1 09:53:01 corpdns systemd-logind[733]: Watching system buttons on /dev/input/event0 (Power Button)
+Oct  1 09:53:01 corpdns systemd-logind[733]: Watching system buttons on /dev/input/event5 (QEMU QEMU USB Keyboard)
+Oct  1 09:53:01 corpdns systemd-logind[733]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+Oct  1 10:03:51 corpdns systemd-logind[733]: Watching system buttons on /dev/input/event0 (Power Button)
+# --- END CHUNK: scenario_2_cron_benign_066 ---
+

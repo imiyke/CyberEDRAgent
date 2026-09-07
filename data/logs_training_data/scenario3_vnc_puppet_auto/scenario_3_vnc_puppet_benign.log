@@ -1,0 +1,550 @@
+# Auto-extracted Benign Logs: scenario_3_vnc_puppet_benign.log
+# Total chunks: 69
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_001 (CLEAR) ---
+Sep 17 13:13:21 atb-fw-image-2025-09-17t12-57-26z systemd[1]: Stopping Availability of block devices...
+Sep 17 13:13:21 atb-fw-image-2025-09-17t12-57-26z systemd[1]: cloud-final.service: Deactivated successfully.
+Sep 17 13:13:21 atb-fw-image-2025-09-17t12-57-26z systemd[1]: Stopped Execute cloud user/final scripts.
+Sep 17 13:13:21 atb-fw-image-2025-09-17t12-57-26z systemd[1]: Stopped target Multi-User System.
+Sep 17 13:13:21 atb-fw-image-2025-09-17t12-57-26z systemd[1]: Stopped target Login Prompts.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_001 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_002 (CLEAR) ---
+Dec 14 19:16:50 inetfw systemd[1]: Mounted Mount unit for snapd, revision 21759.
+Dec 14 19:16:50 inetfw systemd-fsck[361]: cloudimg-rootfs: clean, 87580/3225600 files, 819958/6525179 blocks
+Dec 14 19:16:50 inetfw systemd[1]: Finished Flush Journal to Persistent Storage.
+Dec 14 19:16:50 inetfw systemd[1]: Mounted Mount unit for lxd, revision 28373.
+Dec 14 19:16:50 inetfw systemd[1]: Mounted Mount unit for core20, revision 2318.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_002 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_003 (CLEAR) ---
+Dec 14 19:16:50 inetfw systemd[1]: Condition check resulted in Show Plymouth Boot Screen being skipped.
+Dec 14 19:16:50 inetfw systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+Dec 14 19:16:50 inetfw systemd[1]: Condition check resulted in Forward Password Requests to Plymouth Directory Watch being skipped.
+Dec 14 19:16:50 inetfw systemd[1]: Reached target Local Encrypted Volumes.
+Dec 14 19:16:50 inetfw systemd-udevd[396]: Using default interface naming scheme 'v249'.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_003 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_004 (CLEAR) ---
+Dec 14 19:16:50 inetfw systemd[1]: Reached target Cloud-config availability.
+Dec 14 19:16:50 inetfw systemd[1]: Reached target Network is Online.
+Dec 14 19:16:50 inetfw systemd[1]: Reached target System Initialization.
+Dec 14 19:16:50 inetfw systemd[1]: Condition check resulted in Process error reports when automatic reporting is enabled (file watch) being skipped.
+Dec 14 19:16:50 inetfw systemd[1]: Condition check resulted in Process error reports when automatic reporting is enabled (timer based) being skipped.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_004 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_005 (CLEAR) ---
+Dec 14 19:16:50 inetfw systemd[1]: Listening on cloud-init hotplug hook socket.
+Dec 14 19:16:50 inetfw systemd[1]: Listening on D-Bus System Message Bus Socket.
+Dec 14 19:16:50 inetfw systemd[1]: Listening on Open-iSCSI iscsid Socket.
+Dec 14 19:16:50 inetfw systemd[1]: Listening on Socket unix for snap application lxd.daemon.
+Dec 14 19:16:50 inetfw systemd[1]: Listening on Socket unix for snap application lxd.user-daemon.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_005 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_006 (CLEAR) ---
+Dec 14 19:16:50 inetfw systemd[1]: Reached target Socket Units.
+Dec 14 19:16:50 inetfw systemd[1]: Reached target Basic System.
+Dec 14 19:16:50 inetfw systemd[1]: Starting LSB: automatic crash report generation...
+Dec 14 19:16:50 inetfw systemd[1]: Starting Statistics collection and monitoring daemon...
+Dec 14 19:16:50 inetfw systemd[1]: Started Regular background program processing daemon.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_006 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_007 (CLEAR) ---
+Dec 14 19:16:50 inetfw kernel: [    3.402228] Btrfs loaded, crc32c=crc32c-intel, zoned=yes, fsverity=yes
+Dec 14 19:16:50 inetfw kernel: [    3.429873] EXT4-fs (vda1): mounted filesystem with ordered data mode. Opts: (null). Quota mode: none.
+Dec 14 19:16:50 inetfw kernel: [    3.618908] systemd[1]: Inserted module 'autofs4'
+Dec 14 19:16:50 inetfw kernel: [    3.638453] systemd[1]: systemd 249.11-0ubuntu3.12 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY -P11KIT -QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+Dec 14 19:16:50 inetfw kernel: [    3.643394] systemd[1]: Detected virtualization kvm.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_007 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_008 (CLEAR) ---
+Dec 14 19:16:50 inetfw kernel: [    4.162587] systemd[1]: Starting Apply Kernel Variables...
+Dec 14 19:16:50 inetfw kernel: [    4.166590] systemd[1]: Mounted FUSE Control File System.
+Dec 14 19:16:50 inetfw kernel: [    4.170852] systemd[1]: Mounted Kernel Configuration File System.
+Dec 14 19:16:50 inetfw kernel: [    4.190073] systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+Dec 14 19:16:50 inetfw kernel: [    4.192416] systemd[1]: Finished Load Kernel Module efi_pstore.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_008 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_009 (CLEAR) ---
+Dec 14 19:16:51 inetfw systemd[1]: Starting Time & Date Service...
+Dec 14 19:16:52 inetfw dbus-daemon[639]: [system] Successfully activated service 'org.freedesktop.timedate1'
+Dec 14 19:16:52 inetfw systemd[1]: Started Time & Date Service.
+Dec 14 19:16:52 inetfw systemd[1]: Finished Wait until snapd is fully seeded.
+Dec 14 19:16:52 inetfw systemd[1]: Starting Apply the settings specified in cloud-config...
+# --- END CHUNK: scenario_3_vnc_puppet_benign_009 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_010 (CLEAR) ---
+Dec 14 19:17:29 inetfw cloud-init[1347]: Get:22 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [1007 kB]
+Dec 14 19:17:30 inetfw dbus-daemon[639]: [system] Successfully activated service 'org.freedesktop.timedate1'
+Dec 14 19:17:30 inetfw systemd[1]: Started Time & Date Service.
+Dec 14 19:17:30 inetfw dnsmasq[736]: query[A] ntp.ubuntu.com from 192.168.100.130
+Dec 14 19:17:30 inetfw dnsmasq[736]: forwarded ntp.ubuntu.com to 192.42.2.2
+# --- END CHUNK: scenario_3_vnc_puppet_benign_010 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_011 (CLEAR) ---
+Dec 14 19:17:44 inetfw polkitd[2222]: started daemon version 0.105 using authority implementation `local' version `0.105'
+Dec 14 19:17:44 inetfw dbus-daemon[639]: [system] Successfully activated service 'org.freedesktop.PolicyKit1'
+Dec 14 19:17:44 inetfw systemd[1]: Started Authorization Manager.
+Dec 14 19:17:44 inetfw dbus-daemon[639]: [system] Successfully activated service 'org.freedesktop.PackageKit'
+Dec 14 19:17:44 inetfw systemd[1]: Started PackageKit Daemon.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_011 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_012 (CLEAR) ---
+Dec 14 19:22:29 inetfw systemd[1]: Starting Time & Date Service...
+Dec 14 19:22:29 inetfw dbus-daemon[639]: [system] Successfully activated service 'org.freedesktop.timedate1'
+Dec 14 19:22:29 inetfw systemd[1]: Started Time & Date Service.
+Dec 14 19:22:30 inetfw dnsmasq[736]: query[A] forgeapi.puppet.com from 172.17.100.122
+Dec 14 19:22:30 inetfw dnsmasq[736]: cached forgeapi.puppet.com is <CNAME>
+# --- END CHUNK: scenario_3_vnc_puppet_benign_012 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_013 (CLEAR) ---
+Dec 14 19:27:19 inetfw systemd[1]: Starting Time & Date Service...
+Dec 14 19:27:19 inetfw dbus-daemon[639]: [system] Successfully activated service 'org.freedesktop.timedate1'
+Dec 14 19:27:19 inetfw systemd[1]: Started Time & Date Service.
+Dec 14 19:27:19 inetfw dnsmasq[736]: query[A] adminpc2 from 10.12.0.223
+Dec 14 19:27:19 inetfw dnsmasq[736]: cached adminpc2 is NXDOMAIN
+# --- END CHUNK: scenario_3_vnc_puppet_benign_013 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_014 (CLEAR) ---
+Dec 14 19:28:10 inetfw kernel: [  696.839707] loop4: detected capacity change from 0 to 187192
+Dec 14 19:28:10 inetfw systemd[1]: Mounted Mount unit for lxd, revision 36918.
+Dec 14 19:28:10 inetfw systemd[1]: snap.lxd.daemon.unix.socket: Deactivated successfully.
+Dec 14 19:28:10 inetfw systemd[1]: Closed Socket unix for snap application lxd.daemon.
+Dec 14 19:28:10 inetfw systemd[1]: snap.lxd.user-daemon.unix.socket: Deactivated successfully.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_014 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_015 (CLEAR) ---
+Dec 14 20:03:42 inetfw dnsmasq[736]: cached adminpc2 is NXDOMAIN
+Dec 14 20:03:45 inetfw systemd[1]: Created slice User Slice of UID 1001.
+Dec 14 20:03:45 inetfw systemd[1]: Starting User Runtime Directory /run/user/1001...
+Dec 14 20:03:45 inetfw systemd[1]: Finished User Runtime Directory /run/user/1001.
+Dec 14 20:03:45 inetfw systemd[1]: Starting User Manager for UID 1001...
+# --- END CHUNK: scenario_3_vnc_puppet_benign_015 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_016 (CLEAR) ---
+Dec 14 20:03:45 inetfw systemd[1]: Started User Manager for UID 1001.
+Dec 14 20:03:45 inetfw systemd[1]: Started Session 2 of User aecid.
+Dec 14 20:03:45 inetfw systemd[4163]: Reached target Main User Target.
+Dec 14 20:03:45 inetfw systemd[4163]: Startup finished in 154ms.
+Dec 14 20:03:48 inetfw dnsmasq[736]: query[A] 1.debian.pool.ntp.org from 192.168.100.23
+# --- END CHUNK: scenario_3_vnc_puppet_benign_016 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_017 (CLEAR) ---
+Dec 14 20:04:34 inetfw dnsmasq[736]: cached adminpc2 is NXDOMAIN
+Dec 14 20:04:34 inetfw systemd[1]: Started Session 4 of User aecid.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_017 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_018 (CLEAR) ---
+Sep 17 13:08:34 atb-fw-image-2025-09-17t12-57-26z sshd[2079]: Disconnected from user ubuntu 10.110.0.254 port 42392
+Sep 17 13:08:34 atb-fw-image-2025-09-17t12-57-26z sshd[2033]: pam_unix(sshd:session): session closed for user ubuntu
+Sep 17 13:08:34 atb-fw-image-2025-09-17t12-57-26z systemd-logind[666]: Session 3 logged out. Waiting for processes to exit.
+Sep 17 13:13:21 atb-fw-image-2025-09-17t12-57-26z sudo: pam_unix(sudo:session): session closed for user root
+Sep 17 13:13:21 atb-fw-image-2025-09-17t12-57-26z systemd-logind[666]: Power key pressed.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_018 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_019 (CLEAR) ---
+Sep 17 13:13:21 atb-fw-image-2025-09-17t12-57-26z systemd-logind[666]: System is powering down.
+Sep 17 13:13:21 atb-fw-image-2025-09-17t12-57-26z sshd[873]: pam_unix(sshd:session): session closed for user ubuntu
+Sep 17 13:13:21 atb-fw-image-2025-09-17t12-57-26z sshd[873]: pam_systemd(sshd:session): Failed to release session: Interrupted system call
+Dec 14 19:16:50 inetfw chpasswd[627]: pam_unix(chpasswd:chauthtok): password changed for aecid
+Dec 14 19:16:50 inetfw sshd[713]: Server listening on 0.0.0.0 port 22.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_019 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_020 (CLEAR) ---
+Dec 14 19:16:50 inetfw systemd-logind[654]: New seat seat0.
+Dec 14 19:16:50 inetfw systemd-logind[654]: Watching system buttons on /dev/input/event0 (Power Button)
+Dec 14 19:16:50 inetfw systemd-logind[654]: Watching system buttons on /dev/input/event5 (QEMU QEMU USB Keyboard)
+Dec 14 19:16:50 inetfw systemd-logind[654]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+Dec 14 19:17:01 inetfw CRON[1336]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+# --- END CHUNK: scenario_3_vnc_puppet_benign_020 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_021 (CLEAR) ---
+Dec 14 19:17:01 inetfw CRON[1336]: pam_unix(cron:session): session closed for user root
+Dec 14 19:27:16 inetfw systemd-logind[654]: Watching system buttons on /dev/input/event0 (Power Button)
+Dec 14 19:27:16 inetfw systemd-logind[654]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+Dec 14 19:27:16 inetfw systemd-logind[654]: Watching system buttons on /dev/input/event5 (QEMU QEMU USB Keyboard)
+Dec 14 20:03:45 inetfw sshd[4160]: Accepted publickey for aecid from 172.17.100.201 port 39804 ssh2: RSA SHA256:yxAJcMgl5WTSlj4ZPvj7TSgUbIlxQ1GHdtXeIcp0czs
+# --- END CHUNK: scenario_3_vnc_puppet_benign_021 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_022 (CLEAR) ---
+2025-12-10T13:44:06.990496+00:00 atb-attacker-image-2025-12-10t12-35-00z systemd[1]: Stopping blk-availability.service - Availability of block devices...
+2025-12-10T13:44:06.997555+00:00 atb-attacker-image-2025-12-10t12-35-00z systemd[1]: cloud-final.service: Deactivated successfully.
+2025-12-10T13:44:06.997639+00:00 atb-attacker-image-2025-12-10t12-35-00z systemd[1]: Stopped cloud-final.service - Execute cloud user/final scripts.
+2025-12-10T13:44:06.999932+00:00 atb-attacker-image-2025-12-10t12-35-00z systemd[1]: Stopping finalrd.service - Create final runtime dir for shutdown pivot root...
+2025-12-10T13:44:07.002123+00:00 atb-attacker-image-2025-12-10t12-35-00z systemd[1]: Stopping fwupd.service - Firmware update daemon...
+# --- END CHUNK: scenario_3_vnc_puppet_benign_022 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_023 (CLEAR) ---
+2025-12-10T13:44:07.537874+00:00 atb-attacker-image-2025-12-10t12-35-00z systemd[1]: Stopping rsyslog.service - System Logging Service...
+2025-12-14T19:17:56.358129+00:00 attacker kernel: Linux version 6.8.0-35-generic (buildd@lcy02-amd64-020) (x86_64-linux-gnu-gcc-13 (Ubuntu 13.2.0-23ubuntu4) 13.2.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #35-Ubuntu SMP PREEMPT_DYNAMIC Mon May 20 15:51:52 UTC 2024 (Ubuntu 6.8.0-35.35-generic 6.8.4)
+2025-12-14T19:17:56.358711+00:00 attacker kernel: Command line: BOOT_IMAGE=/vmlinuz-6.8.0-35-generic root=LABEL=cloudimg-rootfs ro console=tty1 console=ttyS0
+2025-12-14T19:17:56.358715+00:00 attacker kernel: KERNEL supported cpus:
+2025-12-14T19:17:56.358716+00:00 attacker kernel:   Intel GenuineIntel
+# --- END CHUNK: scenario_3_vnc_puppet_benign_023 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_024 (CLEAR) ---
+2025-12-14T19:17:56.358742+00:00 attacker kernel: ACPI: Early table checksum verification disabled
+2025-12-14T19:17:56.358740+00:00 attacker systemd-fsck[349]: cloudimg-rootfs: clean, 327787/3145728 files, 3648588/6291195 blocks
+2025-12-14T19:17:56.358742+00:00 attacker kernel: ACPI: RSDP 0x00000000000F5AF0 000014 (v00 BOCHS )
+2025-12-14T19:17:56.358744+00:00 attacker kernel: ACPI: RSDT 0x00000000BFFE1644 000030 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+2025-12-14T19:17:56.358746+00:00 attacker kernel: ACPI: FACP 0x00000000BFFE1518 000074 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+# --- END CHUNK: scenario_3_vnc_puppet_benign_024 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_025 (CLEAR) ---
+2025-12-14T19:17:56.359242+00:00 attacker systemd[1]: Finished systemd-fsck@dev-disk-by\x2dlabel-UEFI.service - File System Check on /dev/disk/by-label/UEFI.
+2025-12-14T19:17:56.359245+00:00 attacker systemd-fsck[476]: BOOT: clean, 600/58496 files, 23926/233728 blocks
+2025-12-14T19:17:56.359251+00:00 attacker systemd[1]: Finished systemd-fsck@dev-disk-by\x2dlabel-BOOT.service - File System Check on /dev/disk/by-label/BOOT.
+2025-12-14T19:17:56.359254+00:00 attacker systemd[1]: Mounting boot.mount - /boot...
+2025-12-14T19:17:56.359257+00:00 attacker systemd[1]: Mounted boot.mount - /boot.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_025 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_026 (CLEAR) ---
+2025-12-10T13:43:56.227940+00:00 atb-attacker-image-2025-12-10t12-35-00z sshd[1697]: Disconnected from user ubuntu 10.110.0.254 port 41430
+2025-12-10T13:43:56.240788+00:00 atb-attacker-image-2025-12-10t12-35-00z sshd[1651]: pam_unix(sshd:session): session closed for user ubuntu
+2025-12-10T13:43:56.294471+00:00 atb-attacker-image-2025-12-10t12-35-00z systemd-logind[767]: Session 3 logged out. Waiting for processes to exit.
+2025-12-10T13:44:06.117961+00:00 atb-attacker-image-2025-12-10t12-35-00z sudo: pam_unix(sudo:session): session closed for user root
+2025-12-10T13:44:06.770578+00:00 atb-attacker-image-2025-12-10t12-35-00z systemd-logind[767]: Power key pressed short.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_026 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_027 (CLEAR) ---
+2025-12-10T13:44:06.893691+00:00 atb-attacker-image-2025-12-10t12-35-00z systemd-logind[767]: System is powering down.
+2025-12-10T13:44:06.935197+00:00 atb-attacker-image-2025-12-10t12-35-00z sshd[983]: pam_unix(sshd:session): session closed for user ubuntu
+2025-12-10T13:44:07.010892+00:00 atb-attacker-image-2025-12-10t12-35-00z sshd[25228]: Received signal 15; terminating.
+2025-12-10T13:44:07.192008+00:00 atb-attacker-image-2025-12-10t12-35-00z systemd-logind[767]: Removed session 3.
+2025-12-10T13:44:07.211381+00:00 atb-attacker-image-2025-12-10t12-35-00z systemd-logind[767]: Session 1 logged out. Waiting for processes to exit.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_027 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_028 (CLEAR) ---
+2025-12-14T19:17:56.362120+00:00 attacker systemd-logind[829]: New seat seat0.
+2025-12-14T19:17:56.362130+00:00 attacker systemd-logind[829]: Watching system buttons on /dev/input/event0 (Power Button)
+2025-12-14T19:17:56.362133+00:00 attacker systemd-logind[829]: Watching system buttons on /dev/input/event5 (QEMU QEMU USB Keyboard)
+2025-12-14T19:17:56.362136+00:00 attacker systemd-logind[829]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+2025-12-14T19:17:56.362429+00:00 attacker polkitd[868]: Loading rules from directory /etc/polkit-1/rules.d
+# --- END CHUNK: scenario_3_vnc_puppet_benign_028 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_029 (CLEAR) ---
+2025-12-14T19:21:03.174854+00:00 attacker sudo: pam_unix(sudo:session): session closed for user root
+2025-12-14T19:25:01.062662+00:00 attacker CRON[7190]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-12-14T19:25:01.069201+00:00 attacker CRON[7190]: pam_unix(cron:session): session closed for user root
+2025-12-14T19:28:54.675057+00:00 attacker dbus-daemon[834]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+2025-12-14T19:30:01.081282+00:00 attacker CRON[9673]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+# --- END CHUNK: scenario_3_vnc_puppet_benign_029 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_030 (CLEAR) ---
+2025-12-14T19:32:34.093794+00:00 attacker sshd[4587]: Disconnected from user aecid 192.42.0.201 port 57724
+2025-12-14T19:32:34.094331+00:00 attacker sshd[4528]: pam_unix(sshd:session): session closed for user aecid
+2025-12-14T19:32:34.100323+00:00 attacker systemd-logind[829]: Session 3 logged out. Waiting for processes to exit.
+2025-12-14T19:35:01.097820+00:00 attacker CRON[16072]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-12-14T19:35:01.100825+00:00 attacker CRON[16072]: pam_unix(cron:session): session closed for user root
+# --- END CHUNK: scenario_3_vnc_puppet_benign_030 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_031 (CLEAR) ---
+2025-12-14T19:45:01.118613+00:00 attacker CRON[36183]: pam_unix(cron:session): session closed for user root
+2025-12-14T19:55:01.126634+00:00 attacker CRON[46513]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-12-14T19:55:01.130030+00:00 attacker CRON[46513]: pam_unix(cron:session): session closed for user root
+2025-12-14T20:05:01.142805+00:00 attacker CRON[51385]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-12-14T20:05:01.147719+00:00 attacker CRON[51385]: pam_unix(cron:session): session closed for user root
+# --- END CHUNK: scenario_3_vnc_puppet_benign_031 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_032 (CLEAR) ---
+2025-12-14T20:15:01.165648+00:00 attacker CRON[56247]: pam_unix(cron:session): session closed for user root
+2025-12-14T20:17:01.176049+00:00 attacker CRON[57225]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-12-14T20:17:01.182639+00:00 attacker CRON[57225]: pam_unix(cron:session): session closed for user root
+2025-12-14T20:17:59.826868+00:00 attacker sudo:     root : PWD=/ ; USER=aecid ; ENV=XDG_RUNTIME_DIR=/run/user/1001 ; COMMAND=/usr/share/rustdesk/rustdesk --server
+2025-12-14T20:17:59.829479+00:00 attacker sudo: pam_unix(sudo:session): session opened for user aecid(uid=1001) by (uid=0)
+# --- END CHUNK: scenario_3_vnc_puppet_benign_032 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_033 (CLEAR) ---
+2025-12-11T12:42:06.462919+00:00 linuxshare systemd[1]: Stopped target time-set.target - System Time Set.
+2025-12-11T12:42:06.462945+00:00 linuxshare systemd[1]: cloud-final.service: Deactivated successfully.
+2025-12-11T12:42:06.462971+00:00 linuxshare systemd[1]: Stopped cloud-final.service - Execute cloud user/final scripts.
+2025-12-11T12:42:06.465947+00:00 linuxshare systemd[1]: Stopped target multi-user.target - Multi-User System.
+2025-12-11T12:42:06.466002+00:00 linuxshare systemd[1]: Stopped target getty.target - Login Prompts.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_033 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_034 (CLEAR) ---
+2025-12-11T12:42:06.494192+00:00 linuxshare systemd[1]: Stopping puppet.service - Puppet agent...
+2025-12-14T19:18:25.255298+00:00 linuxshare kernel: [    0.000000] Linux version 6.1.0-22-cloud-amd64 (debian-kernel@lists.debian.org) (gcc-12 (Debian 12.2.0-14) 12.2.0, GNU ld (GNU Binutils for Debian) 2.40) #1 SMP PREEMPT_DYNAMIC Debian 6.1.94-1 (2024-06-21)
+2025-12-14T19:18:25.261847+00:00 linuxshare kernel: [    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-6.1.0-22-cloud-amd64 root=PARTUUID=09bac5cd-1055-42ea-844b-fa89a2fe88ad ro console=tty0 console=ttyS0,115200 earlyprintk=ttyS0,115200 consoleblank=0
+2025-12-14T19:18:25.261854+00:00 linuxshare kernel: [    0.000000] BIOS-provided physical RAM map:
+2025-12-14T19:18:25.261855+00:00 linuxshare kernel: [    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+# --- END CHUNK: scenario_3_vnc_puppet_benign_034 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_035 (CLEAR) ---
+2025-12-14T19:18:25.262274+00:00 linuxshare kernel: [    0.278979] acpiphp: Slot [7] registered
+2025-12-14T19:18:25.255421+00:00 linuxshare systemd-fsck[234]: /dev/vda1: clean, 53820/1630208 files, 641711/6520827 blocks
+2025-12-14T19:18:25.262317+00:00 linuxshare kernel: [    0.279615] acpiphp: Slot [8] registered
+2025-12-14T19:18:25.262318+00:00 linuxshare kernel: [    0.280220] acpiphp: Slot [9] registered
+2025-12-14T19:18:25.262318+00:00 linuxshare kernel: [    0.280785] acpiphp: Slot [10] registered
+# --- END CHUNK: scenario_3_vnc_puppet_benign_035 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_036 (CLEAR) ---
+2025-12-14T19:18:25.263341+00:00 linuxshare kernel: [    1.166653] virtio_net virtio1 ens3: renamed from eth0
+2025-12-14T19:18:25.263341+00:00 linuxshare kernel: [    1.247201] EXT4-fs (vda1): mounted filesystem with ordered data mode. Quota mode: none.
+2025-12-14T19:18:25.263345+00:00 linuxshare kernel: [    1.307065] Not activating Mandatory Access Control as /sbin/tomoyo-init does not exist.
+2025-12-14T19:18:25.263384+00:00 linuxshare kernel: [    1.898583] device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+2025-12-14T19:18:25.263385+00:00 linuxshare kernel: [    1.900057] device-mapper: uevent: version 1.0.3
+# --- END CHUNK: scenario_3_vnc_puppet_benign_036 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_037 (CLEAR) ---
+2025-12-11T12:40:01.359381+00:00 linuxshare CRON[13574]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2025-12-11T12:40:01.362630+00:00 linuxshare CRON[13573]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2025-12-11T12:40:07.877454+00:00 linuxshare sshd[700]: Received disconnect from 10.110.0.254 port 37318:11: disconnected by user
+2025-12-11T12:40:07.881629+00:00 linuxshare sshd[700]: Disconnected from user debian 10.110.0.254 port 37318
+# --- END CHUNK: scenario_3_vnc_puppet_benign_037 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_038 (CLEAR) ---
+2025-12-14T19:18:25.263574+00:00 linuxshare chpasswd[539]: pam_unix(chpasswd:chauthtok): password changed for aecid
+2025-12-14T19:18:25.344952+00:00 linuxshare systemd-logind[561]: Watching system buttons on /dev/input/event1 (Power Button)
+2025-12-14T19:18:25.345016+00:00 linuxshare systemd-logind[561]: Watching system buttons on /dev/input/event0 (AT Translated Set 2 keyboard)
+2025-12-14T19:18:25.351947+00:00 linuxshare systemd-logind[561]: New seat seat0.
+2025-12-14T19:18:25.438545+00:00 linuxshare sshd[595]: Server listening on 0.0.0.0 port 22.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_038 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_039 (CLEAR) ---
+2025-12-14T19:18:25.438851+00:00 linuxshare sshd[595]: Server listening on :: port 22.
+2025-12-14T19:20:01.230397+00:00 linuxshare CRON[1641]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2025-12-14T19:20:01.232025+00:00 linuxshare CRON[1640]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+2025-12-14T19:20:01.269282+00:00 linuxshare CRON[1641]: pam_unix(cron:session): session closed for user root
+2025-12-14T19:20:01.346145+00:00 linuxshare CRON[1640]: pam_unix(cron:session): session closed for user root
+# --- END CHUNK: scenario_3_vnc_puppet_benign_039 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_040 (CLEAR) ---
+Sep 17 11:19:28 atb-corpdns-image-2025-09-17t11-07-58z systemd[1]: Stopping Availability of block devices...
+Sep 17 11:19:28 atb-corpdns-image-2025-09-17t11-07-58z systemd[1]: cloud-final.service: Deactivated successfully.
+Sep 17 11:19:28 atb-corpdns-image-2025-09-17t11-07-58z systemd[1]: Stopped Execute cloud user/final scripts.
+Sep 17 11:19:28 atb-corpdns-image-2025-09-17t11-07-58z systemd[1]: Stopped target Multi-User System.
+Sep 17 11:19:28 atb-corpdns-image-2025-09-17t11-07-58z systemd[1]: Stopped target Login Prompts.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_040 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_041 (CLEAR) ---
+Sep 17 11:19:28 atb-corpdns-image-2025-09-17t11-07-58z systemd[1]: Stopped Apply the settings specified in cloud-config.
+Dec 14 19:16:28 corpdns kernel: [    0.000000] Linux version 5.15.0-113-generic (buildd@lcy02-amd64-072) (gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #123-Ubuntu SMP Mon Jun 10 08:16:17 UTC 2024 (Ubuntu 5.15.0-113.123-generic 5.15.152)
+Dec 14 19:16:28 corpdns kernel: [    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.15.0-113-generic root=LABEL=cloudimg-rootfs ro console=tty1 console=ttyS0
+Dec 14 19:16:28 corpdns kernel: [    0.000000] KERNEL supported cpus:
+Dec 14 19:16:28 corpdns kernel: [    0.000000]   Intel GenuineIntel
+# --- END CHUNK: scenario_3_vnc_puppet_benign_041 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_042 (CLEAR) ---
+Dec 14 19:16:28 corpdns kernel: [    3.286899] Btrfs loaded, crc32c=crc32c-intel, zoned=yes, fsverity=yes
+Dec 14 19:16:28 corpdns kernel: [    3.336256] EXT4-fs (vda1): mounted filesystem with ordered data mode. Opts: (null). Quota mode: none.
+Dec 14 19:16:28 corpdns kernel: [    3.574057] systemd[1]: Inserted module 'autofs4'
+Dec 14 19:16:28 corpdns kernel: [    3.595383] systemd[1]: systemd 249.11-0ubuntu3.12 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY -P11KIT -QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+Dec 14 19:16:28 corpdns kernel: [    3.600782] systemd[1]: Detected virtualization kvm.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_042 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_043 (CLEAR) ---
+Dec 14 19:16:28 corpdns kernel: [   10.011053] EXT4-fs (vda1): resized filesystem to 13078779
+Dec 14 19:16:28 corpdns systemd-fsck[396]: cloudimg-rootfs: clean, 84382/3225600 files, 814770/6525179 blocks
+Dec 14 19:16:28 corpdns systemd[1]: Mounted Kernel Trace File System.
+Dec 14 19:16:28 corpdns systemd[1]: Finished Create List of Static Device Nodes.
+Dec 14 19:16:28 corpdns systemd[1]: modprobe@configfs.service: Deactivated successfully.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_043 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_044 (CLEAR) ---
+Dec 14 19:16:28 corpdns systemd[1]: Starting Apply Kernel Variables...
+Dec 14 19:16:28 corpdns systemd[1]: Mounted FUSE Control File System.
+Dec 14 19:16:28 corpdns systemd[1]: Mounted Kernel Configuration File System.
+Dec 14 19:16:28 corpdns systemd[1]: Finished Remount Root and Kernel File Systems.
+Dec 14 19:16:28 corpdns systemd[1]: Starting Device-Mapper Multipath Device Controller...
+# --- END CHUNK: scenario_3_vnc_puppet_benign_044 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_045 (CLEAR) ---
+Dec 14 19:16:28 corpdns systemd[1]: Mounted Mount unit for core20, revision 2318.
+Dec 14 19:16:28 corpdns systemd[1]: Mounted Mount unit for lxd, revision 28373.
+Dec 14 19:16:28 corpdns systemd[1]: Mounted Mount unit for snapd, revision 21759.
+Dec 14 19:16:28 corpdns systemd[1]: Reached target Mounted snaps.
+Dec 14 19:16:28 corpdns systemd[1]: Started Rule-based Manager for Device Events and Files.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_045 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_046 (CLEAR) ---
+Dec 14 19:16:28 corpdns systemd[1]: Condition check resulted in Show Plymouth Boot Screen being skipped.
+Dec 14 19:16:28 corpdns systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+Dec 14 19:16:28 corpdns systemd[1]: Condition check resulted in Forward Password Requests to Plymouth Directory Watch being skipped.
+Dec 14 19:16:28 corpdns systemd[1]: Reached target Local Encrypted Volumes.
+Dec 14 19:16:28 corpdns systemd[1]: Found device /dev/ttyS0.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_046 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_047 (CLEAR) ---
+Dec 14 19:16:28 corpdns systemd[1]: Reached target Cloud-config availability.
+Dec 14 19:16:28 corpdns systemd[1]: Reached target Network is Online.
+Dec 14 19:16:28 corpdns systemd[1]: Reached target System Initialization.
+Dec 14 19:16:28 corpdns systemd[1]: Condition check resulted in Process error reports when automatic reporting is enabled (file watch) being skipped.
+Dec 14 19:16:28 corpdns systemd[1]: Condition check resulted in Process error reports when automatic reporting is enabled (timer based) being skipped.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_047 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_048 (CLEAR) ---
+Dec 14 19:16:28 corpdns systemd[1]: Listening on cloud-init hotplug hook socket.
+Dec 14 19:16:28 corpdns systemd[1]: Listening on D-Bus System Message Bus Socket.
+Dec 14 19:16:28 corpdns systemd[1]: Listening on Open-iSCSI iscsid Socket.
+Dec 14 19:16:28 corpdns systemd[1]: Listening on Socket unix for snap application lxd.daemon.
+Dec 14 19:16:28 corpdns systemd[1]: Listening on Socket unix for snap application lxd.user-daemon.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_048 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_049 (CLEAR) ---
+Dec 14 19:16:28 corpdns systemd[1]: Reached target Socket Units.
+Dec 14 19:16:28 corpdns systemd[1]: Reached target Basic System.
+Dec 14 19:16:28 corpdns systemd[1]: Starting LSB: automatic crash report generation...
+Dec 14 19:16:28 corpdns systemd[1]: Starting Statistics collection and monitoring daemon...
+Dec 14 19:16:28 corpdns systemd[1]: Started Regular background program processing daemon.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_049 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_050 (CLEAR) ---
+Dec 14 19:26:50 corpdns systemd[1]: Mounting Mount unit for lxd, revision 36918...
+Dec 14 19:26:50 corpdns systemd[1]: Mounted Mount unit for lxd, revision 36918.
+Dec 14 19:26:50 corpdns kernel: [  633.912420] loop3: detected capacity change from 0 to 187192
+Dec 14 19:26:50 corpdns systemd[1]: snap.lxd.user-daemon.unix.socket: Deactivated successfully.
+Dec 14 19:26:50 corpdns systemd[1]: Closed Socket unix for snap application lxd.user-daemon.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_050 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_051 (CLEAR) ---
+Dec 14 19:55:20 corpdns systemd-timesyncd[532]: Timed out waiting for reply from 185.125.190.57:123 (ntp.ubuntu.com).
+Dec 14 20:04:33 corpdns systemd[1]: Created slice User Slice of UID 1001.
+Dec 14 20:04:33 corpdns systemd[1]: Starting User Runtime Directory /run/user/1001...
+Dec 14 20:04:33 corpdns systemd[1]: Finished User Runtime Directory /run/user/1001.
+Dec 14 20:04:33 corpdns systemd[1]: Starting User Manager for UID 1001...
+# --- END CHUNK: scenario_3_vnc_puppet_benign_051 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_052 (CLEAR) ---
+Dec 14 20:04:33 corpdns systemd[1]: Started User Manager for UID 1001.
+Dec 14 20:04:33 corpdns systemd[1]: Started Session 2 of User aecid.
+Dec 14 20:04:33 corpdns systemd[2596]: Reached target Main User Target.
+Dec 14 20:04:33 corpdns systemd[2596]: Startup finished in 103ms.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_052 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_053 (CLEAR) ---
+Dec 14 19:16:28 corpdns systemd-logind[734]: New seat seat0.
+Dec 14 19:16:28 corpdns systemd-logind[734]: Watching system buttons on /dev/input/event0 (Power Button)
+Dec 14 19:16:28 corpdns systemd-logind[734]: Watching system buttons on /dev/input/event5 (QEMU QEMU USB Keyboard)
+Dec 14 19:16:28 corpdns systemd-logind[734]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+Dec 14 19:17:01 corpdns CRON[2014]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+# --- END CHUNK: scenario_3_vnc_puppet_benign_053 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_054 (CLEAR) ---
+Dec 11 13:06:37 atb-repository-image-2025-12-11t12-47-13z systemd[1]: Stopping Availability of block devices...
+Dec 11 13:06:37 atb-repository-image-2025-12-11t12-47-13z systemd[1]: cloud-final.service: Deactivated successfully.
+Dec 11 13:06:37 atb-repository-image-2025-12-11t12-47-13z systemd[1]: Stopped Execute cloud user/final scripts.
+Dec 11 13:06:37 atb-repository-image-2025-12-11t12-47-13z systemd[1]: Stopped target Multi-User System.
+Dec 11 13:06:37 atb-repository-image-2025-12-11t12-47-13z systemd[1]: Stopped target Login Prompts.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_054 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_055 (CLEAR) ---
+Dec 14 19:18:24 puppet systemd-fsck[384]: cloudimg-rootfs: clean, 240994/6451200 files, 1563426/13078779 blocks
+Dec 14 19:18:24 puppet systemd[1]: Mounted FUSE Control File System.
+Dec 14 19:18:24 puppet systemd[1]: Mounted Kernel Configuration File System.
+Dec 14 19:18:24 puppet systemd[1]: Finished File System Check on Root Device.
+Dec 14 19:18:24 puppet systemd[1]: Starting Remount Root and Kernel File Systems...
+# --- END CHUNK: scenario_3_vnc_puppet_benign_055 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_056 (CLEAR) ---
+Dec 14 19:18:24 puppet systemd[1]: Mounted Mount unit for core20, revision 2318.
+Dec 14 19:18:24 puppet systemd[1]: Mounted Mount unit for lxd, revision 28373.
+Dec 14 19:18:24 puppet systemd[1]: Mounted Mount unit for snapd, revision 21759.
+Dec 14 19:18:24 puppet systemd[1]: Reached target Mounted snaps.
+Dec 14 19:18:24 puppet systemd[1]: Started Rule-based Manager for Device Events and Files.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_056 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_057 (CLEAR) ---
+Dec 14 19:18:24 puppet systemd[1]: Condition check resulted in Show Plymouth Boot Screen being skipped.
+Dec 14 19:18:24 puppet systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+Dec 14 19:18:24 puppet systemd[1]: Condition check resulted in Forward Password Requests to Plymouth Directory Watch being skipped.
+Dec 14 19:18:24 puppet systemd[1]: Reached target Local Encrypted Volumes.
+Dec 14 19:18:24 puppet systemd-udevd[431]: Using default interface naming scheme 'v249'.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_057 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_058 (CLEAR) ---
+Dec 14 19:18:24 puppet systemd[1]: Listening on cloud-init hotplug hook socket.
+Dec 14 19:18:24 puppet systemd[1]: Listening on D-Bus System Message Bus Socket.
+Dec 14 19:18:24 puppet systemd[1]: Listening on Open-iSCSI iscsid Socket.
+Dec 14 19:18:24 puppet systemd[1]: Listening on Socket unix for snap application lxd.daemon.
+Dec 14 19:18:24 puppet systemd[1]: Listening on Socket unix for snap application lxd.user-daemon.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_058 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_059 (CLEAR) ---
+Dec 14 19:18:24 puppet systemd[1]: Reached target Socket Units.
+Dec 14 19:18:24 puppet systemd[1]: Reached target Basic System.
+Dec 14 19:18:24 puppet systemd[1]: Starting Accounts Service...
+Dec 14 19:18:24 puppet systemd[1]: Starting Kernel process accounting...
+Dec 14 19:18:24 puppet anacron[669]: Anacron 2.3 started on 2025-12-14
+# --- END CHUNK: scenario_3_vnc_puppet_benign_059 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_060 (CLEAR) ---
+Dec 14 19:18:24 puppet systemd[1]: Starting Online ext4 Metadata Check for All Filesystems...
+Dec 14 19:18:24 puppet kernel: [    0.000000] Linux version 5.15.0-113-generic (buildd@lcy02-amd64-072) (gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #123-Ubuntu SMP Mon Jun 10 08:16:17 UTC 2024 (Ubuntu 5.15.0-113.123-generic 5.15.152)
+Dec 14 19:18:24 puppet kernel: [    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.15.0-113-generic root=LABEL=cloudimg-rootfs ro console=tty1 console=ttyS0
+Dec 14 19:18:24 puppet kernel: [    0.000000] KERNEL supported cpus:
+Dec 14 19:18:24 puppet kernel: [    0.000000]   Intel GenuineIntel
+# --- END CHUNK: scenario_3_vnc_puppet_benign_060 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_061 (CLEAR) ---
+Dec 14 19:18:24 puppet kernel: [    3.138435] Btrfs loaded, crc32c=crc32c-intel, zoned=yes, fsverity=yes
+Dec 14 19:18:24 puppet kernel: [    3.193057] EXT4-fs (vda1): mounted filesystem with ordered data mode. Opts: (null). Quota mode: none.
+Dec 14 19:18:24 puppet kernel: [    3.385611] systemd[1]: Inserted module 'autofs4'
+Dec 14 19:18:24 puppet kernel: [    3.408215] systemd[1]: systemd 249.11-0ubuntu3.12 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY -P11KIT -QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+Dec 14 19:18:24 puppet kernel: [    3.414808] systemd[1]: Detected virtualization kvm.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_061 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_062 (CLEAR) ---
+Dec 14 19:18:24 puppet systemd[1]: Finished Network Manager Wait Online.
+Dec 14 19:18:24 puppet systemd[1]: Reached target Network is Online.
+Dec 14 19:18:24 puppet systemd[1]: Started Download data for packages that failed at package install time.
+Dec 14 19:18:24 puppet systemd[1]: Started Check to see whether there is a new version of Ubuntu available.
+Dec 14 19:18:24 puppet systemd[1]: Reached target Timer Units.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_062 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_063 (CLEAR) ---
+Dec 14 19:18:26 puppet dbus-daemon[1221]: [session uid=1002 pid=1219] AppArmor D-Bus mediation is enabled
+Dec 14 19:18:26 puppet systemd[1]: Created slice User Slice of UID 118.
+Dec 14 19:18:26 puppet systemd[1]: Starting User Runtime Directory /run/user/118...
+Dec 14 19:18:26 puppet systemd[1]: Finished User Runtime Directory /run/user/118.
+Dec 14 19:18:26 puppet systemd[1]: Starting User Manager for UID 118...
+# --- END CHUNK: scenario_3_vnc_puppet_benign_063 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_064 (CLEAR) ---
+Dec 14 19:28:57 puppet kernel: [  694.043338] loop4: detected capacity change from 0 to 187192
+Dec 14 19:28:57 puppet systemd[1]: Mounted Mount unit for lxd, revision 36918.
+Dec 14 19:28:57 puppet systemd[1]: snap.lxd.user-daemon.unix.socket: Deactivated successfully.
+Dec 14 19:28:57 puppet systemd[1]: Closed Socket unix for snap application lxd.user-daemon.
+Dec 14 19:28:57 puppet systemd[1]: snap.lxd.daemon.unix.socket: Deactivated successfully.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_064 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_065 (CLEAR) ---
+Dec 14 19:42:52 puppet mate-terminal[3759]: unable to open file '/etc/dconf/db/local': Failed to open file “/etc/dconf/db/local”: open() failed: No such file or directory; expect degraded performance
+Dec 14 19:43:28 puppet systemd[1]: Created slice User Slice of UID 0.
+Dec 14 19:43:28 puppet systemd[1]: Starting User Runtime Directory /run/user/0...
+Dec 14 19:43:28 puppet systemd[1]: Finished User Runtime Directory /run/user/0.
+Dec 14 19:43:28 puppet systemd[1]: Starting User Manager for UID 0...
+# --- END CHUNK: scenario_3_vnc_puppet_benign_065 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_066 (CLEAR) ---
+Dec 14 20:18:33 puppet puppet-agent[4057]: Could not retrieve catalog; skipping run
+Dec 14 20:18:49 puppet systemd[1]: Created slice User Slice of UID 1001.
+Dec 14 20:18:49 puppet systemd[1]: Starting User Runtime Directory /run/user/1001...
+Dec 14 20:18:49 puppet systemd[1]: Finished User Runtime Directory /run/user/1001.
+Dec 14 20:18:49 puppet systemd[1]: Starting User Manager for UID 1001...
+# --- END CHUNK: scenario_3_vnc_puppet_benign_066 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_067 (CLEAR) ---
+Dec 14 20:18:49 puppet systemd[1]: Started User Manager for UID 1001.
+Dec 14 20:18:49 puppet systemd[1]: Started Session 5 of User aecid.
+Dec 14 20:18:49 puppet systemd[4126]: Started PipeWire Multimedia Service.
+Dec 14 20:18:49 puppet systemd[4126]: Started PipeWire Media Session Manager.
+Dec 14 20:18:49 puppet systemd[4126]: Starting Sound Service...
+# --- END CHUNK: scenario_3_vnc_puppet_benign_067 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_068 (CLEAR) ---
+Dec 14 20:19:01 puppet systemd[1]: user@1001.service: Deactivated successfully.
+Dec 14 20:19:01 puppet systemd[1]: Stopped User Manager for UID 1001.
+Dec 14 20:19:01 puppet systemd[1]: Stopping User Runtime Directory /run/user/1001...
+Dec 14 20:19:01 puppet systemd[1]: run-user-1001.mount: Deactivated successfully.
+Dec 14 20:19:01 puppet systemd[1]: user-runtime-dir@1001.service: Deactivated successfully.
+# --- END CHUNK: scenario_3_vnc_puppet_benign_068 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_benign_069 (CLEAR) ---
+Dec 14 20:19:01 puppet systemd[1]: Started User Manager for UID 1001.
+Dec 14 20:19:01 puppet systemd[1]: Started Session 7 of User aecid.
+Dec 14 20:19:01 puppet systemd[4242]: Started PipeWire Multimedia Service.
+Dec 14 20:19:01 puppet systemd[4242]: Started PipeWire Media Session Manager.
+Dec 14 20:19:01 puppet systemd[4242]: Starting Sound Service...
+# --- END CHUNK: scenario_3_vnc_puppet_benign_069 ---
+

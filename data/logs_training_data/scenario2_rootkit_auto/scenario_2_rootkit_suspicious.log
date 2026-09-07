@@ -1,0 +1,276 @@
+# Auto-extracted Suspicious Logs: scenario_2_rootkit_suspicious.log
+# Total chunks: 37
+
+# --- START CHUNK: scenario_2_rootkit_susp_001 (SUSPICIOUS) ---
+Oct  1 11:21:56 videoserver sudo:    aecid : TTY=pts/0 ; PWD=/home/aecid ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-zzaasluowczrniooxcbwsehqzotgyjmp ; /usr/bin/python3 /home/aecid/.ansible/tmp/ansible-tmp-1759317715.7458117-518466-207531722211090/AnsiballZ_command.py
+Oct  1 11:21:56 videoserver sudo: pam_unix(sudo:session): session opened for user root(uid=0) by aecid(uid=1001)
+Oct  1 11:21:56 videoserver sudo: pam_unix(sudo:session): session closed for user root
+Oct  1 11:22:57 videoserver sshd[2753]: Received disconnect from 172.17.100.201 port 45694:11: disconnected by user
+Oct  1 11:22:57 videoserver sshd[2753]: Disconnected from user aecid 172.17.100.201 port 45694
+# --- END CHUNK: scenario_2_rootkit_susp_001 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_002 (SUSPICIOUS) ---
+Oct  1 11:32:01 videoserver CRON[2872]: pam_unix(cron:session): session closed for user root
+Oct  1 11:33:01 videoserver sshd[2880]: Accepted publickey for root from 192.42.1.174 port 45636 ssh2: RSA SHA256:VbW9KNEmQ5+AUYJxP2VWEd9r7VCYtZlER7DNatecaRA
+Oct  1 11:33:01 videoserver sshd[2880]: pam_unix(sshd:session): session opened for user root(uid=0) by (uid=0)
+Oct  1 11:33:01 videoserver systemd-logind[556]: New session 5 of user root.
+Oct  1 11:33:01 videoserver systemd: pam_unix(systemd-user:session): session opened for user root(uid=0) by (uid=0)
+# --- END CHUNK: scenario_2_rootkit_susp_002 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_003 (SUSPICIOUS) ---
+Oct  1 11:39:41 videoserver sudo:     root : PWD=/ ; USER=root ; GROUP=fax ; COMMAND=/usr/bin/bash -c /usr/bin/zmcontroller &
+Oct  1 11:39:41 videoserver sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Oct  1 11:39:41 videoserver sudo: pam_unix(sudo:session): session closed for user root
+Oct  1 11:39:41 videoserver sudo:     root : PWD=/usr/share/zoneminder/www ; USER=www-data ; COMMAND=/usr/bin/true
+Oct  1 11:39:41 videoserver sudo: pam_unix(sudo:session): session opened for user www-data(uid=33) by (uid=0)
+# --- END CHUNK: scenario_2_rootkit_susp_003 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_004 (SUSPICIOUS) ---
+Oct  1 12:09:40 videoserver sudo:    aecid : PWD=/home/aecid ; USER=root ; COMMAND=/usr/bin/rsync --server --sender -lLogDtrze.LsfxCIvu . /var/www/default/log/
+Oct  1 12:09:40 videoserver sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+Oct  1 12:09:41 videoserver sudo: pam_unix(sudo:session): session closed for user root
+Oct  1 12:09:41 videoserver sshd[3447]: pam_unix(sshd:session): session closed for user aecid
+Oct  1 12:09:41 videoserver systemd-logind[556]: Session 13 logged out. Waiting for processes to exit.
+# --- END CHUNK: scenario_2_rootkit_susp_004 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_005 (SUSPICIOUS) ---
+Oct  1 12:09:41 videoserver systemd-logind[556]: New session 15 of user aecid.
+Oct  1 12:09:42 videoserver sudo:    aecid : PWD=/home/aecid ; USER=root ; COMMAND=/usr/bin/rsync --server --sender -lLogDtrze.LsfxCIvu . /var/log
+Oct  1 12:09:42 videoserver sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+# --- END CHUNK: scenario_2_rootkit_susp_005 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_006 (SUSPICIOUS) ---
+Jun 18 13:51:46 atb-videoserver-image-2025-06-18t13-40-32z filebeat[38955]: 2025-06-18T13:51:46.305Z#011ERROR#011[kafka]#011kafka/client.go:317#011Kafka (topic=logs): kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
+Jun 18 13:51:50 atb-videoserver-image-2025-06-18t13-40-32z zmwatch[25681]: WAR [Restarting capture daemon for 1 cam-1, no image since startup. Startup time was 1750254661 - now 1750254710 > 45]
+Jun 18 13:51:50 atb-videoserver-image-2025-06-18t13-40-32z zmc_m1[37834]: ERR [zmc_m1] [Unable to open input rtsp://172.17.100.80:8554/mystream due to: Immediate exit requested]
+Jun 18 13:51:50 atb-videoserver-image-2025-06-18t13-40-32z zmc_m1[37834]: ERR [zmc_m1] [Failed to prime capture of initial monitor]
+Jun 18 13:51:53 atb-videoserver-image-2025-06-18t13-40-32z filebeat[38955]: 2025-06-18T13:51:53.084Z#011INFO#011[monitoring]#011log/log.go:184#011Non-zero metrics in the last 30s#011{"monitoring": {"metrics": {"beat":{"cgroup":{"cpu":{"id":"filebeat.service"},"memory":{"id":"filebeat.service","mem":{"usage":{"bytes":55201792}}}},"cpu":{"system":{"ticks":50,"time":{"ms":58}},"total":{"ticks":210,"time":{"ms":222},"value":210},"user":{"ticks":160,"time":{"ms":164}}},"handles":{"limit":{"hard":524288,"soft":524288},"open":22},"info":{"ephemeral_id":"10feb9b3-ad2a-41a5-a1d7-030386a57769","uptime":{"ms":30049},"version":"7.17.28"},"memstats":{"gc_next":47816168,"memory_alloc":23806560,"memory_sys":43865352,"memory_total":79657136,"rss":124452864},"runtime":{"goroutines":111}},"filebeat":{"events":{"active":4125,"added":4151,"done":26},"harvester":{"open_files":12,"running":15,"started":15},"input":{"log":{"files":{"truncated":3}}}},"libbeat":{"config":{"module":{"running":2,"starts":2},"reloads":1,"scans":1},"output":{"events":{"active":2048,"batches":1,"total":2048},"type":"kafka"},"pipeline":{"clients":4,"events":{"active":4118,"filtered":26,"published":4116,"retry":2048,"total":4144},"queue":{"max_events":4096}}},"registrar":{"states":{"current":13,"update":26},"writes":{"success":26,"total":26}},"system":{"cpu":{"cores":1},"load":{"1":0.64,"15":0.24,"5":0.44,"norm":{"1":0.64,"15":0.24,"5":0.44}}}}}}
+# --- END CHUNK: scenario_2_rootkit_susp_006 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_007 (SUSPICIOUS) ---
+Jun 18 13:52:37 atb-videoserver-image-2025-06-18t13-40-32z filebeat[38955]: 2025-06-18T13:52:37.898Z#011ERROR#011[kafka]#011kafka/client.go:317#011Kafka (topic=logs): kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
+Jun 18 13:52:40 atb-videoserver-image-2025-06-18t13-40-32z zmwatch[25681]: WAR [Restarting capture daemon for 1 cam-1, no image since startup. Startup time was 1750254711 - now 1750254760 > 45]
+Jun 18 13:52:40 atb-videoserver-image-2025-06-18t13-40-32z zmc_m1[39637]: ERR [zmc_m1] [Unable to open input rtsp://172.17.100.80:8554/mystream due to: Immediate exit requested]
+Jun 18 13:52:40 atb-videoserver-image-2025-06-18t13-40-32z zmc_m1[39637]: ERR [zmc_m1] [Failed to prime capture of initial monitor]
+Jun 18 13:52:48 atb-videoserver-image-2025-06-18t13-40-32z filebeat[38955]: 2025-06-18T13:52:48.692Z#011ERROR#011[kafka]#011kafka/client.go:317#011Kafka (topic=logs): kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
+# --- END CHUNK: scenario_2_rootkit_susp_007 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_008 (SUSPICIOUS) ---
+Jun 18 13:53:30 atb-videoserver-image-2025-06-18t13-40-32z filebeat[38955]: 2025-06-18T13:53:30.287Z#011ERROR#011[kafka]#011kafka/client.go:317#011Kafka (topic=logs): kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
+Jun 18 13:53:30 atb-videoserver-image-2025-06-18t13-40-32z zmwatch[25681]: WAR [Restarting capture daemon for 1 cam-1, no image since startup. Startup time was 1750254761 - now 1750254810 > 45]
+Jun 18 13:53:30 atb-videoserver-image-2025-06-18t13-40-32z zmc_m1[39642]: ERR [zmc_m1] [Unable to open input rtsp://172.17.100.80:8554/mystream due to: Immediate exit requested]
+Jun 18 13:53:30 atb-videoserver-image-2025-06-18t13-40-32z zmc_m1[39642]: ERR [zmc_m1] [Failed to prime capture of initial monitor]
+Jun 18 13:53:40 atb-videoserver-image-2025-06-18t13-40-32z filebeat[38955]: 2025-06-18T13:53:40.288Z#011ERROR#011[kafka]#011kafka/client.go:317#011Kafka (topic=logs): kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
+# --- END CHUNK: scenario_2_rootkit_susp_008 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_009 (SUSPICIOUS) ---
+Jun 18 13:54:11 atb-videoserver-image-2025-06-18t13-40-32z filebeat[38955]: 2025-06-18T13:54:11.884Z#011ERROR#011[kafka]#011kafka/client.go:317#011Kafka (topic=logs): kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
+Jun 18 13:54:20 atb-videoserver-image-2025-06-18t13-40-32z zmwatch[25681]: WAR [Restarting capture daemon for 1 cam-1, no image since startup. Startup time was 1750254812 - now 1750254860 > 45]
+Jun 18 13:54:21 atb-videoserver-image-2025-06-18t13-40-32z zmc_m1[39653]: ERR [zmc_m1] [Unable to open input rtsp://172.17.100.80:8554/mystream due to: Immediate exit requested]
+Jun 18 13:54:21 atb-videoserver-image-2025-06-18t13-40-32z zmc_m1[39653]: ERR [zmc_m1] [Failed to prime capture of initial monitor]
+Jun 18 13:54:21 atb-videoserver-image-2025-06-18t13-40-32z filebeat[38955]: 2025-06-18T13:54:21.886Z#011ERROR#011[kafka]#011kafka/client.go:317#011Kafka (topic=logs): kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
+# --- END CHUNK: scenario_2_rootkit_susp_009 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_010 (SUSPICIOUS) ---
+Oct  1 11:18:57 videoserver zmc_m1[863]: ERR [zmc_m1] [Failed to prime capture of initial monitor]
+Oct  1 11:19:02 videoserver zmwatch[899]: WAR [Restarting capture daemon for 1 cam-1, no image since startup. Startup time was 1759317491 - now 1759317542 > 45]
+Oct  1 11:19:02 videoserver zmc_m1[863]: ERR [zmc_m1] [Unable to open input rtsp://172.17.100.80:8554/mystream due to: Immediate exit requested]
+Oct  1 11:19:02 videoserver zmc_m1[863]: ERR [zmc_m1] [Failed to prime capture of initial monitor]
+Oct  1 11:19:04 videoserver zmc_m1[2703]: ERR [zmc_m1] [Unable to open input rtsp://172.17.100.80:8554/mystream due to: Server returned 404 Not Found]
+# --- END CHUNK: scenario_2_rootkit_susp_010 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_011 (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1750254711.511:2752): arch=c000003e syscall=257 success=no exit=-13 a0="ffffff9c" a1="+Av" a2="80000" a3=0 items=1 ppid=25639 pid=39637 auid=4294967295 uid=33 gid=33 euid=33 suid=33 fsuid=33 egid=33 sgid=33 fsgid=33 tty=(none) ses=4294967295 comm="zmdc.pl" exe="/usr/bin/perl" subj==unconfined key="T1087_Account_Discovery"ARCH=x86_64 SYSCALL=openat AUID="unset" UID="www-data" GID="www-data" EUID="www-data" SUID="www-data" FSUID="www-data" EGID="www-data" SGID="www-data" FSGID="www-data"
+type=PATH msg=audit(1750254711.511:2752): item=0 name="/etc/shadow" inode=33508 dev=fe:01 mode=0100640 ouid=0 ogid=42 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="shadow"
+type=PROCTITLE msg=audit(1750254711.511:2752): proctitle="/usr/bin/perl -wT /usr/bin/zmdc.pl startup"
+# --- END CHUNK: scenario_2_rootkit_susp_011 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_012 (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1750254761.743:2783): arch=c000003e syscall=257 success=no exit=-13 a0="ffffff9c" a1="+Av" a2="80000" a3=0 items=1 ppid=25639 pid=39642 auid=4294967295 uid=33 gid=33 euid=33 suid=33 fsuid=33 egid=33 sgid=33 fsgid=33 tty=(none) ses=4294967295 comm="zmdc.pl" exe="/usr/bin/perl" subj==unconfined key="T1087_Account_Discovery"ARCH=x86_64 SYSCALL=openat AUID="unset" UID="www-data" GID="www-data" EUID="www-data" SUID="www-data" FSUID="www-data" EGID="www-data" SGID="www-data" FSGID="www-data"
+type=PATH msg=audit(1750254761.743:2783): item=0 name="/etc/shadow" inode=33508 dev=fe:01 mode=0100640 ouid=0 ogid=42 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="shadow"
+type=PROCTITLE msg=audit(1750254761.743:2783): proctitle="/usr/bin/perl -wT /usr/bin/zmdc.pl startup"
+# --- END CHUNK: scenario_2_rootkit_susp_012 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_013 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1759317485.396:112): auid=4294967295 ses=4294967295 subj==unconfined op=add_rule key="T1201_Password_Policy_Discovery" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1759317485.396:112): arch=c000003e syscall=44 success=yes exit=1116 a0=3 a1="8" a2=45c a3=0 items=1 ppid=295 pid=321 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj==unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1759317485.396:112): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PATH msg=audit(1759317485.396:112): item=0 name="/etc/pam.d/" inode=2957 dev=fe:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1759317485.396:112): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_2_rootkit_susp_013 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_014 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1759317485.404:153): auid=4294967295 ses=4294967295 subj==unconfined op=add_rule key="T1087_Account_Discovery" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1759317485.404:153): arch=c000003e syscall=44 success=yes exit=1092 a0=3 a1="8" a2=444 a3=0 items=1 ppid=295 pid=321 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj==unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1759317485.404:153): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PATH msg=audit(1759317485.404:153): item=0 name="/etc/" inode=8196 dev=fe:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1759317485.404:153): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_2_rootkit_susp_014 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_015 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1759317485.408:154): auid=4294967295 ses=4294967295 subj==unconfined op=add_rule key="TT1087_Account_Discovery" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1759317485.408:154): arch=c000003e syscall=44 success=yes exit=1092 a0=3 a1="8" a2=444 a3=0 items=1 ppid=295 pid=321 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj==unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1759317485.408:154): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PATH msg=audit(1759317485.408:154): item=0 name="/etc/" inode=8196 dev=fe:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1759317485.408:154): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_2_rootkit_susp_015 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_016 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1759317485.408:155): auid=4294967295 ses=4294967295 subj==unconfined op=add_rule key="T1087_Account_Discovery" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1759317485.408:155): arch=c000003e syscall=44 success=yes exit=1092 a0=3 a1="8" a2=444 a3=0 items=1 ppid=295 pid=321 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj==unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1759317485.408:155): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PATH msg=audit(1759317485.408:155): item=0 name="/etc/" inode=8196 dev=fe:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1759317485.408:155): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_2_rootkit_susp_016 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_017 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1759317485.444:217): auid=4294967295 ses=4294967295 subj==unconfined op=add_rule key="T1070_Indicator_Removal_on_Host" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1759317485.444:217): arch=c000003e syscall=44 success=yes exit=1088 a0=3 a1="8" a2=440 a3=0 items=0 ppid=295 pid=321 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj==unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1759317485.444:217): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PROCTITLE msg=audit(1759317485.444:217): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_2_rootkit_susp_017 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_018 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1759317485.444:218): auid=4294967295 ses=4294967295 subj==unconfined op=add_rule key="T1070_Indicator_Removal_on_Host" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1759317485.444:218): arch=c000003e syscall=44 success=yes exit=1088 a0=3 a1="8" a2=440 a3=0 items=0 ppid=295 pid=321 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj==unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1759317485.444:218): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PROCTITLE msg=audit(1759317485.444:218): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_2_rootkit_susp_018 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_019 (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1759318321.228:4465): arch=c000003e syscall=87 success=no exit=-2 a0="U " a1="Uǭ5" a2=19 a3="
+=p" items=1 ppid=2873 pid=2874 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4 comm="logrotate" exe="/usr/sbin/logrotate" subj==unconfined key="T1070_Indicator_Removal_on_Host"ARCH=x86_64 SYSCALL=unlink AUID="root" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=PATH msg=audit(1759318321.228:4465): item=0 name="/var/lib/logrotate/" inode=17753 dev=fe:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1759318321.228:4465): proctitle="/usr/sbin/logrotate -f /etc/logrotate.d/apache2-vhost"
+# --- END CHUNK: scenario_2_rootkit_susp_019 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_020 (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1759318321.232:4466): arch=c000003e syscall=82 success=yes exit=0 a0="U " a1="Uǭ5" a2=1c a3="[" items=5 ppid=2873 pid=2874 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4 comm="logrotate" exe="/usr/sbin/logrotate" subj==unconfined key="T1070_Indicator_Removal_on_Host"ARCH=x86_64 SYSCALL=rename AUID="root" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=PATH msg=audit(1759318321.232:4466): item=0 name="/var/lib/logrotate/" inode=17753 dev=fe:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1759318321.232:4466): item=1 name="/var/lib/logrotate/" inode=17753 dev=fe:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1759318321.232:4466): item=2 name="/var/lib/logrotate/status.tmp" inode=33670 dev=fe:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=DELETE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1759318321.232:4466): item=3 name="/var/lib/logrotate/status" inode=33508 dev=fe:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=DELETE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1759318321.232:4466): item=4 name="/var/lib/logrotate/status" inode=33670 dev=fe:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1759318321.232:4466): proctitle="/usr/sbin/logrotate -f /etc/logrotate.d/apache2-vhost"
+# --- END CHUNK: scenario_2_rootkit_susp_020 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_021 (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1759318381.852:4544): arch=c000003e syscall=84 success=yes exit=0 a0="VC," a1=b55 a2="VC*{" a3=4 items=2 ppid=1 pid=2883 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=6 comm="systemd" exe="/usr/lib/systemd/systemd" subj==unconfined key="T1070_Indicator_Removal_on_Host"ARCH=x86_64 SYSCALL=rmdir AUID="root" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=PATH msg=audit(1759318381.852:4544): item=0 name="/run/user/0/systemd/" inode=2 dev=00:27 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1759318381.852:4544): item=1 name="/run/user/0/systemd/generator" inode=12 dev=00:27 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=DELETE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1759318381.852:4544): proctitle="(systemd)"
+# --- END CHUNK: scenario_2_rootkit_susp_021 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_022 (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1759319025.836:5256): arch=c000003e syscall=59 success=yes exit=0 a0=" L" a1=" @" a2="c00093ac80" a3=0 items=3 ppid=3064 pid=3171 auid=4294967295 uid=0 gid=21 euid=0 suid=0 fsuid=0 egid=21 sgid=21 fsgid=21 tty=(none) ses=4294967295 comm="cat" exe="/usr/bin/cat" subj==unconfined key="T1078_Valid_Accounts"ARCH=x86_64 SYSCALL=execve AUID="unset" UID="root" GID="fax" EUID="root" SUID="root" FSUID="root" EGID="fax" SGID="fax" FSGID="fax"
+type=EXECVE msg=audit(1759319025.836:5256): argc=2 a0="cat" a1="/etc/pam.d/common-password"
+type=PATH msg=audit(1759319025.836:5256): item=0 name="/usr/bin/cat" inode=807 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1759319025.836:5256): item=1 name="/usr/bin/cat" inode=807 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1759319025.836:5256): item=2 name="/lib64/ld-linux-x86-64.so.2" inode=1964 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1759319025.836:5256): proctitle="cat /etc/pam.d/common-password"
+# --- END CHUNK: scenario_2_rootkit_susp_022 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_023 (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1759319040.888:5270): arch=c000003e syscall=59 success=yes exit=0 a0=" X" a1=" ـ" a2="c00093af00" a3=0 items=3 ppid=3064 pid=3176 auid=4294967295 uid=0 gid=21 euid=0 suid=0 fsuid=0 egid=21 sgid=21 fsgid=21 tty=(none) ses=4294967295 comm="cat" exe="/usr/bin/cat" subj==unconfined key="T1078_Valid_Accounts"ARCH=x86_64 SYSCALL=execve AUID="unset" UID="root" GID="fax" EUID="root" SUID="root" FSUID="root" EGID="fax" SGID="fax" FSGID="fax"
+type=EXECVE msg=audit(1759319040.888:5270): argc=2 a0="cat" a1="/etc/passwd"
+type=PATH msg=audit(1759319040.888:5270): item=0 name="/usr/bin/cat" inode=807 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1759319040.888:5270): item=1 name="/usr/bin/cat" inode=807 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1759319040.888:5270): item=2 name="/lib64/ld-linux-x86-64.so.2" inode=1964 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1759319040.888:5270): proctitle="cat /etc/passwd"
+# --- END CHUNK: scenario_2_rootkit_susp_023 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_024 (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1759319055.956:5279): arch=c000003e syscall=59 success=yes exit=0 a0=" l" a1=" ~" a2="c00093b100" a3=0 items=3 ppid=3064 pid=3177 auid=4294967295 uid=0 gid=21 euid=0 suid=0 fsuid=0 egid=42 sgid=42 fsgid=42 tty=(none) ses=4294967295 comm="chage" exe="/usr/bin/chage" subj==unconfined key="T1078_Valid_Accounts"ARCH=x86_64 SYSCALL=execve AUID="unset" UID="root" GID="fax" EUID="root" SUID="root" FSUID="root" EGID="shadow" SGID="shadow" FSGID="shadow"
+type=EXECVE msg=audit(1759319055.956:5279): argc=3 a0="chage" a1="-l" a2="aecid"
+type=PATH msg=audit(1759319055.956:5279): item=0 name="/usr/bin/chage" inode=2086 dev=fe:01 mode=0102755 ouid=0 ogid=42 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="shadow"
+type=PATH msg=audit(1759319055.956:5279): item=1 name="/usr/bin/chage" inode=2086 dev=fe:01 mode=0102755 ouid=0 ogid=42 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="shadow"
+type=PATH msg=audit(1759319055.956:5279): item=2 name="/lib64/ld-linux-x86-64.so.2" inode=1964 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1759319055.956:5279): proctitle="chage -l aecid"
+# --- END CHUNK: scenario_2_rootkit_susp_024 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_025 (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1759319055.960:5280): arch=c000003e syscall=257 success=yes exit=5 a0="ffffff9c" a1="Uui" a2="20900" a3=0 items=1 ppid=3064 pid=3177 auid=4294967295 uid=0 gid=21 euid=0 suid=0 fsuid=0 egid=42 sgid=42 fsgid=42 tty=(none) ses=4294967295 comm="chage" exe="/usr/bin/chage" subj==unconfined key="T1087_Account_Discovery"ARCH=x86_64 SYSCALL=openat AUID="unset" UID="root" GID="fax" EUID="root" SUID="root" FSUID="root" EGID="shadow" SGID="shadow" FSGID="shadow"
+type=PATH msg=audit(1759319055.960:5280): item=0 name="/etc/shadow" inode=30247 dev=fe:01 mode=0100640 ouid=0 ogid=42 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="shadow"
+type=PROCTITLE msg=audit(1759319055.960:5280): proctitle="chage -l aecid"
+# --- END CHUNK: scenario_2_rootkit_susp_025 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_026 (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1759319055.960:5281): arch=c000003e syscall=114 success=yes exit=0 a0=15 a1=15 a2=0 a3="+" items=0 ppid=3064 pid=3177 auid=4294967295 uid=0 gid=21 euid=0 suid=0 fsuid=0 egid=21 sgid=21 fsgid=21 tty=(none) ses=4294967295 comm="chage" exe="/usr/bin/chage" subj==unconfined key="T1166_Seuid_and_Setgid"ARCH=x86_64 SYSCALL=setregid AUID="unset" UID="root" GID="fax" EUID="root" SUID="root" FSUID="root" EGID="fax" SGID="fax" FSGID="fax"
+type=PROCTITLE msg=audit(1759319055.960:5281): proctitle="chage -l aecid"
+# --- END CHUNK: scenario_2_rootkit_susp_026 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_027 (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1759319055.960:5282): arch=c000003e syscall=113 success=yes exit=0 a0=0 a1=0 a2=0 a3="+" items=0 ppid=3064 pid=3177 auid=4294967295 uid=0 gid=21 euid=0 suid=0 fsuid=0 egid=21 sgid=21 fsgid=21 tty=(none) ses=4294967295 comm="chage" exe="/usr/bin/chage" subj==unconfined key="T1166_Seuid_and_Setgid"ARCH=x86_64 SYSCALL=setreuid AUID="unset" UID="root" GID="fax" EUID="root" SUID="root" FSUID="root" EGID="fax" SGID="fax" FSGID="fax"
+type=PROCTITLE msg=audit(1759319055.960:5282): proctitle="chage -l aecid"
+# --- END CHUNK: scenario_2_rootkit_susp_027 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_028 (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1759320582.068:6173): arch=c000003e syscall=59 success=yes exit=0 a0="U" a1="U`" a2="U " a3="fffffffffffffb0a" items=3 ppid=3486 pid=3487 auid=1001 uid=1001 gid=1001 euid=0 suid=0 fsuid=0 egid=1001 sgid=1001 fsgid=1001 tty=(none) ses=15 comm="sudo" exe="/usr/bin/sudo" subj==unconfined key="T1078_Valid_Accounts"ARCH=x86_64 SYSCALL=execve AUID="aecid" UID="aecid" GID="aecid" EUID="root" SUID="root" FSUID="root" EGID="aecid" SGID="aecid" FSGID="aecid"
+type=EXECVE msg=audit(1759320582.068:6173): argc=9 a0="sudo" a1="-u" a2="root" a3="rsync" a4="--server" a5="--sender" a6="-lLogDtrze.LsfxCIvu" a7="." a8="/var/log"
+type=PATH msg=audit(1759320582.068:6173): item=0 name="/usr/bin/sudo" inode=26845 dev=fe:01 mode=0104755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1759320582.068:6173): item=1 name="/usr/bin/sudo" inode=26845 dev=fe:01 mode=0104755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1759320582.068:6173): item=2 name="/lib64/ld-linux-x86-64.so.2" inode=1964 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1759320582.068:6173): proctitle="sudo -u root rsync --server --sender -lLogDtrze.LsfxCIvu . /var/log"
+# --- END CHUNK: scenario_2_rootkit_susp_028 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_029 (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1759320582.068:6174): arch=c000003e syscall=257 success=yes exit=5 a0="ffffff9c" a1=""" a2=0 a3=0 items=1 ppid=3486 pid=3487 auid=1001 uid=0 gid=1001 euid=1 suid=0 fsuid=1 egid=0 sgid=1001 fsgid=0 tty=(none) ses=15 comm="sudo" exe="/usr/bin/sudo" subj==unconfined key="T1169_Sudo"ARCH=x86_64 SYSCALL=openat AUID="aecid" UID="root" GID="aecid" EUID="daemon" SUID="root" FSUID="daemon" EGID="root" SGID="aecid" FSGID="root"
+type=PATH msg=audit(1759320582.068:6174): item=0 name="/etc/sudoers" inode=26841 dev=fe:01 mode=0100440 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1759320582.068:6174): proctitle="sudo -u root rsync --server --sender -lLogDtrze.LsfxCIvu . /var/log"
+# --- END CHUNK: scenario_2_rootkit_susp_029 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_030 (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1759320582.072:6175): arch=c000003e syscall=257 success=yes exit=6 a0="ffffff9c" a1=""v" a2="80000" a3=0 items=1 ppid=3486 pid=3487 auid=1001 uid=1001 gid=1001 euid=0 suid=0 fsuid=0 egid=1001 sgid=1001 fsgid=1001 tty=(none) ses=15 comm="sudo" exe="/usr/bin/sudo" subj==unconfined key="T1087_Account_Discovery"ARCH=x86_64 SYSCALL=openat AUID="aecid" UID="aecid" GID="aecid" EUID="root" SUID="root" FSUID="root" EGID="aecid" SGID="aecid" FSGID="aecid"
+type=PATH msg=audit(1759320582.072:6175): item=0 name="/etc/shadow" inode=30247 dev=fe:01 mode=0100640 ouid=0 ogid=42 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="shadow"
+type=PROCTITLE msg=audit(1759320582.072:6175): proctitle="sudo -u root rsync --server --sender -lLogDtrze.LsfxCIvu . /var/log"
+# --- END CHUNK: scenario_2_rootkit_susp_030 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_031 (SUSPICIOUS) ---
+type=USER_CMD msg=audit(1759320582.072:6177): pid=3487 uid=1001 auid=1001 ses=15 subj==unconfined msg='cwd="/home/aecid" cmd="rsync --server --sender -lLogDtrze.LsfxCIvu . /var/log" exe="/usr/bin/sudo" terminal=? res=success'UID="aecid" AUID="aecid"
+# --- END CHUNK: scenario_2_rootkit_susp_031 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_032 (SUSPICIOUS) ---
+Oct  1 12:03:31 inetfw sudo:    aecid : TTY=pts/0 ; PWD=/home/aecid ; USER=root ; COMMAND=/usr/bin/systemctl stop suricata.service
+Oct  1 12:03:31 inetfw sudo: pam_unix(sudo:session): session opened for user root(uid=0) by aecid(uid=1001)
+Oct  1 12:03:32 inetfw sudo: pam_unix(sudo:session): session closed for user root
+Oct  1 12:04:02 inetfw sshd[4456]: Accepted publickey for aecid from 172.17.100.201 port 55334 ssh2: RSA SHA256:yxAJcMgl5WTSlj4ZPvj7TSgUbIlxQ1GHdtXeIcp0czs
+Oct  1 12:04:02 inetfw sshd[4456]: pam_unix(sshd:session): session opened for user aecid(uid=1001) by (uid=0)
+# --- END CHUNK: scenario_2_rootkit_susp_032 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_033 (SUSPICIOUS) ---
+Oct  1 12:04:02 inetfw sudo:    aecid : PWD=/home/aecid ; USER=root ; COMMAND=/usr/bin/rsync --server --sender -lLogDtrze.LsfxCIvu . /var/log
+Oct  1 12:04:02 inetfw sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+# --- END CHUNK: scenario_2_rootkit_susp_033 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_034 (SUSPICIOUS) ---
+10/01/2025-11:18:05.782692  [**] [1:2210054:1] SURICATA STREAM excessive retransmissions [**] [Classification: Generic Protocol Command Decode] [Priority: 3] {TCP} 192.168.100.254:55199 -> 192.168.100.130:1514
+10/01/2025-11:18:09.731255  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.121:33871 -> 192.168.100.130:1515
+10/01/2025-11:18:20.034387  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 172.17.100.80:52192 -> 185.125.190.36:80
+10/01/2025-11:18:20.278039  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 172.17.100.80:39370 -> 185.125.190.93:80
+10/01/2025-11:18:20.305113  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 172.17.100.80:39370 -> 185.125.190.93:80
+# --- END CHUNK: scenario_2_rootkit_susp_034 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_035 (SUSPICIOUS) ---
+10/01/2025-11:18:24.275393  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 172.17.100.80:52192 -> 185.125.190.36:80
+10/01/2025-11:18:29.751512  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.121:60327 -> 192.168.100.130:1514
+10/01/2025-11:18:35.851043  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.121:59313 -> 192.168.100.130:1514
+10/01/2025-11:18:47.578563  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 172.17.100.80:43172 -> 185.125.190.39:80
+10/01/2025-11:18:48.821063  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 172.17.100.80:43172 -> 185.125.190.39:80
+# --- END CHUNK: scenario_2_rootkit_susp_035 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_036 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1759317334.512:121): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="T1201_Password_Policy_Discovery" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1759317334.512:121): arch=c000003e syscall=44 success=yes exit=1116 a0=3 a1="+0" a2=45c a3=0 items=1 ppid=475 pid=488 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1759317334.512:121): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PATH msg=audit(1759317334.512:121): item=0 name="/etc/pam.d/" inode=546 dev=fc:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1759317334.512:121): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_2_rootkit_susp_036 ---
+
+# --- START CHUNK: scenario_2_rootkit_susp_037 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1759317304.192:146): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="T1201_Password_Policy_Discovery" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1759317304.192:146): arch=c000003e syscall=44 success=yes exit=1116 a0=3 a1="px" a2=45c a3=0 items=1 ppid=538 pid=563 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1759317304.192:146): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PATH msg=audit(1759317304.192:146): item=0 name="/etc/pam.d/" inode=546 dev=fc:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1759317304.192:146): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_2_rootkit_susp_037 ---
+

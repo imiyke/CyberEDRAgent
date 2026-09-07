@@ -1,0 +1,558 @@
+# Auto-extracted Benign Logs: scenario_3_ssh_apt_benign.log
+# Total chunks: 70
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_001 (CLEAR) ---
+Sep 17 13:13:21 atb-fw-image-2025-09-17t12-57-26z systemd[1]: Stopping Availability of block devices...
+Sep 17 13:13:21 atb-fw-image-2025-09-17t12-57-26z systemd[1]: cloud-final.service: Deactivated successfully.
+Sep 17 13:13:21 atb-fw-image-2025-09-17t12-57-26z systemd[1]: Stopped Execute cloud user/final scripts.
+Sep 17 13:13:21 atb-fw-image-2025-09-17t12-57-26z systemd[1]: Stopped target Multi-User System.
+Sep 17 13:13:21 atb-fw-image-2025-09-17t12-57-26z systemd[1]: Stopped target Login Prompts.
+# --- END CHUNK: scenario_3_ssh_apt_benign_001 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_002 (CLEAR) ---
+Dec 12 10:14:31 inetfw systemd[1]: Reached target Preparation for Local File Systems.
+Dec 12 10:14:31 inetfw systemd-fsck[363]: cloudimg-rootfs: clean, 87580/3225600 files, 819958/6525179 blocks
+Dec 12 10:14:31 inetfw systemd[1]: Mounting Mount unit for core20, revision 2318...
+Dec 12 10:14:31 inetfw systemd[1]: Mounting Mount unit for lxd, revision 28373...
+Dec 12 10:14:31 inetfw systemd[1]: Mounting Mount unit for snapd, revision 21759...
+# --- END CHUNK: scenario_3_ssh_apt_benign_002 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_003 (CLEAR) ---
+Dec 12 10:14:31 inetfw systemd[1]: Mounted Mount unit for snapd, revision 21759.
+Dec 12 10:14:31 inetfw systemd[1]: Mounted Mount unit for lxd, revision 28373.
+Dec 12 10:14:31 inetfw systemd[1]: Reached target Mounted snaps.
+Dec 12 10:14:31 inetfw systemd[1]: Started Rule-based Manager for Device Events and Files.
+Dec 12 10:14:31 inetfw systemd[1]: Condition check resulted in Show Plymouth Boot Screen being skipped.
+# --- END CHUNK: scenario_3_ssh_apt_benign_003 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_004 (CLEAR) ---
+Dec 12 10:14:31 inetfw systemd[1]: Condition check resulted in Forward Password Requests to Plymouth Directory Watch being skipped.
+Dec 12 10:14:31 inetfw systemd[1]: Reached target Local Encrypted Volumes.
+Dec 12 10:14:31 inetfw systemd-udevd[400]: Using default interface naming scheme 'v249'.
+Dec 12 10:14:31 inetfw systemd-udevd[397]: Using default interface naming scheme 'v249'.
+Dec 12 10:14:31 inetfw systemd-udevd[401]: Using default interface naming scheme 'v249'.
+# --- END CHUNK: scenario_3_ssh_apt_benign_004 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_005 (CLEAR) ---
+Dec 12 10:14:31 inetfw systemd[1]: Reached target Cloud-config availability.
+Dec 12 10:14:31 inetfw systemd[1]: Reached target Network is Online.
+Dec 12 10:14:31 inetfw systemd[1]: Reached target System Initialization.
+Dec 12 10:14:31 inetfw systemd[1]: Condition check resulted in Process error reports when automatic reporting is enabled (file watch) being skipped.
+Dec 12 10:14:31 inetfw systemd[1]: Condition check resulted in Process error reports when automatic reporting is enabled (timer based) being skipped.
+# --- END CHUNK: scenario_3_ssh_apt_benign_005 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_006 (CLEAR) ---
+Dec 12 10:14:31 inetfw systemd[1]: Listening on cloud-init hotplug hook socket.
+Dec 12 10:14:31 inetfw systemd[1]: Listening on D-Bus System Message Bus Socket.
+Dec 12 10:14:31 inetfw systemd[1]: Listening on Open-iSCSI iscsid Socket.
+Dec 12 10:14:31 inetfw systemd[1]: Listening on Socket unix for snap application lxd.daemon.
+Dec 12 10:14:31 inetfw systemd[1]: Listening on Socket unix for snap application lxd.user-daemon.
+# --- END CHUNK: scenario_3_ssh_apt_benign_006 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_007 (CLEAR) ---
+Dec 12 10:14:31 inetfw systemd[1]: Reached target Socket Units.
+Dec 12 10:14:31 inetfw systemd[1]: Reached target Basic System.
+Dec 12 10:14:31 inetfw systemd[1]: Starting LSB: automatic crash report generation...
+Dec 12 10:14:31 inetfw kernel: [    0.000000] Linux version 5.15.0-113-generic (buildd@lcy02-amd64-072) (gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #123-Ubuntu SMP Mon Jun 10 08:16:17 UTC 2024 (Ubuntu 5.15.0-113.123-generic 5.15.152)
+Dec 12 10:14:31 inetfw kernel: [    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.15.0-113-generic root=LABEL=cloudimg-rootfs ro console=tty1 console=ttyS0
+# --- END CHUNK: scenario_3_ssh_apt_benign_007 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_008 (CLEAR) ---
+Dec 12 10:14:31 inetfw kernel: [    3.405712] Btrfs loaded, crc32c=crc32c-intel, zoned=yes, fsverity=yes
+Dec 12 10:14:31 inetfw kernel: [    3.431873] EXT4-fs (vda1): mounted filesystem with ordered data mode. Opts: (null). Quota mode: none.
+Dec 12 10:14:31 inetfw kernel: [    3.605210] systemd[1]: Inserted module 'autofs4'
+Dec 12 10:14:31 inetfw kernel: [    3.623471] systemd[1]: systemd 249.11-0ubuntu3.12 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY -P11KIT -QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+Dec 12 10:14:31 inetfw kernel: [    3.628484] systemd[1]: Detected virtualization kvm.
+# --- END CHUNK: scenario_3_ssh_apt_benign_008 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_009 (CLEAR) ---
+Dec 12 10:14:31 inetfw kernel: [    4.090813] systemd[1]: Mounting FUSE Control File System...
+Dec 12 10:14:31 inetfw kernel: [    4.095039] systemd[1]: Mounted FUSE Control File System.
+Dec 12 10:14:31 inetfw kernel: [    4.099420] systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+Dec 12 10:14:31 inetfw kernel: [    4.105351] systemd[1]: Finished Load Kernel Module efi_pstore.
+Dec 12 10:14:31 inetfw kernel: [    4.118456] systemd[1]: Finished Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+# --- END CHUNK: scenario_3_ssh_apt_benign_009 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_010 (CLEAR) ---
+Dec 12 10:14:33 inetfw systemd[1]: Starting Time & Date Service...
+Dec 12 10:14:33 inetfw dbus-daemon[639]: [system] Successfully activated service 'org.freedesktop.timedate1'
+Dec 12 10:14:33 inetfw systemd[1]: Started Time & Date Service.
+Dec 12 10:14:33 inetfw systemd[1]: Finished Wait until snapd is fully seeded.
+Dec 12 10:14:33 inetfw systemd[1]: Starting Apply the settings specified in cloud-config...
+# --- END CHUNK: scenario_3_ssh_apt_benign_010 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_011 (CLEAR) ---
+Dec 12 10:15:02 inetfw polkitd[1847]: started daemon version 0.105 using authority implementation `local' version `0.105'
+Dec 12 10:15:02 inetfw dbus-daemon[639]: [system] Successfully activated service 'org.freedesktop.PolicyKit1'
+Dec 12 10:15:02 inetfw systemd[1]: Started Authorization Manager.
+Dec 12 10:15:02 inetfw dbus-daemon[639]: [system] Successfully activated service 'org.freedesktop.PackageKit'
+Dec 12 10:15:02 inetfw systemd[1]: Started PackageKit Daemon.
+# --- END CHUNK: scenario_3_ssh_apt_benign_011 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_012 (CLEAR) ---
+Dec 12 10:15:10 inetfw systemd[1]: Starting Time & Date Service...
+Dec 12 10:15:10 inetfw dbus-daemon[639]: [system] Successfully activated service 'org.freedesktop.timedate1'
+Dec 12 10:15:10 inetfw systemd[1]: Started Time & Date Service.
+Dec 12 10:15:12 inetfw systemd-timesyncd[473]: Timed out waiting for reply from 185.125.190.56:123 (ntp.ubuntu.com).
+Dec 12 10:15:17 inetfw dnsmasq[736]: query[A] api.snapcraft.io from 192.168.50.201
+# --- END CHUNK: scenario_3_ssh_apt_benign_012 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_013 (CLEAR) ---
+Dec 12 10:20:10 inetfw systemd[1]: Starting Time & Date Service...
+Dec 12 10:20:10 inetfw dbus-daemon[639]: [system] Successfully activated service 'org.freedesktop.timedate1'
+Dec 12 10:20:10 inetfw systemd[1]: Started Time & Date Service.
+Dec 12 10:20:11 inetfw dnsmasq[736]: query[A] forgeapi.puppet.com from 172.17.100.122
+Dec 12 10:20:11 inetfw dnsmasq[736]: cached forgeapi.puppet.com is <CNAME>
+# --- END CHUNK: scenario_3_ssh_apt_benign_013 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_014 (CLEAR) ---
+Dec 12 10:25:39 inetfw systemd[1]: Starting Time & Date Service...
+Dec 12 10:25:39 inetfw dbus-daemon[639]: [system] Successfully activated service 'org.freedesktop.timedate1'
+Dec 12 10:25:39 inetfw systemd[1]: Started Time & Date Service.
+Dec 12 10:25:40 inetfw dnsmasq[736]: query[A] puppet.attackbed.local from 192.168.100.23
+Dec 12 10:25:40 inetfw dnsmasq[736]: config puppet.attackbed.local is 172.17.100.122
+# --- END CHUNK: scenario_3_ssh_apt_benign_014 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_015 (CLEAR) ---
+Dec 12 10:26:44 inetfw kernel: [  749.245997] loop5: detected capacity change from 0 to 187192
+Dec 12 10:26:44 inetfw systemd[1]: Mounted Mount unit for lxd, revision 36918.
+Dec 12 10:26:44 inetfw systemd[1]: snap.lxd.daemon.unix.socket: Deactivated successfully.
+Dec 12 10:26:44 inetfw systemd[1]: Closed Socket unix for snap application lxd.daemon.
+Dec 12 10:26:44 inetfw systemd[1]: snap.lxd.user-daemon.unix.socket: Deactivated successfully.
+# --- END CHUNK: scenario_3_ssh_apt_benign_015 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_016 (CLEAR) ---
+Dec 12 10:58:28 inetfw dnsmasq[736]: reply cti.wazuh.com.cdn.cloudflare.net is 2606:4700:3031::6815:28dc
+Dec 12 10:58:36 inetfw systemd[1]: Created slice User Slice of UID 1001.
+Dec 12 10:58:36 inetfw systemd[1]: Starting User Runtime Directory /run/user/1001...
+Dec 12 10:58:36 inetfw systemd[1]: Finished User Runtime Directory /run/user/1001.
+Dec 12 10:58:36 inetfw systemd[1]: Starting User Manager for UID 1001...
+# --- END CHUNK: scenario_3_ssh_apt_benign_016 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_017 (CLEAR) ---
+Dec 12 10:58:37 inetfw systemd[1]: Started User Manager for UID 1001.
+Dec 12 10:58:37 inetfw systemd[1]: Started Session 2 of User aecid.
+Dec 12 10:58:37 inetfw systemd[4334]: Reached target Main User Target.
+Dec 12 10:58:37 inetfw systemd[4334]: Startup finished in 122ms.
+Dec 12 10:58:38 inetfw dnsmasq[736]: query[A] adminpc2 from 10.12.0.223
+# --- END CHUNK: scenario_3_ssh_apt_benign_017 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_018 (CLEAR) ---
+Dec 12 10:59:19 inetfw dnsmasq[736]: cached adminpc2 is NXDOMAIN
+Dec 12 10:59:26 inetfw systemd[1]: Started Session 4 of User aecid.
+Dec 12 10:59:29 inetfw dnsmasq[736]: query[A] adminpc2 from 10.12.0.223
+Dec 12 10:59:29 inetfw dnsmasq[736]: cached adminpc2 is NXDOMAIN
+Dec 12 10:59:29 inetfw dnsmasq[736]: query[AAAA] adminpc2 from 10.12.0.223
+# --- END CHUNK: scenario_3_ssh_apt_benign_018 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_019 (CLEAR) ---
+Dec 12 10:59:29 inetfw dnsmasq[736]: cached adminpc2 is NXDOMAIN
+Dec 12 10:59:31 inetfw systemd[1]: Started Session 5 of User aecid.
+# --- END CHUNK: scenario_3_ssh_apt_benign_019 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_020 (CLEAR) ---
+Sep 17 13:08:34 atb-fw-image-2025-09-17t12-57-26z sshd[2079]: Disconnected from user ubuntu 10.110.0.254 port 42392
+Sep 17 13:08:34 atb-fw-image-2025-09-17t12-57-26z sshd[2033]: pam_unix(sshd:session): session closed for user ubuntu
+Sep 17 13:08:34 atb-fw-image-2025-09-17t12-57-26z systemd-logind[666]: Session 3 logged out. Waiting for processes to exit.
+Sep 17 13:13:21 atb-fw-image-2025-09-17t12-57-26z sudo: pam_unix(sudo:session): session closed for user root
+Sep 17 13:13:21 atb-fw-image-2025-09-17t12-57-26z systemd-logind[666]: Power key pressed.
+# --- END CHUNK: scenario_3_ssh_apt_benign_020 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_021 (CLEAR) ---
+Sep 17 13:13:21 atb-fw-image-2025-09-17t12-57-26z systemd-logind[666]: System is powering down.
+Sep 17 13:13:21 atb-fw-image-2025-09-17t12-57-26z sshd[873]: pam_unix(sshd:session): session closed for user ubuntu
+Sep 17 13:13:21 atb-fw-image-2025-09-17t12-57-26z sshd[873]: pam_systemd(sshd:session): Failed to release session: Interrupted system call
+Dec 12 10:14:31 inetfw chpasswd[627]: pam_unix(chpasswd:chauthtok): password changed for aecid
+Dec 12 10:14:32 inetfw sshd[707]: Server listening on 0.0.0.0 port 22.
+# --- END CHUNK: scenario_3_ssh_apt_benign_021 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_022 (CLEAR) ---
+Dec 12 10:14:32 inetfw systemd-logind[653]: New seat seat0.
+Dec 12 10:14:32 inetfw systemd-logind[653]: Watching system buttons on /dev/input/event0 (Power Button)
+Dec 12 10:14:32 inetfw systemd-logind[653]: Watching system buttons on /dev/input/event5 (QEMU QEMU USB Keyboard)
+Dec 12 10:14:32 inetfw systemd-logind[653]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+Dec 12 10:17:01 inetfw CRON[3361]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+# --- END CHUNK: scenario_3_ssh_apt_benign_022 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_023 (CLEAR) ---
+Dec 12 10:17:01 inetfw CRON[3361]: pam_unix(cron:session): session closed for user root
+Dec 12 10:25:35 inetfw systemd-logind[653]: Watching system buttons on /dev/input/event0 (Power Button)
+Dec 12 10:25:35 inetfw systemd-logind[653]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+Dec 12 10:25:35 inetfw systemd-logind[653]: Watching system buttons on /dev/input/event5 (QEMU QEMU USB Keyboard)
+Dec 12 10:58:36 inetfw sshd[4328]: Accepted publickey for aecid from 172.17.100.201 port 58636 ssh2: RSA SHA256:yxAJcMgl5WTSlj4ZPvj7TSgUbIlxQ1GHdtXeIcp0czs
+# --- END CHUNK: scenario_3_ssh_apt_benign_023 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_024 (CLEAR) ---
+2025-12-10T13:44:06.990496+00:00 atb-attacker-image-2025-12-10t12-35-00z systemd[1]: Stopping blk-availability.service - Availability of block devices...
+2025-12-10T13:44:06.997555+00:00 atb-attacker-image-2025-12-10t12-35-00z systemd[1]: cloud-final.service: Deactivated successfully.
+2025-12-10T13:44:06.997639+00:00 atb-attacker-image-2025-12-10t12-35-00z systemd[1]: Stopped cloud-final.service - Execute cloud user/final scripts.
+2025-12-10T13:44:06.999932+00:00 atb-attacker-image-2025-12-10t12-35-00z systemd[1]: Stopping finalrd.service - Create final runtime dir for shutdown pivot root...
+2025-12-10T13:44:07.002123+00:00 atb-attacker-image-2025-12-10t12-35-00z systemd[1]: Stopping fwupd.service - Firmware update daemon...
+# --- END CHUNK: scenario_3_ssh_apt_benign_024 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_025 (CLEAR) ---
+2025-12-12T10:16:14.071785+00:00 attacker systemd-modules-load[344]: Inserted module 'dm_multipath'
+2025-12-12T10:16:14.071858+00:00 attacker systemd-fsck[345]: cloudimg-rootfs: clean, 327787/3145728 files, 3648588/6291195 blocks
+2025-12-12T10:16:14.071864+00:00 attacker systemd[1]: modprobe@configfs.service: Deactivated successfully.
+2025-12-12T10:16:14.071870+00:00 attacker systemd[1]: Finished modprobe@configfs.service - Load Kernel Module configfs.
+2025-12-12T10:16:14.071873+00:00 attacker systemd[1]: modprobe@dm_mod.service: Deactivated successfully.
+# --- END CHUNK: scenario_3_ssh_apt_benign_025 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_026 (CLEAR) ---
+2025-12-12T10:16:14.072092+00:00 attacker mtp-probe: checking bus 1, device 2: "/sys/devices/pci0000:00/0000:00:01.2/usb1/1-1"
+2025-12-12T10:16:14.072118+00:00 attacker kernel: Linux version 6.8.0-35-generic (buildd@lcy02-amd64-020) (x86_64-linux-gnu-gcc-13 (Ubuntu 13.2.0-23ubuntu4) 13.2.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #35-Ubuntu SMP PREEMPT_DYNAMIC Mon May 20 15:51:52 UTC 2024 (Ubuntu 6.8.0-35.35-generic 6.8.4)
+2025-12-12T10:16:14.072129+00:00 attacker kernel: Command line: BOOT_IMAGE=/vmlinuz-6.8.0-35-generic root=LABEL=cloudimg-rootfs ro console=tty1 console=ttyS0
+2025-12-12T10:16:14.072130+00:00 attacker kernel: KERNEL supported cpus:
+2025-12-12T10:16:14.072130+00:00 attacker kernel:   Intel GenuineIntel
+# --- END CHUNK: scenario_3_ssh_apt_benign_026 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_027 (CLEAR) ---
+2025-12-12T10:16:14.072163+00:00 attacker systemd[1]: Starting systemd-fsck@dev-disk-by\x2dlabel-UEFI.service - File System Check on /dev/disk/by-label/UEFI...
+2025-12-12T10:16:14.072167+00:00 attacker systemd-fsck[472]: BOOT: clean, 600/58496 files, 23926/233728 blocks
+2025-12-12T10:16:14.072173+00:00 attacker systemd[1]: Finished systemd-fsck@dev-disk-by\x2dlabel-BOOT.service - File System Check on /dev/disk/by-label/BOOT.
+2025-12-12T10:16:14.072176+00:00 attacker systemd[1]: Mounting boot.mount - /boot...
+2025-12-12T10:16:14.072179+00:00 attacker systemd-fsck[473]: fsck.fat 4.2 (2021-01-31)
+# --- END CHUNK: scenario_3_ssh_apt_benign_027 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_028 (CLEAR) ---
+2025-12-10T13:43:56.227940+00:00 atb-attacker-image-2025-12-10t12-35-00z sshd[1697]: Disconnected from user ubuntu 10.110.0.254 port 41430
+2025-12-10T13:43:56.240788+00:00 atb-attacker-image-2025-12-10t12-35-00z sshd[1651]: pam_unix(sshd:session): session closed for user ubuntu
+2025-12-10T13:43:56.294471+00:00 atb-attacker-image-2025-12-10t12-35-00z systemd-logind[767]: Session 3 logged out. Waiting for processes to exit.
+2025-12-10T13:44:06.117961+00:00 atb-attacker-image-2025-12-10t12-35-00z sudo: pam_unix(sudo:session): session closed for user root
+2025-12-10T13:44:06.770578+00:00 atb-attacker-image-2025-12-10t12-35-00z systemd-logind[767]: Power key pressed short.
+# --- END CHUNK: scenario_3_ssh_apt_benign_028 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_029 (CLEAR) ---
+2025-12-10T13:44:06.893691+00:00 atb-attacker-image-2025-12-10t12-35-00z systemd-logind[767]: System is powering down.
+2025-12-10T13:44:06.935197+00:00 atb-attacker-image-2025-12-10t12-35-00z sshd[983]: pam_unix(sshd:session): session closed for user ubuntu
+2025-12-10T13:44:07.010892+00:00 atb-attacker-image-2025-12-10t12-35-00z sshd[25228]: Received signal 15; terminating.
+2025-12-10T13:44:07.192008+00:00 atb-attacker-image-2025-12-10t12-35-00z systemd-logind[767]: Removed session 3.
+2025-12-10T13:44:07.211381+00:00 atb-attacker-image-2025-12-10t12-35-00z systemd-logind[767]: Session 1 logged out. Waiting for processes to exit.
+# --- END CHUNK: scenario_3_ssh_apt_benign_029 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_030 (CLEAR) ---
+2025-12-12T10:16:14.073539+00:00 attacker systemd-logind[837]: New seat seat0.
+2025-12-12T10:16:14.073541+00:00 attacker systemd-logind[837]: Watching system buttons on /dev/input/event0 (Power Button)
+2025-12-12T10:16:14.073549+00:00 attacker systemd-logind[837]: Watching system buttons on /dev/input/event5 (QEMU QEMU USB Keyboard)
+2025-12-12T10:16:14.073552+00:00 attacker systemd-logind[837]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+2025-12-12T10:16:14.073937+00:00 attacker polkitd[888]: Loading rules from directory /etc/polkit-1/rules.d
+# --- END CHUNK: scenario_3_ssh_apt_benign_030 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_031 (CLEAR) ---
+2025-12-12T10:16:39.358541+00:00 attacker sudo: pam_unix(sudo:session): session closed for user root
+2025-12-12T10:17:01.745542+00:00 attacker CRON[3669]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-12-12T10:17:01.751086+00:00 attacker CRON[3669]: pam_unix(cron:session): session closed for user root
+2025-12-12T10:17:14.068105+00:00 attacker sshd[3769]: Accepted publickey for aecid from 192.42.0.201 port 44960 ssh2: RSA SHA256:yxAJcMgl5WTSlj4ZPvj7TSgUbIlxQ1GHdtXeIcp0czs
+2025-12-12T10:17:14.072393+00:00 attacker sshd[3769]: pam_unix(sshd:session): session opened for user aecid(uid=1001) by aecid(uid=0)
+# --- END CHUNK: scenario_3_ssh_apt_benign_031 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_032 (CLEAR) ---
+2025-12-12T10:17:34.072199+00:00 attacker sudo: pam_unix(sudo:session): session closed for user root
+2025-12-12T10:25:01.764837+00:00 attacker CRON[8119]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-12-12T10:25:01.769214+00:00 attacker CRON[8119]: pam_unix(cron:session): session closed for user root
+2025-12-12T10:29:05.198464+00:00 attacker sshd[3819]: Received disconnect from 192.42.0.201 port 44960:11: disconnected by user
+2025-12-12T10:29:05.199463+00:00 attacker sshd[3819]: Disconnected from user aecid 192.42.0.201 port 44960
+# --- END CHUNK: scenario_3_ssh_apt_benign_032 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_033 (CLEAR) ---
+2025-12-12T10:29:05.210219+00:00 attacker systemd-logind[837]: Session 4 logged out. Waiting for processes to exit.
+2025-12-12T10:30:01.782223+00:00 attacker CRON[10624]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-12-12T10:30:01.785420+00:00 attacker CRON[10624]: pam_unix(cron:session): session closed for user root
+2025-12-12T10:35:01.796753+00:00 attacker CRON[17754]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-12-12T10:35:01.802144+00:00 attacker CRON[17754]: pam_unix(cron:session): session closed for user root
+# --- END CHUNK: scenario_3_ssh_apt_benign_033 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_034 (CLEAR) ---
+2025-12-12T10:45:01.819519+00:00 attacker CRON[37871]: pam_unix(cron:session): session closed for user root
+2025-12-12T10:55:01.832293+00:00 attacker CRON[42913]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-12-12T10:55:01.841084+00:00 attacker CRON[42913]: pam_unix(cron:session): session closed for user root
+2025-12-12T11:05:01.855912+00:00 attacker CRON[47797]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-12-12T11:05:01.862070+00:00 attacker CRON[47797]: pam_unix(cron:session): session closed for user root
+# --- END CHUNK: scenario_3_ssh_apt_benign_034 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_035 (CLEAR) ---
+2025-12-12T11:07:35.986968+00:00 attacker dbus-daemon[842]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+2025-12-12T11:15:01.875032+00:00 attacker CRON[52704]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-12-12T11:15:01.880995+00:00 attacker CRON[52704]: pam_unix(cron:session): session closed for user root
+2025-12-12T11:16:12.637454+00:00 attacker sudo:     root : PWD=/ ; USER=aecid ; ENV=XDG_RUNTIME_DIR=/run/user/1001 ; COMMAND=/usr/share/rustdesk/rustdesk --server
+2025-12-12T11:16:12.639645+00:00 attacker sudo: pam_unix(sudo:session): session opened for user aecid(uid=1001) by (uid=0)
+# --- END CHUNK: scenario_3_ssh_apt_benign_035 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_036 (CLEAR) ---
+2025-12-12T11:21:54.977805+00:00 attacker sshd[56248]: Disconnected from user aecid 192.42.0.201 port 52178
+2025-12-12T11:21:54.979567+00:00 attacker sshd[56146]: pam_unix(sshd:session): session closed for user aecid
+2025-12-12T11:21:54.987859+00:00 attacker systemd-logind[837]: Session 13 logged out. Waiting for processes to exit.
+2025-12-12T11:21:54.990316+00:00 attacker systemd-logind[837]: Removed session 13.
+2025-12-12T11:21:55.875975+00:00 attacker sshd[56260]: Accepted publickey for aecid from 192.42.0.201 port 36118 ssh2: RSA SHA256:yxAJcMgl5WTSlj4ZPvj7TSgUbIlxQ1GHdtXeIcp0czs
+# --- END CHUNK: scenario_3_ssh_apt_benign_036 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_037 (CLEAR) ---
+2025-12-11T12:42:06.462919+00:00 linuxshare systemd[1]: Stopped target time-set.target - System Time Set.
+2025-12-11T12:42:06.462945+00:00 linuxshare systemd[1]: cloud-final.service: Deactivated successfully.
+2025-12-11T12:42:06.462971+00:00 linuxshare systemd[1]: Stopped cloud-final.service - Execute cloud user/final scripts.
+2025-12-11T12:42:06.465947+00:00 linuxshare systemd[1]: Stopped target multi-user.target - Multi-User System.
+2025-12-11T12:42:06.466002+00:00 linuxshare systemd[1]: Stopped target getty.target - Login Prompts.
+# --- END CHUNK: scenario_3_ssh_apt_benign_037 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_038 (CLEAR) ---
+2025-12-11T12:42:06.494192+00:00 linuxshare systemd[1]: Stopping puppet.service - Puppet agent...
+2025-12-12T10:15:36.281598+00:00 linuxshare kernel: [    0.000000] Linux version 6.1.0-22-cloud-amd64 (debian-kernel@lists.debian.org) (gcc-12 (Debian 12.2.0-14) 12.2.0, GNU ld (GNU Binutils for Debian) 2.40) #1 SMP PREEMPT_DYNAMIC Debian 6.1.94-1 (2024-06-21)
+2025-12-12T10:15:36.289789+00:00 linuxshare kernel: [    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-6.1.0-22-cloud-amd64 root=PARTUUID=09bac5cd-1055-42ea-844b-fa89a2fe88ad ro console=tty0 console=ttyS0,115200 earlyprintk=ttyS0,115200 consoleblank=0
+2025-12-12T10:15:36.289794+00:00 linuxshare kernel: [    0.000000] BIOS-provided physical RAM map:
+2025-12-12T10:15:36.289794+00:00 linuxshare kernel: [    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+# --- END CHUNK: scenario_3_ssh_apt_benign_038 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_039 (CLEAR) ---
+2025-12-12T10:15:36.289822+00:00 linuxshare kernel: [    0.005200] last_pfn = 0xbffdb max_arch_pfn = 0x400000000
+2025-12-12T10:15:36.288665+00:00 linuxshare systemd-fsck[234]: /dev/vda1: clean, 53820/1630208 files, 641711/6520827 blocks
+2025-12-12T10:15:36.289824+00:00 linuxshare kernel: [    0.005798] Using GB pages for direct mapping
+2025-12-12T10:15:36.289833+00:00 linuxshare kernel: [    0.006985] RAMDISK: [mem 0x364bf000-0x37256fff]
+2025-12-12T10:15:36.289834+00:00 linuxshare kernel: [    0.007489] ACPI: Early table checksum verification disabled
+# --- END CHUNK: scenario_3_ssh_apt_benign_039 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_040 (CLEAR) ---
+2025-12-12T10:15:36.290957+00:00 linuxshare kernel: [    1.101229] virtio_net virtio1 ens3: renamed from eth0
+2025-12-12T10:15:36.290958+00:00 linuxshare kernel: [    1.150611] EXT4-fs (vda1): mounted filesystem with ordered data mode. Quota mode: none.
+2025-12-12T10:15:36.290962+00:00 linuxshare kernel: [    1.191799] Not activating Mandatory Access Control as /sbin/tomoyo-init does not exist.
+2025-12-12T10:15:36.291000+00:00 linuxshare kernel: [    1.727423] device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+2025-12-12T10:15:36.291000+00:00 linuxshare kernel: [    1.728925] device-mapper: uevent: version 1.0.3
+# --- END CHUNK: scenario_3_ssh_apt_benign_040 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_041 (CLEAR) ---
+2025-12-12T10:15:36.295825+00:00 linuxshare chpasswd[539]: pam_unix(chpasswd:chauthtok): password changed for aecid
+2025-12-12T10:15:36.407273+00:00 linuxshare systemd-logind[561]: Watching system buttons on /dev/input/event1 (Power Button)
+2025-12-12T10:15:36.407365+00:00 linuxshare systemd-logind[561]: Watching system buttons on /dev/input/event0 (AT Translated Set 2 keyboard)
+2025-12-12T10:15:36.413262+00:00 linuxshare systemd-logind[561]: New seat seat0.
+2025-12-12T10:15:36.594762+00:00 linuxshare sshd[595]: Server listening on 0.0.0.0 port 22.
+# --- END CHUNK: scenario_3_ssh_apt_benign_041 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_042 (CLEAR) ---
+Sep 17 11:19:28 atb-corpdns-image-2025-09-17t11-07-58z systemd[1]: Stopping Availability of block devices...
+Sep 17 11:19:28 atb-corpdns-image-2025-09-17t11-07-58z systemd[1]: cloud-final.service: Deactivated successfully.
+Sep 17 11:19:28 atb-corpdns-image-2025-09-17t11-07-58z systemd[1]: Stopped Execute cloud user/final scripts.
+Sep 17 11:19:28 atb-corpdns-image-2025-09-17t11-07-58z systemd[1]: Stopped target Multi-User System.
+Sep 17 11:19:28 atb-corpdns-image-2025-09-17t11-07-58z systemd[1]: Stopped target Login Prompts.
+# --- END CHUNK: scenario_3_ssh_apt_benign_042 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_043 (CLEAR) ---
+Sep 17 11:19:28 atb-corpdns-image-2025-09-17t11-07-58z systemd[1]: Stopped Apply the settings specified in cloud-config.
+Dec 12 10:14:09 corpdns systemd-fsck[397]: cloudimg-rootfs: clean, 84382/3225600 files, 814770/6525179 blocks
+Dec 12 10:14:09 corpdns systemd[1]: Mounted Huge Pages File System.
+Dec 12 10:14:09 corpdns systemd[1]: Mounted POSIX Message Queue File System.
+Dec 12 10:14:09 corpdns systemd[1]: Mounted Kernel Debug File System.
+# --- END CHUNK: scenario_3_ssh_apt_benign_043 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_044 (CLEAR) ---
+Dec 12 10:14:09 corpdns systemd[1]: Starting Apply Kernel Variables...
+Dec 12 10:14:09 corpdns systemd[1]: Mounted FUSE Control File System.
+Dec 12 10:14:09 corpdns systemd[1]: Mounted Kernel Configuration File System.
+Dec 12 10:14:09 corpdns systemd[1]: Finished Remount Root and Kernel File Systems.
+Dec 12 10:14:09 corpdns systemd[1]: Starting Device-Mapper Multipath Device Controller...
+# --- END CHUNK: scenario_3_ssh_apt_benign_044 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_045 (CLEAR) ---
+Dec 12 10:14:09 corpdns systemd[1]: Finished Flush Journal to Persistent Storage.
+Dec 12 10:14:09 corpdns systemd[1]: Mounted Mount unit for lxd, revision 28373.
+Dec 12 10:14:09 corpdns systemd[1]: Mounted Mount unit for snapd, revision 21759.
+Dec 12 10:14:09 corpdns systemd[1]: Reached target Mounted snaps.
+Dec 12 10:14:09 corpdns systemd[1]: Started Rule-based Manager for Device Events and Files.
+# --- END CHUNK: scenario_3_ssh_apt_benign_045 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_046 (CLEAR) ---
+Dec 12 10:14:09 corpdns systemd[1]: Condition check resulted in Show Plymouth Boot Screen being skipped.
+Dec 12 10:14:09 corpdns systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+Dec 12 10:14:09 corpdns systemd[1]: Condition check resulted in Forward Password Requests to Plymouth Directory Watch being skipped.
+Dec 12 10:14:09 corpdns systemd[1]: Reached target Local Encrypted Volumes.
+Dec 12 10:14:09 corpdns systemd-udevd[444]: Using default interface naming scheme 'v249'.
+# --- END CHUNK: scenario_3_ssh_apt_benign_046 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_047 (CLEAR) ---
+Dec 12 10:14:09 corpdns systemd[1]: Reached target Cloud-config availability.
+Dec 12 10:14:09 corpdns systemd[1]: Reached target Network is Online.
+Dec 12 10:14:09 corpdns systemd[1]: Reached target System Initialization.
+Dec 12 10:14:09 corpdns systemd[1]: Condition check resulted in Process error reports when automatic reporting is enabled (file watch) being skipped.
+Dec 12 10:14:09 corpdns systemd[1]: Condition check resulted in Process error reports when automatic reporting is enabled (timer based) being skipped.
+# --- END CHUNK: scenario_3_ssh_apt_benign_047 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_048 (CLEAR) ---
+Dec 12 10:14:09 corpdns systemd[1]: Listening on cloud-init hotplug hook socket.
+Dec 12 10:14:09 corpdns systemd[1]: Listening on D-Bus System Message Bus Socket.
+Dec 12 10:14:09 corpdns systemd[1]: Listening on Open-iSCSI iscsid Socket.
+Dec 12 10:14:09 corpdns systemd[1]: Listening on Socket unix for snap application lxd.daemon.
+Dec 12 10:14:09 corpdns systemd[1]: Listening on Socket unix for snap application lxd.user-daemon.
+# --- END CHUNK: scenario_3_ssh_apt_benign_048 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_049 (CLEAR) ---
+Dec 12 10:14:09 corpdns systemd[1]: Reached target Socket Units.
+Dec 12 10:14:09 corpdns systemd[1]: Reached target Basic System.
+Dec 12 10:14:09 corpdns systemd[1]: Starting LSB: automatic crash report generation...
+Dec 12 10:14:09 corpdns systemd[1]: Starting Statistics collection and monitoring daemon...
+Dec 12 10:14:09 corpdns systemd[1]: Started Regular background program processing daemon.
+# --- END CHUNK: scenario_3_ssh_apt_benign_049 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_050 (CLEAR) ---
+Dec 12 10:14:09 corpdns systemd[1]: Starting Hold until boot process finishes up...
+Dec 12 10:14:09 corpdns kernel: [    0.000000] Linux version 5.15.0-113-generic (buildd@lcy02-amd64-072) (gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #123-Ubuntu SMP Mon Jun 10 08:16:17 UTC 2024 (Ubuntu 5.15.0-113.123-generic 5.15.152)
+Dec 12 10:14:09 corpdns kernel: [    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.15.0-113-generic root=LABEL=cloudimg-rootfs ro console=tty1 console=ttyS0
+Dec 12 10:14:09 corpdns kernel: [    0.000000] KERNEL supported cpus:
+Dec 12 10:14:09 corpdns kernel: [    0.000000]   Intel GenuineIntel
+# --- END CHUNK: scenario_3_ssh_apt_benign_050 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_051 (CLEAR) ---
+Dec 12 10:14:09 corpdns kernel: [    3.237257] Btrfs loaded, crc32c=crc32c-intel, zoned=yes, fsverity=yes
+Dec 12 10:14:09 corpdns kernel: [    3.283399] EXT4-fs (vda1): mounted filesystem with ordered data mode. Opts: (null). Quota mode: none.
+Dec 12 10:14:09 corpdns kernel: [    3.492384] systemd[1]: Inserted module 'autofs4'
+Dec 12 10:14:09 corpdns kernel: [    3.521217] systemd[1]: systemd 249.11-0ubuntu3.12 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY -P11KIT -QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+Dec 12 10:14:09 corpdns kernel: [    3.533313] systemd[1]: Detected virtualization kvm.
+# --- END CHUNK: scenario_3_ssh_apt_benign_051 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_052 (CLEAR) ---
+Dec 12 10:26:39 corpdns kernel: [  760.802151] loop5: detected capacity change from 0 to 187192
+Dec 12 10:26:39 corpdns systemd[1]: Mounted Mount unit for lxd, revision 36918.
+Dec 12 10:26:39 corpdns systemd[1]: snap.lxd.user-daemon.unix.socket: Deactivated successfully.
+Dec 12 10:26:39 corpdns systemd[1]: Closed Socket unix for snap application lxd.user-daemon.
+Dec 12 10:26:39 corpdns systemd[1]: snap.lxd.daemon.unix.socket: Deactivated successfully.
+# --- END CHUNK: scenario_3_ssh_apt_benign_052 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_053 (CLEAR) ---
+Dec 12 10:53:11 corpdns systemd-timesyncd[532]: Timed out waiting for reply from 185.125.190.58:123 (ntp.ubuntu.com).
+Dec 12 10:59:26 corpdns systemd[1]: Created slice User Slice of UID 1001.
+Dec 12 10:59:26 corpdns systemd[1]: Starting User Runtime Directory /run/user/1001...
+Dec 12 10:59:26 corpdns systemd[1]: Finished User Runtime Directory /run/user/1001.
+Dec 12 10:59:26 corpdns systemd[1]: Starting User Manager for UID 1001...
+# --- END CHUNK: scenario_3_ssh_apt_benign_053 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_054 (CLEAR) ---
+Dec 12 10:59:26 corpdns systemd[1]: Started User Manager for UID 1001.
+Dec 12 10:59:26 corpdns systemd[1]: Started Session 2 of User aecid.
+Dec 12 10:59:31 corpdns systemd[1]: Started Session 4 of User aecid.
+# --- END CHUNK: scenario_3_ssh_apt_benign_054 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_055 (CLEAR) ---
+Dec 12 10:14:10 corpdns systemd-logind[732]: New seat seat0.
+Dec 12 10:14:10 corpdns systemd-logind[732]: Watching system buttons on /dev/input/event0 (Power Button)
+Dec 12 10:14:10 corpdns systemd-logind[732]: Watching system buttons on /dev/input/event5 (QEMU QEMU USB Keyboard)
+Dec 12 10:14:10 corpdns systemd-logind[732]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+Dec 12 10:17:01 corpdns CRON[2008]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+# --- END CHUNK: scenario_3_ssh_apt_benign_055 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_056 (CLEAR) ---
+Dec 11 13:06:37 atb-repository-image-2025-12-11t12-47-13z systemd[1]: Stopping Availability of block devices...
+Dec 11 13:06:37 atb-repository-image-2025-12-11t12-47-13z systemd[1]: cloud-final.service: Deactivated successfully.
+Dec 11 13:06:37 atb-repository-image-2025-12-11t12-47-13z systemd[1]: Stopped Execute cloud user/final scripts.
+Dec 11 13:06:37 atb-repository-image-2025-12-11t12-47-13z systemd[1]: Stopped target Multi-User System.
+Dec 11 13:06:37 atb-repository-image-2025-12-11t12-47-13z systemd[1]: Stopped target Login Prompts.
+# --- END CHUNK: scenario_3_ssh_apt_benign_056 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_057 (CLEAR) ---
+Dec 12 10:15:34 puppet systemd[1]: Starting Apply Kernel Variables...
+Dec 12 10:15:34 puppet systemd[1]: Mounted FUSE Control File System.
+Dec 12 10:15:34 puppet systemd[1]: Mounted Kernel Configuration File System.
+Dec 12 10:15:34 puppet systemd[1]: Finished Remount Root and Kernel File Systems.
+Dec 12 10:15:34 puppet systemd[1]: Starting Device-Mapper Multipath Device Controller...
+# --- END CHUNK: scenario_3_ssh_apt_benign_057 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_058 (CLEAR) ---
+Dec 12 10:15:34 puppet systemd[1]: Mounting Mount unit for snapd, revision 21759...
+Dec 12 10:15:34 puppet systemd[1]: Mounted Mount unit for lxd, revision 28373.
+Dec 12 10:15:34 puppet systemd[1]: Mounted Mount unit for snapd, revision 21759.
+Dec 12 10:15:34 puppet systemd[1]: Mounted Mount unit for core20, revision 2318.
+Dec 12 10:15:34 puppet systemd[1]: Reached target Mounted snaps.
+# --- END CHUNK: scenario_3_ssh_apt_benign_058 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_059 (CLEAR) ---
+Dec 12 10:15:34 puppet systemd[1]: Condition check resulted in Show Plymouth Boot Screen being skipped.
+Dec 12 10:15:34 puppet systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+Dec 12 10:15:34 puppet systemd[1]: Condition check resulted in Forward Password Requests to Plymouth Directory Watch being skipped.
+Dec 12 10:15:34 puppet systemd[1]: Reached target Local Encrypted Volumes.
+Dec 12 10:15:34 puppet systemd-udevd[426]: Using default interface naming scheme 'v249'.
+# --- END CHUNK: scenario_3_ssh_apt_benign_059 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_060 (CLEAR) ---
+Dec 12 10:15:34 puppet systemd[1]: Listening on cloud-init hotplug hook socket.
+Dec 12 10:15:34 puppet systemd[1]: Listening on D-Bus System Message Bus Socket.
+Dec 12 10:15:34 puppet systemd[1]: Listening on Open-iSCSI iscsid Socket.
+Dec 12 10:15:34 puppet systemd[1]: Listening on Socket unix for snap application lxd.daemon.
+Dec 12 10:15:34 puppet systemd[1]: Listening on Socket unix for snap application lxd.user-daemon.
+# --- END CHUNK: scenario_3_ssh_apt_benign_060 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_061 (CLEAR) ---
+Dec 12 10:15:34 puppet systemd[1]: Reached target Socket Units.
+Dec 12 10:15:34 puppet systemd[1]: Reached target Basic System.
+Dec 12 10:15:34 puppet systemd[1]: Starting Accounts Service...
+Dec 12 10:15:34 puppet systemd[1]: Starting Kernel process accounting...
+Dec 12 10:15:34 puppet anacron[670]: Anacron 2.3 started on 2025-12-12
+# --- END CHUNK: scenario_3_ssh_apt_benign_061 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_062 (CLEAR) ---
+Dec 12 10:15:34 puppet systemd[1]: Started irqbalance daemon.
+Dec 12 10:15:34 puppet kernel: [    0.000000] Linux version 5.15.0-113-generic (buildd@lcy02-amd64-072) (gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #123-Ubuntu SMP Mon Jun 10 08:16:17 UTC 2024 (Ubuntu 5.15.0-113.123-generic 5.15.152)
+Dec 12 10:15:34 puppet kernel: [    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.15.0-113-generic root=LABEL=cloudimg-rootfs ro console=tty1 console=ttyS0
+Dec 12 10:15:34 puppet kernel: [    0.000000] KERNEL supported cpus:
+Dec 12 10:15:34 puppet kernel: [    0.000000]   Intel GenuineIntel
+# --- END CHUNK: scenario_3_ssh_apt_benign_062 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_063 (CLEAR) ---
+Dec 12 10:15:34 puppet kernel: [    3.158446] Btrfs loaded, crc32c=crc32c-intel, zoned=yes, fsverity=yes
+Dec 12 10:15:34 puppet kernel: [    3.200173] EXT4-fs (vda1): mounted filesystem with ordered data mode. Opts: (null). Quota mode: none.
+Dec 12 10:15:34 puppet kernel: [    3.413510] systemd[1]: Inserted module 'autofs4'
+Dec 12 10:15:34 puppet kernel: [    3.439065] systemd[1]: systemd 249.11-0ubuntu3.12 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY -P11KIT -QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+Dec 12 10:15:34 puppet kernel: [    3.446950] systemd[1]: Detected virtualization kvm.
+# --- END CHUNK: scenario_3_ssh_apt_benign_063 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_064 (CLEAR) ---
+Dec 12 10:15:35 puppet systemd[1]: Finished Network Manager Wait Online.
+Dec 12 10:15:35 puppet systemd[1]: Reached target Network is Online.
+Dec 12 10:15:35 puppet systemd[1]: Started Download data for packages that failed at package install time.
+Dec 12 10:15:35 puppet systemd[1]: Started Check to see whether there is a new version of Ubuntu available.
+Dec 12 10:15:35 puppet systemd[1]: Reached target Timer Units.
+# --- END CHUNK: scenario_3_ssh_apt_benign_064 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_065 (CLEAR) ---
+Dec 12 10:15:37 puppet dbus-daemon[1218]: [session uid=1002 pid=1216] Successfully activated service 'org.freedesktop.portal.IBus'
+Dec 12 10:15:37 puppet systemd[1]: Created slice User Slice of UID 118.
+Dec 12 10:15:37 puppet systemd[1]: Starting User Runtime Directory /run/user/118...
+Dec 12 10:15:37 puppet systemd[1]: Finished User Runtime Directory /run/user/118.
+Dec 12 10:15:37 puppet systemd[1]: Starting User Manager for UID 118...
+# --- END CHUNK: scenario_3_ssh_apt_benign_065 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_066 (CLEAR) ---
+Dec 12 10:28:10 puppet systemd[1]: Mounted Mount unit for core20, revision 2682.
+Dec 12 10:28:25 puppet systemd[1]: Created slice User Slice of UID 1002.
+Dec 12 10:28:25 puppet systemd[1]: Starting User Runtime Directory /run/user/1002...
+Dec 12 10:28:25 puppet systemd[1]: Finished User Runtime Directory /run/user/1002.
+Dec 12 10:28:25 puppet systemd[1]: Starting User Manager for UID 1002...
+# --- END CHUNK: scenario_3_ssh_apt_benign_066 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_067 (CLEAR) ---
+Dec 12 10:28:25 puppet systemd[3601]: Started PipeWire Multimedia Service.
+Dec 12 10:28:25 puppet systemd[1]: Started Session 3 of User john.
+Dec 12 10:28:25 puppet systemd[3601]: Started PipeWire Media Session Manager.
+Dec 12 10:28:25 puppet systemd[3601]: Starting Sound Service...
+Dec 12 10:28:26 puppet pipewire[3609]: mod.rt: RTKit error: org.freedesktop.DBus.Error.AccessDenied
+# --- END CHUNK: scenario_3_ssh_apt_benign_067 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_068 (CLEAR) ---
+Dec 12 10:28:37 puppet systemd[1]: user@1002.service: Deactivated successfully.
+Dec 12 10:28:37 puppet systemd[1]: Stopped User Manager for UID 1002.
+Dec 12 10:28:37 puppet systemd[1]: Stopping User Runtime Directory /run/user/1002...
+Dec 12 10:28:37 puppet systemd[1]: run-user-1002.mount: Deactivated successfully.
+Dec 12 10:28:37 puppet systemd[1]: user-runtime-dir@1002.service: Deactivated successfully.
+# --- END CHUNK: scenario_3_ssh_apt_benign_068 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_069 (CLEAR) ---
+Dec 12 10:28:37 puppet systemd[1]: user-1002.slice: Consumed 1.523s CPU time.
+Dec 12 10:28:44 puppet systemd[1]: Created slice User Slice of UID 1002.
+Dec 12 10:28:44 puppet systemd[1]: Starting User Runtime Directory /run/user/1002...
+Dec 12 10:28:44 puppet systemd[1]: Finished User Runtime Directory /run/user/1002.
+Dec 12 10:28:44 puppet systemd[1]: Starting User Manager for UID 1002...
+# --- END CHUNK: scenario_3_ssh_apt_benign_069 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_benign_070 (CLEAR) ---
+Dec 12 10:49:53 puppet systemd[1]: user@1002.service: Deactivated successfully.
+Dec 12 10:49:53 puppet systemd[1]: Stopped User Manager for UID 1002.
+Dec 12 10:49:53 puppet systemd[1]: Stopping User Runtime Directory /run/user/1002...
+Dec 12 10:49:53 puppet systemd[1]: run-user-1002.mount: Deactivated successfully.
+Dec 12 10:49:53 puppet systemd[1]: user-runtime-dir@1002.service: Deactivated successfully.
+# --- END CHUNK: scenario_3_ssh_apt_benign_070 ---
+
