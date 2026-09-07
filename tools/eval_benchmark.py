@@ -128,15 +128,20 @@ def run_benchmark(
 
         logger.info("[%d/%d] Testing %s (Expected: %s)...", idx, len(targets), target_id, expected_status)
 
-        # Prepare messages
-        if target.get("messages"):
-            messages = dict_list_to_messages(target["messages"])
+        # Prepare clean single-turn messages (System + Target raw logs)
+        if target.get("raw_logs"):
+            user_text = f"Raw Logs:
+{target['raw_logs']}"
+        elif target.get("messages"):
+            human_msgs = [m["content"] for m in target["messages"] if m.get("role") in ["user", "human"]]
+            user_text = human_msgs[-1] if human_msgs else ""
         else:
-            messages = [
-                SystemMessage(content=SYNTHESIS_SYSTEM),
-                HumanMessage(content=f"Raw Logs:\n{target['raw_logs']}")
-            ]
+            user_text = target.get("prompt", "")
 
+        messages = [
+            SystemMessage(content=SYNTHESIS_SYSTEM),
+            HumanMessage(content=user_text)
+        ]
         t0 = time.time()
         try:
             resp = llm.invoke(messages)
