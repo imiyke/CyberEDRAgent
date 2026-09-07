@@ -84,7 +84,8 @@ def run_benchmark(
     targets: List[Dict[str, Any]],
     model_name: str,
     config: Optional[dict] = None,
-    limit: Optional[int] = None
+    limit: Optional[int] = None,
+    verbose = False
 ) -> Dict[str, Any]:
     """Runs model evaluation against all targets and computes SOC metrics."""
     cfg = config or load_config()
@@ -130,8 +131,7 @@ def run_benchmark(
 
         # Prepare clean single-turn messages (System + Target raw logs)
         if target.get("raw_logs"):
-            user_text = f"Raw Logs:
-{target['raw_logs']}"
+            user_text = f"Raw Logs:\n{target['raw_logs']}"
         elif target.get("messages"):
             human_msgs = [m["content"] for m in target["messages"] if m.get("role") in ["user", "human"]]
             user_text = human_msgs[-1] if human_msgs else ""
@@ -176,6 +176,11 @@ def run_benchmark(
                     pred_mitre = data.get("mitre_id")
                     is_valid_json = True
                     metrics["json_compliance"] += 1
+            if verbose:
+                print(f"[DEBUG] Parsed output: {output_str}")
+                print(f"[DEBUG] Parsed thinking:\n{thinking}")
+                print(f"[DEBUG] JSON valid: {is_valid_json}")
+            print(f"[DEBUG] Pred status: {pred_status}, Pred Mitre: {pred_mitre}")
         except Exception:
             pass
 
@@ -261,8 +266,19 @@ def main():
     parser.add_argument("--scenario", "-s", default=None, help="Path to scenario directory (e.g. 'data/logs_training_data/scenario4_auto')")
     parser.add_argument("--limit", "-l", type=int, default=None, help="Optional limit on number of samples to evaluate")
     parser.add_argument("--output-report", "-o", default=None, help="Optional path to save full evaluation JSON report")
+    parser.add_argument("-v", "--verbose", action="store_true", help="Verbose output")
 
     args = parser.parse_args()
+
+    if args.verbose:
+        logger.setLevel(logging.DEBUG)
+        print(f"[INFO] Verbose mode enabled")
+        print(f"[INFO] Model: {args.model}")
+        print(f"[INFO] Eval file: {args.eval_file}")
+        print(f"[INFO] Scenario: {args.scenario}")
+        print(f"[INFO] Limit: {args.limit}")
+        print(f"[INFO] Output report: {args.output_report}")
+        print(f"[INFO] Verbose: {args.verbose}")
 
     # Default fallback
     if not args.eval_file and not args.scenario:
