@@ -266,3 +266,75 @@ Every triage prediction is structured in two parts:
   "recommended_action": "Isolate host web-prod, terminate process 28910, block external IP 198.51.100.23."
 }
 ```
+
+---
+
+## 📊 Benchmark Scorecards & Evaluation Results
+
+### 🏆 Comparative Overview: Baseline vs Fine-Tuned (DPO)
+
+| Metric | Baseline (`qwen3.5:0.8b`) | Fine-Tuned (`cyberagent-dpo`) | Delta / Improvement |
+| :--- | :---: | :---: | :---: |
+| 🎯 **Threat Recall (Catch Rate)** | 0.0% | **38.37%** | **+38.37%** |
+| 🚨 **False Positive Rate (Benign)** | 1.97% | **0.49%** | **-1.48%** *(75% reduction)* |
+| 🏷️ **MITRE ATT&CK Mapping Acc.** | 0.0% | **3.57%** | **+3.57%** |
+| 🧠 **CoT `<think>` Compliance** | 100.0% | **100.0%** | **100% (Maintained)** |
+| 📋 **Strict JSON Schema Validity** | 14.19% | **99.65%** | **+85.46%** *(7x improvement)* |
+| ⏱️ **Average Latency** | 4.687s / sample | **0.882s / sample** | **5.3x faster** *(-3.805s)* |
+
+---
+
+### 📋 Detailed Confusion Matrices & Performance
+
+#### 1. Baseline Model (`qwen3.5:0.8b`)
+
+**Confusion Matrix:**
+
+| Actual \ Predicted | Predicted Alert | Predicted Suspicious | Predicted Clear | Invalid / Malformed | Total |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Actual Alert** | 0 | 0 | 5 | 18 | **23** |
+| **Actual Suspicious** | 0 | 0 | 10 | 53 | **63** |
+| **Actual Clear** | 1 | 3 | 22 | 177 | **203** |
+| **Total** | **1** | **3** | **37** | **248** | **289** |
+
+**Scorecard:**
+* 🎯 **Threat Recall (Catch Rate)**: `0.0%` *(Alert + Suspicious captured)*
+* 🚨 **False Positive Rate (Benign)**: `1.97%` *(Benign flagged as threats)*
+* 🏷️ **MITRE ATT&CK Mapping Acc.**: `0.0%`
+* 🧠 **CoT `<think>` Compliance**: `100.0%`
+* 📋 **Strict JSON Schema Validity**: `14.19%`
+* ⏱️ **Average Latency**: `4.687s / sample`
+
+---
+
+#### 2. Fine-Tuned Model (`qwen-sft-dpo` / `cyberagent-dpo`)
+
+**Confusion Matrix:**
+
+| Actual \ Predicted | Predicted Alert | Predicted Suspicious | Predicted Clear | Invalid / Malformed | Total |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Actual Alert** | 11 | 0 | 12 | 0 | **23** |
+| **Actual Suspicious** | 22 | 0 | 40 | 1 | **63** |
+| **Actual Clear** | 1 | 0 | 202 | 0 | **203** |
+| **Total** | **34** | **0** | **254** | **1** | **289** |
+
+**Scorecard:**
+* 🎯 **Threat Recall (Catch Rate)**: `38.37%` *(Alert + Suspicious captured)*
+* 🚨 **False Positive Rate (Benign)**: `0.49%` *(Benign flagged as threats)*
+* 🏷️ **MITRE ATT&CK Mapping Acc.**: `3.57%`
+* 🧠 **CoT `<think>` Compliance**: `100.0%`
+* 📋 **Strict JSON Schema Validity**: `99.65%`
+* ⏱️ **Average Latency**: `0.882s / sample`
+
+---
+
+## 🔬 Preliminary Results Analysis and Future Works
+
+* **JSON Reliability & Latency Breakthrough**: The baseline model had an unacceptable **85.81% invalid JSON rate**, causing it to fail triage pipelines. The DPO model achieves **99.65% strict JSON schema validity** while cutting inference latency by **5.3x** (`4.687s` ➔ `0.882s`) thanks to more structured reasoning.
+* **Noise Suppression & FP Reduction**: The fine-tuned agent maintains an ultra-low **0.49% False Positive Rate** on benign system noise, ensuring SOC operators are not overwhelmed by alert fatigue.
+* **Catch Rate & Threat Identification**: Threat recall increased from **0.0% to 38.37%** on zero-shot / test scenarios.
+* **Next Steps / Ongoing Improvements**:
+  1. [] Increase SFT/DPO coverage for nuanced `suspicious` classifications to balance borderline alert thresholds. Also improve the rewards/penalties for this specific class (this first run intentionally accepted suspicious logs classified as alerts, and vice-versa).  
+  2. [] Further fine-tune MITRE ATT&CK technique classification by tightening RAG top-k grounding in Phase 1 chosen responses.
+  3. [] Add a L2 agent node to investigate and correlate multiple logs from different time windows.
+  4. [] Make a proper deamon, autonomously pulling logs every X seconds, and send alerts to a SIEM.
