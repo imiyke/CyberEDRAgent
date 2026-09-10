@@ -1,0 +1,55 @@
+# Auto-extracted Offensive Logs: scenario_2_cron_offensive.log
+# Total chunks: 6
+
+# --- START CHUNK: scenario_2_cron_off_001 (ALERT) ---
+type=SYSCALL msg=audit(1759313746.209:4662): arch=c000003e syscall=59 success=yes exit=0 a0="UJ!@" a1="UJ* " a2="UJ" a3="fffffffffffff286" items=3 ppid=2802 pid=2850 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=6 comm="sed" exe="/usr/bin/sed" subj==unconfined key="T1078_Valid_Accounts"ARCH=x86_64 SYSCALL=execve AUID="root" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1759313746.209:4662): argc=4 a0="sed" a1="-i" a2="s/#!\/bin\/sh/#!\/bin\/sh\n\/usr\/bin\/zmcontroller \&\n/" a3="/usr/share/awffull/awffull"
+type=PATH msg=audit(1759313746.209:4662): item=0 name="/usr/bin/sed" inode=362 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1759313746.209:4662): item=1 name="/usr/bin/sed" inode=362 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1759313746.209:4662): item=2 name="/lib64/ld-linux-x86-64.so.2" inode=1964 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1759313746.209:4662): proctitle="sshd: root@notty"
+# --- END CHUNK: scenario_2_cron_off_001 ---
+
+# --- START CHUNK: scenario_2_cron_off_002 (ALERT) ---
+type=SYSCALL msg=audit(1759314798.305:5200): arch=c000003e syscall=263 success=yes exit=0 a0="ffffffffffffff9c" a1=" *i" a2=0 a3=0 items=2 ppid=1 pid=2977 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=11 comm="zmcontroller" exe="/usr/bin/zmcontroller" subj==unconfined key="T1070_Indicator_Removal_on_Host"ARCH=x86_64 SYSCALL=unlinkat AUID="root" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=PATH msg=audit(1759314798.305:5200): item=0 name="/tmp/" inode=8203 dev=fe:01 mode=041777 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1759314798.305:5200): item=1 name="/tmp/r.tar.gz" inode=32680 dev=fe:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=DELETE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1759314798.305:5200): proctitle="/usr/bin/zmcontroller"
+# --- END CHUNK: scenario_2_cron_off_002 ---
+
+# --- START CHUNK: scenario_2_cron_off_003 (ALERT) ---
+type=SYSCALL msg=audit(1759314828.417:5221): arch=c000003e syscall=59 success=yes exit=0 a0=" *m" a1="c0001dedc8" a2=" 1" a3=0 items=3 ppid=2977 pid=3016 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=11 comm="cat" exe="/usr/bin/cat" subj==unconfined key="T1078_Valid_Accounts"ARCH=x86_64 SYSCALL=execve AUID="root" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1759314828.417:5221): argc=2 a0="cat" a1="/etc/pam.d/common-password"
+type=PATH msg=audit(1759314828.417:5221): item=0 name="/usr/bin/cat" inode=807 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1759314828.417:5221): item=1 name="/usr/bin/cat" inode=807 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1759314828.417:5221): item=2 name="/lib64/ld-linux-x86-64.so.2" inode=1964 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1759314828.417:5221): proctitle="cat /etc/pam.d/common-password"
+# --- END CHUNK: scenario_2_cron_off_003 ---
+
+# --- START CHUNK: scenario_2_cron_off_004 (ALERT) ---
+type=SYSCALL msg=audit(1759314843.481:5228): arch=c000003e syscall=59 success=yes exit=0 a0=" *d" a1=" 0" a2=" 1@" a3=0 items=3 ppid=2977 pid=3017 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=11 comm="cat" exe="/usr/bin/cat" subj==unconfined key="T1078_Valid_Accounts"ARCH=x86_64 SYSCALL=execve AUID="root" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1759314843.481:5228): argc=2 a0="cat" a1="/etc/passwd"
+type=PATH msg=audit(1759314843.481:5228): item=0 name="/usr/bin/cat" inode=807 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1759314843.481:5228): item=1 name="/usr/bin/cat" inode=807 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1759314843.481:5228): item=2 name="/lib64/ld-linux-x86-64.so.2" inode=1964 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1759314843.481:5228): proctitle="cat /etc/passwd"
+# --- END CHUNK: scenario_2_cron_off_004 ---
+
+# --- START CHUNK: scenario_2_cron_off_005 (ALERT) ---
+type=SYSCALL msg=audit(1759314858.541:5235): arch=c000003e syscall=59 success=yes exit=0 a0=" *r " a1=" *-" a2=" 1" a3=0 items=3 ppid=2977 pid=3020 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=42 sgid=42 fsgid=42 tty=(none) ses=11 comm="chage" exe="/usr/bin/chage" subj==unconfined key="T1078_Valid_Accounts"ARCH=x86_64 SYSCALL=execve AUID="root" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="shadow" SGID="shadow" FSGID="shadow"
+type=EXECVE msg=audit(1759314858.541:5235): argc=3 a0="chage" a1="-l" a2="aecid"
+type=PATH msg=audit(1759314858.541:5235): item=0 name="/usr/bin/chage" inode=2086 dev=fe:01 mode=0102755 ouid=0 ogid=42 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="shadow"
+type=PATH msg=audit(1759314858.541:5235): item=1 name="/usr/bin/chage" inode=2086 dev=fe:01 mode=0102755 ouid=0 ogid=42 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="shadow"
+type=PATH msg=audit(1759314858.541:5235): item=2 name="/lib64/ld-linux-x86-64.so.2" inode=1964 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1759314858.541:5235): proctitle="chage -l aecid"
+# --- END CHUNK: scenario_2_cron_off_005 ---
+
+# --- START CHUNK: scenario_2_cron_off_006 (ALERT) ---
+type=SYSCALL msg=audit(1759314889.185:5275): arch=c000003e syscall=59 success=yes exit=0 a0=" *q" a1=" *)" a2=" 1	@" a3=0 items=3 ppid=2977 pid=3035 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=11 comm="chmod" exe="/usr/bin/chmod" subj==unconfined key="T1078_Valid_Accounts"ARCH=x86_64 SYSCALL=execve AUID="root" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1759314889.185:5275): argc=3 a0="chmod" a1="755" a2="/tmp/nmap"
+type=PATH msg=audit(1759314889.185:5275): item=0 name="/usr/bin/chmod" inode=811 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1759314889.185:5275): item=1 name="/usr/bin/chmod" inode=811 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1759314889.185:5275): item=2 name="/lib64/ld-linux-x86-64.so.2" inode=1964 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1759314889.185:5275): proctitle="chmod 755 /tmp/nmap"
+# --- END CHUNK: scenario_2_cron_off_006 ---
+

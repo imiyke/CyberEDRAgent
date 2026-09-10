@@ -1,0 +1,52 @@
+# Curated dataset for Scenario 2: scenario2_cron_offensive.log
+# Total chunks: 6
+
+# --- START CHUNK: scenario2_off_001_cron_trojan (ALERT) ---
+Oct  1 10:30:01 videoserver CRON[2974]: (root) CMD (/usr/share/awffull/awffull)
+type=SYSCALL msg=audit(1759315501.465:5668): arch=c000003e syscall=59 success=yes exit=0 a0=55c64b0b7868 a1=55c64b0b78a0 a2=55c64b0b78b0 a3=8 items=4 ppid=3214 pid=3216 auid=0 uid=0 gid=0 euid=0 tty=(none) ses=16 comm="sh" exe="/bin/dash"
+type=EXECVE msg=audit(1759315501.465:5668): argc=2 a0="/bin/sh" a1="/usr/share/awffull/awffull"
+type=PATH msg=audit(1759315501.465:5668): item=0 name="/usr/share/awffull/awffull" inode=531981 dev=fe:01 mode=0100755 ouid=33 ogid=0
+type=EXECVE msg=audit(1759315501.469:5670): argc=1 a0="/usr/bin/zmcontroller"
+type=PATH msg=audit(1759315501.469:5670): item=0 name="/usr/bin/zmcontroller" inode=30329 dev=fe:01 mode=0100755 ouid=0 ogid=0
+type=PROCTITLE msg=audit(1759315501.469:5670): proctitle="/usr/bin/zmcontroller"
+# --- END CHUNK: scenario2_off_001_cron_trojan ---
+
+# --- START CHUNK: scenario2_off_002_implant_c2_beacon (ALERT) ---
+type=SYSCALL msg=audit(1759315501.485:5673): arch=c000003e syscall=42 success=yes exit=0 a0=3 a1=c000092bac a2=10 a3=0 items=0 ppid=1 pid=3217 auid=0 uid=0 gid=0 euid=0 comm="zmcontroller" exe="/usr/bin/zmcontroller"
+type=PROCTITLE msg=audit(1759315501.485:5673): proctitle="/usr/bin/zmcontroller"
+type=SYSCALL msg=audit(1759315501.485:5674): arch=c000003e syscall=42 success=yes exit=0 a0=7 a1=c000092bcc a2=10 a3=0 items=0 ppid=1 pid=3217 auid=0 uid=0 gid=0 euid=0 comm="zmcontroller" exe="/usr/bin/zmcontroller"
+type=PROCTITLE msg=audit(1759315501.485:5674): proctitle="/usr/bin/zmcontroller"
+type=SYSCALL msg=audit(1759315501.513:5680): arch=c000003e syscall=42 success=yes exit=0 a0=7 a1=c00009370c a2=10 a3=0 items=0 ppid=1 pid=3217 auid=0 uid=0 gid=0 euid=0 comm="zmcontroller" exe="/usr/bin/zmcontroller"
+type=PROCTITLE msg=audit(1759315501.513:5680): proctitle="/usr/bin/zmcontroller"
+# --- END CHUNK: scenario2_off_002_implant_c2_beacon ---
+
+# --- START CHUNK: scenario2_off_003_shadow_credential_access (ALERT) ---
+type=SYSCALL msg=audit(1759315504.849:5753): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=7f58e995a176 a2=80000 a3=0 items=1 ppid=690 pid=3257 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 comm="sshd" exe="/usr/sbin/sshd" key="T1087_Account_Discovery"
+type=PATH msg=audit(1759315504.849:5753): item=0 name="/etc/shadow" inode=30247 dev=fe:01 mode=0100640 ouid=0 ogid=42 rdev=00:00 nametype=NORMAL OUID="root" OGID="shadow"
+type=SYSCALL msg=audit(1759315504.861:5763): arch=c000003e syscall=257 success=yes exit=5 a0=ffffff9c a1=7f58e995a176 a2=80000 a3=0 items=1 ppid=690 pid=3257 auid=1001 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 comm="sshd" exe="/usr/sbin/sshd" key="T1087_Account_Discovery"
+type=PATH msg=audit(1759315504.861:5763): item=0 name="/etc/shadow" inode=30247 dev=fe:01 mode=0100640 ouid=0 ogid=42 rdev=00:00 nametype=NORMAL OUID="root" OGID="shadow"
+# --- END CHUNK: scenario2_off_003_shadow_credential_access ---
+
+# --- START CHUNK: scenario2_off_004_root_archive_staging (ALERT) ---
+type=SYSCALL msg=audit(1759315538.107:5810): arch=c000003e syscall=59 success=yes exit=0 a0=55d21a08e120 a1=55d21a08e150 a2=55d21a08e170 a3=8 items=2 ppid=3217 pid=3280 auid=0 uid=0 gid=0 euid=0 comm="tar" exe="/usr/bin/tar" key="T1005_Data_from_Local_System"
+type=EXECVE msg=audit(1759315538.107:5810): argc=4 a0="/usr/bin/tar" a1="cvzf" a2="/tmp/r.tar.gz" a3="/root"
+type=PATH msg=audit(1759315538.107:5810): item=0 name="/usr/bin/tar" inode=30412 dev=fe:01 mode=0100755 ouid=0 ogid=0
+type=PATH msg=audit(1759315538.107:5810): item=1 name="/tmp/r.tar.gz" inode=14022 dev=fe:01 mode=0100644 ouid=0 ogid=0
+type=PROCTITLE msg=audit(1759315538.107:5810): proctitle=2F7573722F62696E2F7461720063767A66002F746D702F722E7461722E677A002F726F6F74
+# --- END CHUNK: scenario2_off_004_root_archive_staging ---
+
+# --- START CHUNK: scenario2_off_005_nmap_internal_recon (ALERT) ---
+type=SYSCALL msg=audit(1759314889.136:5275): arch=c000003e syscall=268 success=yes exit=0 a0=ffffff9c a1=c000355600 a2=1ed a3=0 items=1 ppid=1 pid=2977 auid=0 uid=0 gid=0 euid=0 comm="zmcontroller" exe="/usr/bin/zmcontroller" key="T1070_Indicator_Removal_on_Host"
+type=PATH msg=audit(1759314889.136:5275): item=0 name="/tmp/nmap" inode=13988 dev=fe:01 mode=0100755 ouid=0 ogid=0
+type=SYSCALL msg=audit(1759314904.237:5282): arch=c000003e syscall=59 success=yes exit=0 a0=55c64b0b7868 a1=55c64b0b78a0 a2=55c64b0b78b0 a3=8 items=2 ppid=2977 pid=3044 auid=0 uid=0 gid=0 euid=0 comm="nmap" exe="/tmp/nmap" key="T1046_Network_Service_Scanning"
+type=EXECVE msg=audit(1759314904.237:5282): argc=2 a0="/tmp/nmap" a1="172.17.100.0/24"
+type=PROCTITLE msg=audit(1759314904.237:5282): proctitle=2F746D702F6E6D6170003137322E31372E3130302E302F3234
+# --- END CHUNK: scenario2_off_005_nmap_internal_recon ---
+
+# --- START CHUNK: scenario2_off_006_sftp_ingress_implant (ALERT) ---
+Oct  1 10:14:15 videoserver sshd[2802]: Accepted publickey for root from 192.42.1.174 port 34856 ssh2: RSA SHA256:VbW9KNEmQ5+AUYJxP2VWEd9r7V
+Oct  1 10:14:15 videoserver sshd[2802]: pam_unix(sshd:session): session opened for user root(uid=0) by (uid=0)
+Oct  1 10:14:15 videoserver systemd-logind[557]: New session 6 of user root.
+type=SYSCALL msg=audit(1759314931.002:5120): arch=c000003e syscall=257 success=yes exit=3 a0=ffffff9c a1=55c64b0c1230 a2=241 a3=1b6 items=2 ppid=2802 pid=2820 auid=0 uid=0 gid=0 euid=0 comm="sftp-server" exe="/usr/lib/openssh/sftp-server" key="T1105_remote_file_copy"
+type=PATH msg=audit(1759314931.002:5120): item=0 name="/usr/bin/zmcontroller" inode=30329 dev=fe:01 mode=0100755 ouid=0 ogid=0
+# --- END CHUNK: scenario2_off_006_sftp_ingress_implant ---

@@ -1,0 +1,25 @@
+llms:
+  good:
+    provider: "ollama"
+    model: "gemma4"
+  bad:
+    provider: "ollama"
+    model: "qwen3.5:0.8b"
+  query_generator:
+    provider: "ollama"
+    model: "mistral:latest"
+  synthesizer:
+    provider: "ollama"
+    model: "qwen2.5"
+  #all:
+  #   provider: "ollama"
+  #   model: "gemma4"
+
+
+embeddings:
+  provider: "ollama"
+  model: "nomic-embed-text"
+
+vector_store:
+  persist_directory: "./data/chroma_mitre_db"
+  collection_name: "mitre_knowledge_base"

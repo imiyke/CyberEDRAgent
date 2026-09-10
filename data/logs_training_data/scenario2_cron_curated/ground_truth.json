@@ -1,0 +1,322 @@
+{
+  "scenario2_off_001_cron_trojan": {
+    "log_file": "scenario2_cron_offensive.log",
+    "source_host": "videoserver",
+    "log_type": "auditd / syslog",
+    "status": "alert",
+    "category": "security",
+    "mitre_id": "T1547.001",
+    "mitre_technique_name": "Boot or Logon Autostart Execution: Cron",
+    "target_entities": [
+      "/usr/share/awffull/awffull",
+      "/usr/bin/zmcontroller",
+      "cron",
+      "pid=3216"
+    ],
+    "observed_intent": "persistence_script_trojanization",
+    "confidence": "high",
+    "summary": "Scheduled cron execution of trojanized awffull script spawning the unauthorized /usr/bin/zmcontroller binary in background."
+  },
+  "scenario2_off_002_implant_c2_beacon": {
+    "log_file": "scenario2_cron_offensive.log",
+    "source_host": "videoserver",
+    "log_type": "auditd",
+    "status": "alert",
+    "category": "security",
+    "mitre_id": "T1071.001",
+    "mitre_technique_name": "Application Layer Protocol: Web Protocols",
+    "target_entities": [
+      "/usr/bin/zmcontroller",
+      "pid=3217",
+      "syscall=42",
+      "c000092bac"
+    ],
+    "observed_intent": "c2_network_beaconing",
+    "confidence": "high",
+    "summary": "Implant zmcontroller invoking socket connect (syscall 42) to establish persistent C2 communications."
+  },
+  "scenario2_off_003_shadow_credential_access": {
+    "log_file": "scenario2_cron_offensive.log",
+    "source_host": "videoserver",
+    "log_type": "auditd",
+    "status": "alert",
+    "category": "security",
+    "mitre_id": "T1003.008",
+    "mitre_technique_name": "OS Credential Dumping: /etc/passwd and /etc/shadow",
+    "target_entities": [
+      "/etc/shadow",
+      "pid=3257",
+      "syscall=257 (openat)",
+      "root"
+    ],
+    "observed_intent": "credential_theft_shadow_dump",
+    "confidence": "high",
+    "summary": "Direct access and exfiltration read attempt against /etc/shadow credential database."
+  },
+  "scenario2_off_004_root_archive_staging": {
+    "log_file": "scenario2_cron_offensive.log",
+    "source_host": "videoserver",
+    "log_type": "auditd",
+    "status": "alert",
+    "category": "security",
+    "mitre_id": "T1560.001",
+    "mitre_technique_name": "Archive Collected Data: Archive via Utility",
+    "target_entities": [
+      "/usr/bin/tar",
+      "/tmp/r.tar.gz",
+      "/root",
+      "tar"
+    ],
+    "observed_intent": "data_staging_and_compression",
+    "confidence": "high",
+    "summary": "Execution of tar archiving the entire /root directory into a temporary archive /tmp/r.tar.gz for exfiltration staging."
+  },
+  "scenario2_off_005_nmap_internal_recon": {
+    "log_file": "scenario2_cron_offensive.log",
+    "source_host": "videoserver",
+    "log_type": "auditd",
+    "status": "alert",
+    "category": "security",
+    "mitre_id": "T1046",
+    "mitre_technique_name": "Network Service Discovery",
+    "target_entities": [
+      "/tmp/nmap",
+      "172.17.100.0/24",
+      "pid=2977",
+      "chmod"
+    ],
+    "observed_intent": "internal_network_scanning",
+    "confidence": "high",
+    "summary": "Deployment and execution of rogue /tmp/nmap binary scanning internal subnet 172.17.100.0/24."
+  },
+  "scenario2_off_006_sftp_ingress_implant": {
+    "log_file": "scenario2_cron_offensive.log",
+    "source_host": "videoserver",
+    "log_type": "auth.log / auditd",
+    "status": "alert",
+    "category": "security",
+    "mitre_id": "T1105",
+    "mitre_technique_name": "Ingress Tool Transfer",
+    "target_entities": [
+      "root",
+      "192.42.1.174",
+      "/usr/bin/zmcontroller",
+      "sshd"
+    ],
+    "observed_intent": "remote_tool_drop_sftp",
+    "confidence": "high",
+    "summary": "External SSH login as root dropping the malicious payload into /usr/bin/zmcontroller."
+  },
+  "scenario2_susp_001_password_policy_discovery": {
+    "log_file": "scenario2_cron_suspicious.log",
+    "source_host": "videoserver",
+    "log_type": "auditd",
+    "status": "suspicious",
+    "category": "security",
+    "mitre_id": "T1201",
+    "mitre_technique_name": "Password Policy Discovery",
+    "target_entities": [
+      "/etc/pam.d/common-password",
+      "chage",
+      "aecid",
+      "cat"
+    ],
+    "observed_intent": "account_password_policy_enumeration",
+    "confidence": "medium",
+    "summary": "User executing cat on common-password PAM config and querying account password expiration policy using chage."
+  },
+  "scenario2_susp_002_tmp_archive_deletion": {
+    "log_file": "scenario2_cron_suspicious.log",
+    "source_host": "videoserver",
+    "log_type": "auditd",
+    "status": "suspicious",
+    "category": "security",
+    "mitre_id": "T1070.004",
+    "mitre_technique_name": "Indicator Removal: File Deletion",
+    "target_entities": [
+      "/tmp/r.tar.gz",
+      "syscall=263 (unlinkat)",
+      "pid=3217",
+      "zmcontroller"
+    ],
+    "observed_intent": "temporary_archive_cleanup_or_antiforensics",
+    "confidence": "medium",
+    "summary": "Process deleting temporary archive /tmp/r.tar.gz immediately after file creation."
+  },
+  "scenario2_susp_003_zoneminder_daemon_fail_restart": {
+    "log_file": "scenario2_cron_suspicious.log",
+    "source_host": "videoserver",
+    "log_type": "syslog",
+    "status": "suspicious",
+    "category": "system_warning",
+    "mitre_id": null,
+    "mitre_technique_name": null,
+    "target_entities": [
+      "zmc_m1",
+      "zmwatch",
+      "rtsp://172.17.100.80:8554/mystream",
+      "pid=3012"
+    ],
+    "observed_intent": "service_instability_or_video_stream_interruption",
+    "confidence": "low",
+    "summary": "ZoneMinder watchdog repeatedly restarting video capture daemon due to 404 HTTP/RTSP error and lack of video frames."
+  },
+  "scenario2_susp_004_sudo_rsync_log_collection": {
+    "log_file": "scenario2_cron_suspicious.log",
+    "source_host": "inetfw",
+    "log_type": "auth.log / auditd",
+    "status": "suspicious",
+    "category": "system_warning",
+    "mitre_id": "T1005",
+    "mitre_technique_name": "Data from Local System",
+    "target_entities": [
+      "aecid",
+      "sudo",
+      "/usr/bin/rsync",
+      "/var/log",
+      "172.17.100.201"
+    ],
+    "observed_intent": "bulk_log_sync_or_data_collection",
+    "confidence": "medium",
+    "summary": "User aecid logging in via SSH and executing rsync with sudo over /var/log directory."
+  },
+  "scenario2_susp_005_suricata_packet_thread_anomaly": {
+    "log_file": "scenario2_cron_suspicious.log",
+    "source_host": "inetfw",
+    "log_type": "suricata fast.log",
+    "status": "suspicious",
+    "category": "system_warning",
+    "mitre_id": null,
+    "mitre_technique_name": null,
+    "target_entities": [
+      "172.17.100.121",
+      "192.168.100.130",
+      "port 1515",
+      "TCP"
+    ],
+    "observed_intent": "atypical_network_stream_pattern",
+    "confidence": "low",
+    "summary": "NIDS engine detecting out-of-sequence stream packets between internal host 172.17.100.121 and Wazuh manager port 1515."
+  },
+  "scenario2_susp_006_interactive_passwd_enum": {
+    "log_file": "scenario2_cron_suspicious.log",
+    "source_host": "videoserver",
+    "log_type": "auditd",
+    "status": "suspicious",
+    "category": "security",
+    "mitre_id": "T1003.008",
+    "mitre_technique_name": "OS Credential Dumping: /etc/passwd and /etc/shadow",
+    "target_entities": [
+      "/etc/passwd",
+      "pid=3288",
+      "cat",
+      "root"
+    ],
+    "observed_intent": "local_user_enumeration",
+    "confidence": "medium",
+    "summary": "Root execution of cat on /etc/passwd to enumerate system accounts."
+  },
+  "scenario2_benign_001_routine_cron_session": {
+    "log_file": "scenario2_cron_benign.log",
+    "source_host": "corpdns",
+    "log_type": "auth.log / syslog",
+    "status": "clear",
+    "category": "noise",
+    "mitre_id": null,
+    "mitre_technique_name": null,
+    "target_entities": [
+      "CRON[3020]",
+      "root",
+      "pam_unix"
+    ],
+    "observed_intent": "admin_scheduled_task_maintenance",
+    "confidence": "high",
+    "summary": "Standard scheduled system cron job session open and close for root user on corpdns."
+  },
+  "scenario2_benign_002_systemd_boot_cloud_init": {
+    "log_file": "scenario2_cron_benign.log",
+    "source_host": "corpdns",
+    "log_type": "syslog",
+    "status": "clear",
+    "category": "noise",
+    "mitre_id": null,
+    "mitre_technique_name": null,
+    "target_entities": [
+      "systemd[1]",
+      "cloud-final.service",
+      "cloudimg-rootfs"
+    ],
+    "observed_intent": "routine_system_initialization",
+    "confidence": "high",
+    "summary": "Routine systemd service deactivations and filesystem check during VM cloud-init completion."
+  },
+  "scenario2_benign_003_suricata_apt_outbound_policy": {
+    "log_file": "scenario2_cron_benign.log",
+    "source_host": "inetfw",
+    "log_type": "suricata fast.log",
+    "status": "clear",
+    "category": "noise",
+    "mitre_id": null,
+    "mitre_technique_name": null,
+    "target_entities": [
+      "192.168.100.130",
+      "185.125.190.95",
+      "port 80",
+      "APT User-Agent"
+    ],
+    "observed_intent": "routine_package_manager_update",
+    "confidence": "high",
+    "summary": "Suricata policy signature for routine outbound Ubuntu APT package manager update check."
+  },
+  "scenario2_benign_004_systemd_user_manager_exit": {
+    "log_file": "scenario2_cron_benign.log",
+    "source_host": "videoserver",
+    "log_type": "syslog",
+    "status": "clear",
+    "category": "noise",
+    "mitre_id": null,
+    "mitre_technique_name": null,
+    "target_entities": [
+      "systemd[2805]",
+      "user@0.service",
+      "UID 0"
+    ],
+    "observed_intent": "system_session_logout_cleanup",
+    "confidence": "high",
+    "summary": "Normal systemd unit shutdown sequence upon root user logout."
+  },
+  "scenario2_benign_005_kernel_hardware_enumeration": {
+    "log_file": "scenario2_cron_benign.log",
+    "source_host": "corpdns",
+    "log_type": "dmesg / syslog",
+    "status": "clear",
+    "category": "noise",
+    "mitre_id": null,
+    "mitre_technique_name": null,
+    "target_entities": [
+      "kernel",
+      "x86_64",
+      "Intel GenuineIntel"
+    ],
+    "observed_intent": "hardware_initialization",
+    "confidence": "high",
+    "summary": "Kernel boot message reporting CPU features and microcode initialization."
+  },
+  "scenario2_benign_006_unattended_upgrades_check": {
+    "log_file": "scenario2_cron_benign.log",
+    "source_host": "videoserver",
+    "log_type": "syslog",
+    "status": "clear",
+    "category": "noise",
+    "mitre_id": null,
+    "mitre_technique_name": null,
+    "target_entities": [
+      "unattended-upgrade",
+      "dpkg",
+      "apt"
+    ],
+    "observed_intent": "automated_system_patching_check",
+    "confidence": "high",
+    "summary": "Scheduled unattended-upgrades service verifying no pending security updates before cleanly stopping."
+  }
+}

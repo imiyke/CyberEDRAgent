@@ -1,0 +1,4 @@
+Jan 15 18:30:10 api-gateway kernel: [12934.112] nginx[8820]: segfault at 0 ip 00007f31a28b4910 sp 00007ffe312a0140 error 4 in libssl.so.3
+Jan 15 18:30:12 api-gateway systemd-coredump[8890]: Process 8820 (nginx) of user 33 dumped core.
+Jan 15 18:30:15 api-gateway sudo[8910]: sre-oncall : TTY=pts/0 ; PWD=/var/crash ; USER=root ; COMMAND=/usr/bin/gcore -o /var/crash/nginx_debug 8820
+Jan 15 18:30:20 api-gateway gcore[8915]: Saved corefile /var/crash/nginx_debug.8820

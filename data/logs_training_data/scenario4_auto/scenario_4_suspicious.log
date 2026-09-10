@@ -1,0 +1,223 @@
+# Auto-extracted Suspicious Logs: scenario_4_suspicious.log
+# Total chunks: 29
+
+# --- START CHUNK: scenario_4_susp_001 (SUSPICIOUS) ---
+Dec 15 11:06:01 inetfw sudo:     root : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/tar -xzf /tmp/auditf.tar.gz -C /usr/bin
+Dec 15 11:06:01 inetfw sudo: pam_unix(sudo:session): session opened for user root(uid=0) by john(uid=0)
+Dec 15 11:06:01 inetfw sudo: pam_unix(sudo:session): session closed for user root
+Dec 15 11:07:04 inetfw sudo:     root : TTY=pts/1 ; PWD=/usr/bin ; USER=root ; COMMAND=/usr/bin/chmod +x system-verify.sh
+Dec 15 11:07:04 inetfw sudo: pam_unix(sudo:session): session opened for user root(uid=0) by john(uid=0)
+# --- END CHUNK: scenario_4_susp_001 ---
+
+# --- START CHUNK: scenario_4_susp_002 (SUSPICIOUS) ---
+Dec 15 11:10:06 inetfw sudo:     root : TTY=pts/1 ; PWD=/usr/bin ; USER=root ; COMMAND=/usr/bin/systemctl daemon-reload
+Dec 15 11:10:06 inetfw sudo: pam_unix(sudo:session): session opened for user root(uid=0) by john(uid=0)
+Dec 15 11:10:06 inetfw sudo: pam_unix(sudo:session): session closed for user root
+Dec 15 11:10:26 inetfw sudo:     root : TTY=pts/1 ; PWD=/usr/bin ; USER=root ; COMMAND=/usr/bin/systemctl enable auditf.service
+Dec 15 11:10:26 inetfw sudo: pam_unix(sudo:session): session opened for user root(uid=0) by john(uid=0)
+# --- END CHUNK: scenario_4_susp_002 ---
+
+# --- START CHUNK: scenario_4_susp_003 (SUSPICIOUS) ---
+Dec 15 11:10:45 inetfw sudo:     root : TTY=pts/1 ; PWD=/usr/bin ; USER=root ; COMMAND=/usr/bin/systemctl start auditf.service
+Dec 15 11:10:45 inetfw sudo: pam_unix(sudo:session): session opened for user root(uid=0) by john(uid=0)
+Dec 15 11:10:45 inetfw sudo: pam_unix(sudo:session): session closed for user root
+Dec 15 11:11:05 inetfw sudo: pam_unix(sudo-i:session): session closed for user root
+Dec 15 11:11:45 inetfw sudo:     root : PWD=/usr/bin ; USER=root ; COMMAND=/usr/bin/chmod +x /usr/bin/systemp
+# --- END CHUNK: scenario_4_susp_003 ---
+
+# --- START CHUNK: scenario_4_susp_004 (SUSPICIOUS) ---
+Dec 15 11:11:45 inetfw sudo:     root : PWD=/usr/bin ; USER=root ; COMMAND=/usr/bin/systemp
+Dec 15 11:11:45 inetfw sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Dec 15 11:12:05 inetfw sudo:     root : PWD=/usr/bin ; USER=root ; COMMAND=/usr/bin/sed -i '/# Kafka Ports/i\\ACCEPT dmz lan:$LINUXSHARE tcp  22  -   -   -' /etc/shorewall/rules
+Dec 15 11:12:05 inetfw sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Dec 15 11:12:05 inetfw sudo: pam_unix(sudo:session): session closed for user root
+# --- END CHUNK: scenario_4_susp_004 ---
+
+# --- START CHUNK: scenario_4_susp_005 (SUSPICIOUS) ---
+Dec 15 11:44:07 inetfw sudo:    aecid : TTY=pts/0 ; PWD=/home/aecid ; USER=root ; COMMAND=/usr/bin/systemctl stop suricata.service
+Dec 15 11:44:07 inetfw sudo: pam_unix(sudo:session): session opened for user root(uid=0) by aecid(uid=1001)
+Dec 15 11:44:07 inetfw sudo: pam_unix(sudo:session): session closed for user root
+Dec 15 11:44:37 inetfw sshd[4697]: Accepted publickey for aecid from 172.17.100.201 port 40060 ssh2: RSA SHA256:yxAJcMgl5WTSlj4ZPvj7TSgUbIlxQ1GHdtXeIcp0czs
+Dec 15 11:44:37 inetfw sshd[4697]: pam_unix(sshd:session): session opened for user aecid(uid=1001) by (uid=0)
+# --- END CHUNK: scenario_4_susp_005 ---
+
+# --- START CHUNK: scenario_4_susp_006 (SUSPICIOUS) ---
+Dec 15 11:44:41 inetfw systemd-logind[655]: New session 9 of user aecid.
+Dec 15 11:44:42 inetfw sudo:    aecid : PWD=/home/aecid ; USER=root ; COMMAND=/usr/bin/rsync --server --sender -lLogDtrze.LsfxCIvu . /var/log
+Dec 15 11:44:42 inetfw sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+# --- END CHUNK: scenario_4_susp_006 ---
+
+# --- START CHUNK: scenario_4_susp_007 (SUSPICIOUS) ---
+12/15/2025-10:45:41.982855  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:772 -> 192.168.100.23:2049
+12/15/2025-10:46:32.511967  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:54329 -> 192.168.100.130:1515
+12/15/2025-10:46:47.551109  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:44226 -> 185.125.190.83:80
+12/15/2025-10:46:47.744207  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:53594 -> 91.189.91.93:80
+# --- END CHUNK: scenario_4_susp_007 ---
+
+# --- START CHUNK: scenario_4_susp_008 (SUSPICIOUS) ---
+12/15/2025-10:46:52.503493  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:53594 -> 91.189.91.93:80
+12/15/2025-10:47:02.519936  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:42255 -> 192.168.100.130:1515
+12/15/2025-10:47:29.912503  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:44040 -> 91.189.91.95:80
+12/15/2025-10:47:30.151493  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:44040 -> 91.189.91.95:80
+12/15/2025-10:47:30.151493  [**] [1:2013504:6] ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management [**] [Classification: Not Suspicious Traffic] [Priority: 3] {TCP} 192.168.100.130:44040 -> 91.189.91.95:80
+# --- END CHUNK: scenario_4_susp_008 ---
+
+# --- START CHUNK: scenario_4_susp_009 (SUSPICIOUS) ---
+12/15/2025-10:47:37.545182  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:34551 -> 192.168.100.130:1515
+12/15/2025-10:48:17.560408  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:49419 -> 192.168.100.130:1515
+12/15/2025-10:49:02.574186  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:36331 -> 192.168.100.130:1515
+12/15/2025-10:49:52.588032  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:45071 -> 192.168.100.130:1515
+12/15/2025-10:50:01.864974  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.100.23:45056 -> 172.17.100.122:21
+# --- END CHUNK: scenario_4_susp_009 ---
+
+# --- START CHUNK: scenario_4_susp_010 (SUSPICIOUS) ---
+12/15/2025-10:50:01.928194  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.100.23:34896 -> 172.17.100.122:43421
+12/15/2025-10:50:03.135442  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.100.23:47526 -> 172.17.100.122:8140
+12/15/2025-10:50:47.604937  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:45913 -> 192.168.100.130:1515
+12/15/2025-10:51:47.619096  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:35337 -> 192.168.100.130:1515
+12/15/2025-10:52:47.637076  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:33025 -> 192.168.100.130:1515
+# --- END CHUNK: scenario_4_susp_010 ---
+
+# --- START CHUNK: scenario_4_susp_011 (SUSPICIOUS) ---
+12/15/2025-10:53:47.649983  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:59395 -> 192.168.100.130:1515
+12/15/2025-10:54:47.663001  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:58185 -> 192.168.100.130:1515
+12/15/2025-10:55:01.980528  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.100.23:37362 -> 172.17.100.122:21
+12/15/2025-10:55:02.054887  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.100.23:57842 -> 172.17.100.122:37756
+12/15/2025-10:55:03.143208  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.100.23:39856 -> 172.17.100.122:8140
+# --- END CHUNK: scenario_4_susp_011 ---
+
+# --- START CHUNK: scenario_4_susp_012 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1765795411.712:132): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="T1201_Password_Policy_Discovery" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1765795411.712:132): arch=c000003e syscall=44 success=yes exit=1116 a0=3 a1="֭P" a2=45c a3=0 items=1 ppid=479 pid=494 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1765795411.712:132): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PATH msg=audit(1765795411.712:132): item=0 name="/etc/pam.d/" inode=546 dev=fc:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765795411.712:132): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_4_susp_012 ---
+
+# --- START CHUNK: scenario_4_susp_013 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1765795411.744:175): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="T1087_Account_Discovery" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1765795411.744:175): arch=c000003e syscall=44 success=yes exit=1092 a0=3 a1="֭P" a2=444 a3=0 items=1 ppid=479 pid=494 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1765795411.744:175): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PATH msg=audit(1765795411.744:175): item=0 name="/etc/" inode=41 dev=fc:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765795411.744:175): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_4_susp_013 ---
+
+# --- START CHUNK: scenario_4_susp_014 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1765795411.744:176): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="TT1087_Account_Discovery" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1765795411.744:176): arch=c000003e syscall=44 success=yes exit=1092 a0=3 a1="֭P" a2=444 a3=0 items=1 ppid=479 pid=494 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1765795411.744:176): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PATH msg=audit(1765795411.744:176): item=0 name="/etc/" inode=41 dev=fc:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765795411.744:176): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_4_susp_014 ---
+
+# --- START CHUNK: scenario_4_susp_015 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1765795411.748:178): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="T1087_Account_Discovery" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1765795411.748:178): arch=c000003e syscall=44 success=yes exit=1092 a0=3 a1="֭P" a2=444 a3=0 items=1 ppid=479 pid=494 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1765795411.748:178): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PATH msg=audit(1765795411.748:178): item=0 name="/etc/" inode=41 dev=fc:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765795411.748:178): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_4_susp_015 ---
+
+# --- START CHUNK: scenario_4_susp_016 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1765795411.748:179): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="T1087_Account_Discovery" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1765795411.748:179): arch=c000003e syscall=44 success=yes exit=1092 a0=3 a1="֭P" a2=444 a3=0 items=1 ppid=479 pid=494 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1765795411.748:179): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PATH msg=audit(1765795411.748:179): item=0 name="/etc/" inode=41 dev=fc:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765795411.748:179): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_4_susp_016 ---
+
+# --- START CHUNK: scenario_4_susp_017 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1765795411.748:180): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="T1087_Account_Discovery" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1765795411.748:180): arch=c000003e syscall=44 success=yes exit=1100 a0=3 a1="֭P" a2=44c a3=0 items=1 ppid=479 pid=494 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1765795411.748:180): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PATH msg=audit(1765795411.748:180): item=0 name="/etc/security/" inode=531 dev=fc:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765795411.748:180): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_4_susp_017 ---
+
+# --- START CHUNK: scenario_4_susp_018 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1765795411.788:241): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="T1070_Indicator_Removal_on_Host" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1765795411.788:241): arch=c000003e syscall=44 success=yes exit=1088 a0=3 a1="֭P" a2=440 a3=0 items=0 ppid=479 pid=494 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1765795411.788:241): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PROCTITLE msg=audit(1765795411.788:241): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_4_susp_018 ---
+
+# --- START CHUNK: scenario_4_susp_019 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1765795411.788:242): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="T1070_Indicator_Removal_on_Host" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1765795411.788:242): arch=c000003e syscall=44 success=yes exit=1088 a0=3 a1="֭P" a2=440 a3=0 items=0 ppid=479 pid=494 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1765795411.788:242): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PROCTITLE msg=audit(1765795411.788:242): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_4_susp_019 ---
+
+# --- START CHUNK: scenario_4_susp_020 (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1765799082.172:7804): arch=c000003e syscall=59 success=yes exit=0 a0="VNHr`" a1="VNHr" a2="VNHr" a3=8 items=2 ppid=4872 pid=4873 auid=1001 uid=1001 gid=1001 euid=0 suid=0 fsuid=0 egid=1001 sgid=1001 fsgid=1001 tty=(none) ses=9 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="T1078_Valid_Accounts"ARCH=x86_64 SYSCALL=execve AUID="aecid" UID="aecid" GID="aecid" EUID="root" SUID="root" FSUID="root" EGID="aecid" SGID="aecid" FSGID="aecid"
+type=EXECVE msg=audit(1765799082.172:7804): argc=9 a0="sudo" a1="-u" a2="root" a3="rsync" a4="--server" a5="--sender" a6="-lLogDtrze.LsfxCIvu" a7="." a8="/var/log"
+type=PATH msg=audit(1765799082.172:7804): item=0 name="/usr/bin/sudo" inode=1974 dev=fc:01 mode=0104755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1765799082.172:7804): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=3599 dev=fc:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765799082.172:7804): proctitle="sudo -u root rsync --server --sender -lLogDtrze.LsfxCIvu . /var/log"
+# --- END CHUNK: scenario_4_susp_020 ---
+
+# --- START CHUNK: scenario_4_susp_021 (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1765799082.176:7805): arch=c000003e syscall=257 success=yes exit=5 a0="ffffff9c" a1="h" a2=0 a3=0 items=1 ppid=4872 pid=4873 auid=1001 uid=0 gid=1001 euid=1 suid=0 fsuid=1 egid=0 sgid=1001 fsgid=0 tty=(none) ses=9 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="T1169_Sudo"ARCH=x86_64 SYSCALL=openat AUID="aecid" UID="root" GID="aecid" EUID="daemon" SUID="root" FSUID="daemon" EGID="root" SGID="aecid" FSGID="root"
+type=PATH msg=audit(1765799082.176:7805): item=0 name="/etc/sudoers" inode=989 dev=fc:01 mode=0100440 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765799082.176:7805): proctitle="sudo -u root rsync --server --sender -lLogDtrze.LsfxCIvu . /var/log"
+# --- END CHUNK: scenario_4_susp_021 ---
+
+# --- START CHUNK: scenario_4_susp_022 (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1765799082.176:7806): arch=c000003e syscall=257 success=yes exit=6 a0="ffffff9c" a1="h]" a2="80000" a3=0 items=1 ppid=4872 pid=4873 auid=1001 uid=0 gid=1001 euid=0 suid=0 fsuid=0 egid=0 sgid=1001 fsgid=0 tty=(none) ses=9 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="T1016_System_Network_Configuration_Discovery"ARCH=x86_64 SYSCALL=openat AUID="aecid" UID="root" GID="aecid" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="aecid" FSGID="root"
+type=PATH msg=audit(1765799082.176:7806): item=0 name="/etc/resolv.conf" inode=267551 dev=fc:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765799082.176:7806): proctitle="sudo -u root rsync --server --sender -lLogDtrze.LsfxCIvu . /var/log"
+# --- END CHUNK: scenario_4_susp_022 ---
+
+# --- START CHUNK: scenario_4_susp_023 (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1765799082.180:7807): arch=c000003e syscall=257 success=yes exit=6 a0="ffffff9c" a1="h" a2="80000" a3=0 items=1 ppid=4872 pid=4873 auid=1001 uid=1001 gid=1001 euid=0 suid=0 fsuid=0 egid=1001 sgid=1001 fsgid=1001 tty=(none) ses=9 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="T1087_Account_Discovery"ARCH=x86_64 SYSCALL=openat AUID="aecid" UID="aecid" GID="aecid" EUID="root" SUID="root" FSUID="root" EGID="aecid" SGID="aecid" FSGID="aecid"
+type=PATH msg=audit(1765799082.180:7807): item=0 name="/etc/shadow" inode=1905 dev=fc:01 mode=0100640 ouid=0 ogid=42 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="shadow"
+type=PROCTITLE msg=audit(1765799082.180:7807): proctitle="sudo -u root rsync --server --sender -lLogDtrze.LsfxCIvu . /var/log"
+# --- END CHUNK: scenario_4_susp_023 ---
+
+# --- START CHUNK: scenario_4_susp_024 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1765795435.012:122): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="T1201_Password_Policy_Discovery" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1765795435.012:122): arch=c000003e syscall=44 success=yes exit=1116 a0=3 a1="dP" a2=45c a3=0 items=1 ppid=431 pid=442 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1765795435.012:122): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PATH msg=audit(1765795435.012:122): item=0 name="/etc/pam.d/" inode=2706 dev=fe:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765795435.012:122): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_4_susp_024 ---
+
+# --- START CHUNK: scenario_4_susp_025 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1765795435.024:227): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="T1070_Indicator_Removal_on_Host" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1765795435.024:227): arch=c000003e syscall=44 success=yes exit=1088 a0=3 a1="dP" a2=440 a3=0 items=0 ppid=431 pid=442 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1765795435.024:227): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PROCTITLE msg=audit(1765795435.024:227): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_4_susp_025 ---
+
+# --- START CHUNK: scenario_4_susp_026 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1765795435.024:228): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="T1070_Indicator_Removal_on_Host" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1765795435.024:228): arch=c000003e syscall=44 success=yes exit=1088 a0=3 a1="dP" a2=440 a3=0 items=0 ppid=431 pid=442 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1765795435.024:228): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PROCTITLE msg=audit(1765795435.024:228): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_4_susp_026 ---
+
+# --- START CHUNK: scenario_4_susp_027 (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1765795502.444:845): arch=c000003e syscall=82 success=yes exit=0 a0="U 1P" a1="U 1" a2="U 1" a3=0 items=4 ppid=939 pid=957 auid=0 uid=105 gid=111 euid=105 suid=105 fsuid=105 egid=111 sgid=111 fsgid=111 tty=(none) ses=1 comm="sendmail" exe="/usr/sbin/exim4" subj=unconfined key="T1070_Indicator_Removal_on_Host"ARCH=x86_64 SYSCALL=rename AUID="root" UID="Debian-exim" GID="Debian-exim" EUID="Debian-exim" SUID="Debian-exim" FSUID="Debian-exim" EGID="Debian-exim" SGID="Debian-exim" FSGID="Debian-exim"
+type=PATH msg=audit(1765795502.444:845): item=0 name="/var/spool/exim4//input//" inode=145047 dev=fe:01 mode=040750 ouid=105 ogid=111 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="Debian-exim" OGID="Debian-exim"
+type=PATH msg=audit(1765795502.444:845): item=1 name="/var/spool/exim4//input//" inode=145047 dev=fe:01 mode=040750 ouid=105 ogid=111 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="Debian-exim" OGID="Debian-exim"
+type=PATH msg=audit(1765795502.444:845): item=2 name="/var/spool/exim4//input//hdr.1vV64c-0000FR-1Q" inode=131134 dev=fe:01 mode=0100640 ouid=105 ogid=111 rdev=00:00 nametype=DELETE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="Debian-exim" OGID="Debian-exim"
+type=PATH msg=audit(1765795502.444:845): item=3 name="/var/spool/exim4//input//1vV64c-0000FR-1Q-H" inode=131134 dev=fe:01 mode=0100640 ouid=105 ogid=111 rdev=00:00 nametype=CREATE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="Debian-exim" OGID="Debian-exim"
+type=PROCTITLE msg=audit(1765795502.444:845): proctitle="/usr/sbin/CRON -f"
+# --- END CHUNK: scenario_4_susp_027 ---
+
+# --- START CHUNK: scenario_4_susp_028 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1765795391.144:147): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="T1201_Password_Policy_Discovery" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1765795391.144:147): arch=c000003e syscall=44 success=yes exit=1116 a0=3 a1="7fffbb130080" a2=45c a3=0 items=1 ppid=542 pid=571 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1765795391.144:147): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PATH msg=audit(1765795391.144:147): item=0 name="/etc/pam.d/" inode=546 dev=fc:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765795391.144:147): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_4_susp_028 ---
+
+# --- START CHUNK: scenario_4_susp_029 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1765795440.636:119): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="T1201_Password_Policy_Discovery" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1765795440.636:119): arch=c000003e syscall=44 success=yes exit=1116 a0=3 a1="b" a2=45c a3=0 items=1 ppid=536 pid=553 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1765795440.636:119): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PATH msg=audit(1765795440.636:119): item=0 name="/etc/pam.d/" inode=546 dev=fc:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765795440.636:119): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_4_susp_029 ---
+

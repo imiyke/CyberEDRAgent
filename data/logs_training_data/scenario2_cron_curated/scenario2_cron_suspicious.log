@@ -1,0 +1,47 @@
+# Curated dataset for Scenario 2: scenario2_cron_suspicious.log
+# Total chunks: 6
+
+# --- START CHUNK: scenario2_susp_001_password_policy_discovery (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1759315548.367:5825): arch=c000003e syscall=59 success=yes exit=0 a0=55d21a08e120 a1=55d21a08e150 a2=55d21a08e170 a3=8 items=2 ppid=3217 pid=3285 auid=0 uid=0 gid=0 euid=0 comm="cat" exe="/bin/cat" key="T1201_Password_Policy_Discovery"
+type=EXECVE msg=audit(1759315548.367:5825): argc=2 a0="cat" a1="/etc/pam.d/common-password"
+type=PATH msg=audit(1759315548.367:5825): item=0 name="/etc/pam.d/common-password" inode=30248 dev=fe:01 mode=0100644 ouid=0 ogid=0
+type=SYSCALL msg=audit(1759315558.490:5830): arch=c000003e syscall=59 success=yes exit=0 a0=55d21a08e120 a1=55d21a08e150 a2=55d21a08e170 a3=8 items=2 ppid=3217 pid=3290 auid=0 uid=0 gid=0 euid=0 comm="chage" exe="/usr/bin/chage" key="T1201_Password_Policy_Discovery"
+type=EXECVE msg=audit(1759315558.490:5830): argc=3 a0="chage" a1="-l" a2="aecid"
+# --- END CHUNK: scenario2_susp_001_password_policy_discovery ---
+
+# --- START CHUNK: scenario2_susp_002_tmp_archive_deletion (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1759315518.253:5798): arch=c000003e syscall=263 success=yes exit=0 a0=ffffff9c a1=c000355600 a2=0 a3=0 items=2 ppid=1 pid=3217 auid=0 uid=0 gid=0 euid=0 comm="zmcontroller" exe="/usr/bin/zmcontroller" key="T1070_Indicator_Removal_on_Host"
+type=PATH msg=audit(1759315518.253:5798): item=0 name="/tmp" inode=14016 dev=fe:01 mode=041777 ouid=0 ogid=0
+type=PATH msg=audit(1759315518.253:5798): item=1 name="/tmp/r.tar.gz" inode=14022 dev=fe:01 mode=0100644 ouid=0 ogid=0
+type=PROCTITLE msg=audit(1759315518.253:5798): proctitle="/usr/bin/zmcontroller"
+# --- END CHUNK: scenario2_susp_002_tmp_archive_deletion ---
+
+# --- START CHUNK: scenario2_susp_003_zoneminder_daemon_fail_restart (SUSPICIOUS) ---
+Oct  1 10:34:21 videoserver zmc_m1[3012]: ERR [zmc_m1] [Unable to open input rtsp://172.17.100.80:8554/mystream due to: Server returned 404 Not Found]
+Oct  1 10:34:21 videoserver zmc_m1[3012]: ERR [zmc_m1] [Failed to prime capture of initial monitor]
+Oct  1 10:34:33 videoserver zmwatch[875]: WAR [Restarting capture daemon for 1 cam-1, no image since startup. Startup time was 1759314825 - now 1759314873 > 45]
+Oct  1 10:34:34 videoserver zmc_m1[3012]: ERR [zmc_m1] [Unable to open input rtsp://172.17.100.80:8554/mystream due to: Immediate exit requested]
+Oct  1 10:34:35 videoserver zmc_m1[3033]: ERR [zmc_m1] [Unable to open input rtsp://172.17.100.80:8554/mystream due to: Server returned 404 Not Found]
+# --- END CHUNK: scenario2_susp_003_zoneminder_daemon_fail_restart ---
+
+# --- START CHUNK: scenario2_susp_004_sudo_rsync_log_collection (SUSPICIOUS) ---
+Oct  1 10:38:02 inetfw sshd[4587]: Accepted publickey for aecid from 172.17.100.201 port 58402 ssh2: RSA SHA256:yxAJcMgl5WTSlj4ZPvj7TSgUbIlx
+Oct  1 10:38:02 inetfw sshd[4587]: pam_unix(sshd:session): session opened for user aecid(uid=1001) by (uid=0)
+Oct  1 10:38:02 inetfw sudo:    aecid : PWD=/home/aecid ; USER=root ; COMMAND=/usr/bin/rsync --server --sender -lLogDtrze.LsfxCIvu . /var/log
+Oct  1 10:38:02 inetfw sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+type=USER_CMD msg=audit(1759315082.688:7090): pid=4587 uid=1001 auid=1001 ses=5 msg='cwd="/home/aecid" cmd="rsync --server --sender -lLogDtrze.LsfxCIvu . /var/log" exe="/usr/bin/sudo" terminal=? res=success'
+# --- END CHUNK: scenario2_susp_004_sudo_rsync_log_collection ---
+
+# --- START CHUNK: scenario2_susp_005_suricata_packet_thread_anomaly (SUSPICIOUS) ---
+10/01/2025-09:57:18.200098  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.121:35559 -> 192.168.100.130:1515
+10/01/2025-09:57:53.208128  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.121:45659 -> 192.168.100.130:1515
+10/01/2025-09:58:13.234022  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.121:58399 -> 192.168.100.130:1515
+10/01/2025-09:58:17.384421  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.121:60805 -> 192.168.100.130:1515
+# --- END CHUNK: scenario2_susp_005_suricata_packet_thread_anomaly ---
+
+# --- START CHUNK: scenario2_susp_006_interactive_passwd_enum (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1759315553.431:5828): arch=c000003e syscall=59 success=yes exit=0 a0=55d21a08e120 a1=55d21a08e150 a2=55d21a08e170 a3=8 items=2 ppid=3217 pid=3288 auid=0 uid=0 gid=0 euid=0 comm="cat" exe="/bin/cat" key="T1087_Account_Discovery"
+type=EXECVE msg=audit(1759315553.431:5828): argc=2 a0="cat" a1="/etc/passwd"
+type=PATH msg=audit(1759315553.431:5828): item=0 name="/bin/cat" inode=30401 dev=fe:01 mode=0100755 ouid=0 ogid=0
+type=PATH msg=audit(1759315553.431:5828): item=1 name="/etc/passwd" inode=30246 dev=fe:01 mode=0100644 ouid=0 ogid=0
+# --- END CHUNK: scenario2_susp_006_interactive_passwd_enum ---

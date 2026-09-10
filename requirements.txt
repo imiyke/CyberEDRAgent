@@ -1,0 +1,13 @@
+requests
+pyyaml
+python-dotenv
+pydantic
+typing-extensions
+langchain-core
+langchain-community
+langchain-chroma
+langchain-ollama
+langchain-google-genai
+langgraph
+chromadb
+pytest

@@ -1,0 +1,232 @@
+# Auto-extracted Suspicious Logs: scenario_3_vnc_puppet_suspicious.log
+# Total chunks: 30
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_001 (SUSPICIOUS) ---
+Dec 14 20:03:55 inetfw sudo:    aecid : TTY=pts/0 ; PWD=/home/aecid ; USER=root ; COMMAND=/usr/bin/systemctl stop suricata.service
+Dec 14 20:03:55 inetfw sudo: pam_unix(sudo:session): session opened for user root(uid=0) by aecid(uid=1001)
+Dec 14 20:03:55 inetfw sudo: pam_unix(sudo:session): session closed for user root
+Dec 14 20:04:34 inetfw sshd[4300]: Accepted publickey for aecid from 172.17.100.201 port 51508 ssh2: RSA SHA256:yxAJcMgl5WTSlj4ZPvj7TSgUbIlxQ1GHdtXeIcp0czs
+Dec 14 20:04:34 inetfw sshd[4300]: pam_unix(sshd:session): session opened for user aecid(uid=1001) by (uid=0)
+# --- END CHUNK: scenario_3_vnc_puppet_susp_001 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_002 (SUSPICIOUS) ---
+Dec 14 20:04:34 inetfw systemd-logind[654]: New session 4 of user aecid.
+Dec 14 20:04:34 inetfw sudo:    aecid : PWD=/home/aecid ; USER=root ; COMMAND=/usr/bin/rsync --server --sender -lLogDtrze.LsfxCIvu . /var/log
+Dec 14 20:04:34 inetfw sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+# --- END CHUNK: scenario_3_vnc_puppet_susp_002 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_003 (SUSPICIOUS) ---
+12/14/2025-19:18:56.824903  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:42005 -> 192.168.100.130:1515
+12/14/2025-19:19:04.704937  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:695 -> 192.168.100.23:2049
+12/14/2025-19:19:16.837421  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:40481 -> 192.168.100.130:1515
+12/14/2025-19:19:16.841820  [**] [1:2260001:1] SURICATA Applayer Wrong direction first Data [**] [Classification: Generic Protocol Command Decode] [Priority: 3] {TCP} 172.17.100.122:40481 -> 192.168.100.130:1515
+# --- END CHUNK: scenario_3_vnc_puppet_susp_003 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_004 (SUSPICIOUS) ---
+12/14/2025-19:19:41.848704  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:34507 -> 192.168.100.130:1515
+12/14/2025-19:20:01.166697  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.100.23:54954 -> 172.17.100.122:21
+12/14/2025-19:20:01.232192  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.100.23:46370 -> 172.17.100.122:38489
+12/14/2025-19:20:11.864233  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:41353 -> 192.168.100.130:1515
+12/14/2025-19:20:46.881910  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:43705 -> 192.168.100.130:1515
+# --- END CHUNK: scenario_3_vnc_puppet_susp_004 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_005 (SUSPICIOUS) ---
+12/14/2025-19:21:26.895986  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:46473 -> 192.168.100.130:1515
+12/14/2025-19:22:11.911183  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:35885 -> 192.168.100.130:1515
+12/14/2025-19:23:01.923440  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:40203 -> 192.168.100.130:1515
+12/14/2025-19:23:28.277889  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.100.23:56378 -> 172.17.100.122:8140
+12/14/2025-19:23:56.937824  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:44735 -> 192.168.100.130:1515
+# --- END CHUNK: scenario_3_vnc_puppet_susp_005 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_006 (SUSPICIOUS) ---
+12/14/2025-19:24:56.952017  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:36385 -> 192.168.100.130:1515
+12/14/2025-19:25:01.281990  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.100.23:39278 -> 172.17.100.122:21
+12/14/2025-19:25:01.366134  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.100.23:44822 -> 172.17.100.122:50742
+12/14/2025-19:25:56.964025  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:49111 -> 192.168.100.130:1515
+12/14/2025-19:26:56.978965  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:50385 -> 192.168.100.130:1515
+# --- END CHUNK: scenario_3_vnc_puppet_susp_006 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_007 (SUSPICIOUS) ---
+12/14/2025-19:27:56.994375  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:45073 -> 192.168.100.130:1515
+12/14/2025-19:28:28.271866  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.100.23:36524 -> 172.17.100.122:8140
+12/14/2025-19:28:57.009653  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:59275 -> 192.168.100.130:1515
+12/14/2025-19:29:57.022002  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.100.122:46981 -> 192.168.100.130:1515
+12/14/2025-19:30:01.423532  [**] [1:2210059:1] SURICATA STREAM pkt seen on wrong thread [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.100.23:41056 -> 172.17.100.122:21
+# --- END CHUNK: scenario_3_vnc_puppet_susp_007 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_008 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1765739798.764:124): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="T1201_Password_Policy_Discovery" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1765739798.764:124): arch=c000003e syscall=44 success=yes exit=1116 a0=3 a1="d9@" a2=45c a3=0 items=1 ppid=477 pid=490 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1765739798.764:124): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PATH msg=audit(1765739798.764:124): item=0 name="/etc/pam.d/" inode=546 dev=fc:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765739798.764:124): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_3_vnc_puppet_susp_008 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_009 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1765739798.804:172): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="T1087_Account_Discovery" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1765739798.804:172): arch=c000003e syscall=44 success=yes exit=1092 a0=3 a1="d9@" a2=444 a3=0 items=1 ppid=477 pid=490 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1765739798.804:172): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PATH msg=audit(1765739798.804:172): item=0 name="/etc/" inode=41 dev=fc:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765739798.804:172): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_3_vnc_puppet_susp_009 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_010 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1765739798.804:173): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="TT1087_Account_Discovery" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1765739798.804:173): arch=c000003e syscall=44 success=yes exit=1092 a0=3 a1="d9@" a2=444 a3=0 items=1 ppid=477 pid=490 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1765739798.804:173): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PATH msg=audit(1765739798.804:173): item=0 name="/etc/" inode=41 dev=fc:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765739798.804:173): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_3_vnc_puppet_susp_010 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_011 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1765739798.808:175): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="T1087_Account_Discovery" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1765739798.808:175): arch=c000003e syscall=44 success=yes exit=1092 a0=3 a1="d9@" a2=444 a3=0 items=1 ppid=477 pid=490 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1765739798.808:175): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PATH msg=audit(1765739798.808:175): item=0 name="/etc/" inode=41 dev=fc:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765739798.808:175): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_3_vnc_puppet_susp_011 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_012 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1765739798.808:176): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="T1087_Account_Discovery" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1765739798.808:176): arch=c000003e syscall=44 success=yes exit=1092 a0=3 a1="d9@" a2=444 a3=0 items=1 ppid=477 pid=490 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1765739798.808:176): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PATH msg=audit(1765739798.808:176): item=0 name="/etc/" inode=41 dev=fc:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765739798.808:176): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_3_vnc_puppet_susp_012 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_013 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1765739798.808:177): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="T1087_Account_Discovery" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1765739798.808:177): arch=c000003e syscall=44 success=yes exit=1100 a0=3 a1="d9@" a2=44c a3=0 items=1 ppid=477 pid=490 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1765739798.808:177): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PATH msg=audit(1765739798.808:177): item=0 name="/etc/security/" inode=531 dev=fc:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765739798.808:177): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_3_vnc_puppet_susp_013 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_014 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1765739798.868:245): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="T1070_Indicator_Removal_on_Host" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1765739798.868:245): arch=c000003e syscall=44 success=yes exit=1088 a0=3 a1="d9@" a2=440 a3=0 items=0 ppid=477 pid=490 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1765739798.868:245): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PROCTITLE msg=audit(1765739798.868:245): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_3_vnc_puppet_susp_014 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_015 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1765739798.868:246): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="T1070_Indicator_Removal_on_Host" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1765739798.868:246): arch=c000003e syscall=44 success=yes exit=1088 a0=3 a1="d9@" a2=440 a3=0 items=0 ppid=477 pid=490 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1765739798.868:246): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PROCTITLE msg=audit(1765739798.868:246): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_3_vnc_puppet_susp_015 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_016 (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1765742674.456:6681): arch=c000003e syscall=59 success=yes exit=0 a0="Us`" a1="Us" a2="Usɐ" a3=8 items=2 ppid=4346 pid=4347 auid=1001 uid=1001 gid=1001 euid=0 suid=0 fsuid=0 egid=1001 sgid=1001 fsgid=1001 tty=(none) ses=4 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="T1078_Valid_Accounts"ARCH=x86_64 SYSCALL=execve AUID="aecid" UID="aecid" GID="aecid" EUID="root" SUID="root" FSUID="root" EGID="aecid" SGID="aecid" FSGID="aecid"
+type=EXECVE msg=audit(1765742674.456:6681): argc=9 a0="sudo" a1="-u" a2="root" a3="rsync" a4="--server" a5="--sender" a6="-lLogDtrze.LsfxCIvu" a7="." a8="/var/log"
+type=PATH msg=audit(1765742674.456:6681): item=0 name="/usr/bin/sudo" inode=1974 dev=fc:01 mode=0104755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1765742674.456:6681): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=3599 dev=fc:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765742674.456:6681): proctitle="sudo -u root rsync --server --sender -lLogDtrze.LsfxCIvu . /var/log"
+# --- END CHUNK: scenario_3_vnc_puppet_susp_016 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_017 (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1765742674.460:6682): arch=c000003e syscall=257 success=yes exit=5 a0="ffffff9c" a1="$_" a2=0 a3=0 items=1 ppid=4346 pid=4347 auid=1001 uid=0 gid=1001 euid=1 suid=0 fsuid=1 egid=0 sgid=1001 fsgid=0 tty=(none) ses=4 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="T1169_Sudo"ARCH=x86_64 SYSCALL=openat AUID="aecid" UID="root" GID="aecid" EUID="daemon" SUID="root" FSUID="daemon" EGID="root" SGID="aecid" FSGID="root"
+type=PATH msg=audit(1765742674.460:6682): item=0 name="/etc/sudoers" inode=989 dev=fc:01 mode=0100440 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765742674.460:6682): proctitle="sudo -u root rsync --server --sender -lLogDtrze.LsfxCIvu . /var/log"
+# --- END CHUNK: scenario_3_vnc_puppet_susp_017 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_018 (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1765742674.460:6683): arch=c000003e syscall=257 success=yes exit=6 a0="ffffff9c" a1="$?]" a2="80000" a3=0 items=1 ppid=4346 pid=4347 auid=1001 uid=0 gid=1001 euid=0 suid=0 fsuid=0 egid=0 sgid=1001 fsgid=0 tty=(none) ses=4 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="T1016_System_Network_Configuration_Discovery"ARCH=x86_64 SYSCALL=openat AUID="aecid" UID="root" GID="aecid" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="aecid" FSGID="root"
+type=PATH msg=audit(1765742674.460:6683): item=0 name="/etc/resolv.conf" inode=267551 dev=fc:01 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765742674.460:6683): proctitle="sudo -u root rsync --server --sender -lLogDtrze.LsfxCIvu . /var/log"
+# --- END CHUNK: scenario_3_vnc_puppet_susp_018 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_019 (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1765742674.464:6684): arch=c000003e syscall=257 success=yes exit=6 a0="ffffff9c" a1="$B" a2="80000" a3=0 items=1 ppid=4346 pid=4347 auid=1001 uid=1001 gid=1001 euid=0 suid=0 fsuid=0 egid=1001 sgid=1001 fsgid=1001 tty=(none) ses=4 comm="sudo" exe="/usr/bin/sudo" subj=unconfined key="T1087_Account_Discovery"ARCH=x86_64 SYSCALL=openat AUID="aecid" UID="aecid" GID="aecid" EUID="root" SUID="root" FSUID="root" EGID="aecid" SGID="aecid" FSGID="aecid"
+type=PATH msg=audit(1765742674.464:6684): item=0 name="/etc/shadow" inode=1905 dev=fc:01 mode=0100640 ouid=0 ogid=42 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="shadow"
+type=PROCTITLE msg=audit(1765742674.464:6684): proctitle="sudo -u root rsync --server --sender -lLogDtrze.LsfxCIvu . /var/log"
+# --- END CHUNK: scenario_3_vnc_puppet_susp_019 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_020 (SUSPICIOUS) ---
+2025-12-14T19:18:07.905083+00:00 attacker sudo:    aecid : TTY=pts/0 ; PWD=/home/aecid ; USER=root ; COMMAND=/usr/bin/vim /etc/hosts
+2025-12-14T19:18:07.906418+00:00 attacker sudo: pam_unix(sudo:session): session opened for user root(uid=0) by aecid(uid=1001)
+2025-12-14T19:18:19.787148+00:00 attacker sudo: pam_unix(sudo:session): session closed for user root
+2025-12-14T19:20:35.724213+00:00 attacker sshd[4528]: Accepted publickey for aecid from 192.42.0.201 port 57724 ssh2: RSA SHA256:yxAJcMgl5WTSlj4ZPvj7TSgUbIlxQ1GHdtXeIcp0czs
+2025-12-14T19:20:35.727717+00:00 attacker sshd[4528]: pam_unix(sshd:session): session opened for user aecid(uid=1001) by aecid(uid=0)
+# --- END CHUNK: scenario_3_vnc_puppet_susp_020 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_021 (SUSPICIOUS) ---
+2025-12-14T19:20:57.950750+00:00 attacker sudo:    aecid : TTY=pts/1 ; PWD=/home/aecid ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-watxrrvbxfqqswnlrgkafinsctkunion ; /usr/bin/python3 /home/aecid/.ansible/tmp/ansible-tmp-1765740036.707662-2633898-257830683754726/AnsiballZ_command.py'
+2025-12-14T19:20:57.952471+00:00 attacker sudo: pam_unix(sudo:session): session opened for user root(uid=0) by aecid(uid=1001)
+2025-12-14T19:20:58.189602+00:00 attacker sudo: pam_unix(sudo:session): session closed for user root
+2025-12-14T19:20:59.586880+00:00 attacker sudo:    aecid : TTY=pts/1 ; PWD=/home/aecid ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-kghrvcjacgbiqwgqjlmkqrmzdljexqvc ; /usr/bin/python3 /home/aecid/.ansible/tmp/ansible-tmp-1765740058.8469198-2636620-53463536033178/AnsiballZ_blockinfile.py'
+2025-12-14T19:20:59.588211+00:00 attacker sudo: pam_unix(sudo:session): session opened for user root(uid=0) by aecid(uid=1001)
+# --- END CHUNK: scenario_3_vnc_puppet_susp_021 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_022 (SUSPICIOUS) ---
+2025-12-14T19:21:01.491140+00:00 attacker sudo:    aecid : TTY=pts/1 ; PWD=/home/aecid ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-tyboxzxnhjosqvejcsgeklulgxhlbddf ; /usr/bin/python3 /home/aecid/.ansible/tmp/ansible-tmp-1765740060.6881926-2636886-157374073425942/AnsiballZ_stat.py'
+2025-12-14T19:21:01.491978+00:00 attacker sudo: pam_unix(sudo:session): session opened for user root(uid=0) by aecid(uid=1001)
+2025-12-14T19:21:01.715153+00:00 attacker sudo: pam_unix(sudo:session): session closed for user root
+2025-12-14T19:21:02.965198+00:00 attacker sudo:    aecid : TTY=pts/1 ; PWD=/home/aecid ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-zyfkhlgoaavlihixbqlxoshdqkgweixu ; /usr/bin/python3 /home/aecid/.ansible/tmp/ansible-tmp-1765740060.6881926-2636886-157374073425942/AnsiballZ_copy.py'
+2025-12-14T19:21:02.966911+00:00 attacker sudo: pam_unix(sudo:session): session opened for user root(uid=0) by aecid(uid=1001)
+# --- END CHUNK: scenario_3_vnc_puppet_susp_022 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_023 (SUSPICIOUS) ---
+2025-12-14T20:19:46.082330+00:00 attacker sudo:    aecid : PWD=/home/aecid ; USER=root ; COMMAND=/usr/bin/rsync --server --sender -lLogDtrze.LsfxCIvu . /home/aecid/attackmate.log
+2025-12-14T20:19:46.083297+00:00 attacker sudo: pam_unix(sudo:session): session opened for user root(uid=0) by aecid(uid=1001)
+2025-12-14T20:19:46.465321+00:00 attacker sudo: pam_unix(sudo:session): session closed for user root
+2025-12-14T20:19:46.484194+00:00 attacker sshd[58753]: Received disconnect from 192.42.0.201 port 37430:11: disconnected by user
+2025-12-14T20:19:46.484542+00:00 attacker sshd[58753]: Disconnected from user aecid 192.42.0.201 port 37430
+# --- END CHUNK: scenario_3_vnc_puppet_susp_023 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_024 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1765739845.092:118): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="T1201_Password_Policy_Discovery" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1765739845.092:118): arch=c000003e syscall=44 success=yes exit=1116 a0=3 a1="wh/" a2=45c a3=0 items=1 ppid=428 pid=439 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1765739845.092:118): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PATH msg=audit(1765739845.092:118): item=0 name="/etc/pam.d/" inode=2706 dev=fe:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765739845.092:118): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_3_vnc_puppet_susp_024 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_025 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1765739845.104:223): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="T1070_Indicator_Removal_on_Host" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1765739845.104:223): arch=c000003e syscall=44 success=yes exit=1088 a0=3 a1="wh/" a2=440 a3=0 items=0 ppid=428 pid=439 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1765739845.104:223): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PROCTITLE msg=audit(1765739845.104:223): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_3_vnc_puppet_susp_025 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_026 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1765739845.104:224): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="T1070_Indicator_Removal_on_Host" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1765739845.104:224): arch=c000003e syscall=44 success=yes exit=1088 a0=3 a1="wh/" a2=440 a3=0 items=0 ppid=428 pid=439 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1765739845.104:224): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PROCTITLE msg=audit(1765739845.104:224): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_3_vnc_puppet_susp_026 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_027 (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1765740001.340:2162): arch=c000003e syscall=82 success=yes exit=0 a0="U~1P" a1="U~1" a2="U~1" a3=0 items=4 ppid=1640 pid=1652 auid=0 uid=105 gid=111 euid=105 suid=105 fsuid=105 egid=111 sgid=111 fsgid=111 tty=(none) ses=2 comm="sendmail" exe="/usr/sbin/exim4" subj=unconfined key="T1070_Indicator_Removal_on_Host"ARCH=x86_64 SYSCALL=rename AUID="root" UID="Debian-exim" GID="Debian-exim" EUID="Debian-exim" SUID="Debian-exim" FSUID="Debian-exim" EGID="Debian-exim" SGID="Debian-exim" FSGID="Debian-exim"
+type=PATH msg=audit(1765740001.340:2162): item=0 name="/var/spool/exim4//input//" inode=145047 dev=fe:01 mode=040750 ouid=105 ogid=111 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="Debian-exim" OGID="Debian-exim"
+type=PATH msg=audit(1765740001.340:2162): item=1 name="/var/spool/exim4//input//" inode=145047 dev=fe:01 mode=040750 ouid=105 ogid=111 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="Debian-exim" OGID="Debian-exim"
+type=PATH msg=audit(1765740001.340:2162): item=2 name="/var/spool/exim4//input//hdr.1vUrdR-0000Qe-15" inode=131118 dev=fe:01 mode=0100640 ouid=105 ogid=111 rdev=00:00 nametype=DELETE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="Debian-exim" OGID="Debian-exim"
+type=PATH msg=audit(1765740001.340:2162): item=3 name="/var/spool/exim4//input//1vUrdR-0000Qe-15-H" inode=131118 dev=fe:01 mode=0100640 ouid=105 ogid=111 rdev=00:00 nametype=CREATE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="Debian-exim" OGID="Debian-exim"
+type=PROCTITLE msg=audit(1765740001.340:2162): proctitle="/usr/sbin/CRON -f"
+# --- END CHUNK: scenario_3_vnc_puppet_susp_027 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_028 (SUSPICIOUS) ---
+type=SYSCALL msg=audit(1765741895.340:3240): arch=c000003e syscall=59 success=yes exit=0 a0="Ug" a1="Ug@" a2="UgҰ" a3="c-" items=3 ppid=2215 pid=2237 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=4294967295 comm="cat" exe="/usr/bin/cat" subj=unconfined key="T1078_Valid_Accounts"ARCH=x86_64 SYSCALL=execve AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1765741895.340:3240): argc=2 a0="cat" a1="/etc/passwd"
+type=PATH msg=audit(1765741895.340:3240): item=0 name="/usr/bin/cat" inode=564 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1765741895.340:3240): item=1 name="/usr/bin/cat" inode=564 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1765741895.340:3240): item=2 name="/lib64/ld-linux-x86-64.so.2" inode=2058 dev=fe:01 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765741895.340:3240): proctitle="cat /etc/passwd"
+# --- END CHUNK: scenario_3_vnc_puppet_susp_028 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_029 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1765739781.196:146): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="T1201_Password_Policy_Discovery" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1765739781.196:146): arch=c000003e syscall=44 success=yes exit=1116 a0=3 a1="~@" a2=45c a3=0 items=1 ppid=544 pid=576 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1765739781.196:146): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PATH msg=audit(1765739781.196:146): item=0 name="/etc/pam.d/" inode=546 dev=fc:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765739781.196:146): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_3_vnc_puppet_susp_029 ---
+
+# --- START CHUNK: scenario_3_vnc_puppet_susp_030 (SUSPICIOUS) ---
+type=CONFIG_CHANGE msg=audit(1765739848.444:113): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="T1201_Password_Policy_Discovery" list=4 res=1AUID="unset"
+type=SYSCALL msg=audit(1765739848.444:113): arch=c000003e syscall=44 success=yes exit=1116 a0=3 a1="r`" a2=45c a3=0 items=1 ppid=531 pid=545 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1765739848.444:113): saddr=100000000000000000000000SADDR={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 }
+type=PATH msg=audit(1765739848.444:113): item=0 name="/etc/pam.d/" inode=546 dev=fc:01 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1765739848.444:113): proctitle="/sbin/auditctl -R /etc/audit/audit.rules"
+# --- END CHUNK: scenario_3_vnc_puppet_susp_030 ---
+
